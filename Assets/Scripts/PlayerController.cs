@@ -5,17 +5,31 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float moveSpeed = 1f; // 移动速度
+    public float moveSpeed = 1f;
+    float detectionRadius = 1f;
+    GameObject toPossess;
+    bool isPossessing = false;
+    bool reachedGoal = false;
+    Rigidbody2D ghostRb;
+    Collider2D ghostCollider;
 
     void Start()
     {
-        
+        ghostRb = transform.GetComponent<Rigidbody2D>();
+        ghostCollider = transform.GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Possess();
+        DetectTaggedObjects2D("Possessible", detectionRadius);
+    }
+
+    void FixedUpdate()
+    {
         MoveCharacter();
+
     }
 
     void LateUpdate()
@@ -28,26 +42,89 @@ public class PlayerController : MonoBehaviour
         float horizontalInput = 0f;
         float verticalInput = 0f;
 
-        if (Input.GetKey(KeyCode.A)) 
+        if (Input.GetKey(KeyCode.A))
         {
-            horizontalInput = -1f; 
+            horizontalInput = -1f;
         }
-        else if (Input.GetKey(KeyCode.D)) 
+        else if (Input.GetKey(KeyCode.D))
         {
-            horizontalInput = 1f; 
+            horizontalInput = 1f;
         }
 
-        if (Input.GetKey(KeyCode.W)) 
+        if (Input.GetKey(KeyCode.W))
         {
-            verticalInput = 1f;  
+            verticalInput = 1f;
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            verticalInput = -1f; 
+            verticalInput = -1f;
         }
-        Vector3 moveDirection = new Vector3(horizontalInput, verticalInput, 0f).normalized;
 
-        transform.position += moveDirection * moveSpeed * Time.deltaTime;
+        Vector2 moveDirection = new Vector2(horizontalInput, verticalInput).normalized;
+
+        // 动态获取父对象的Rigidbody2D组件
+        Rigidbody2D parentRb = null;
+
+        if (transform.parent != null)
+        {
+            parentRb = transform.parent.GetComponent<Rigidbody2D>();
+            parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+            parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;//取消xy轴移动限制
+        }
+
+        if (parentRb != null)
+        {
+            // 使用Rigidbody2D来移动父对象
+            Vector2 newParentPosition = parentRb.position + moveDirection * moveSpeed * Time.fixedDeltaTime;
+            parentRb.MovePosition(newParentPosition);
+            ghostRb.MovePosition(newParentPosition);
+
+        }
+        else
+        {
+            // 如果没有父对象的Rigidbody2D，就按原来的方式移动当前对象
+            ghostRb.MovePosition(ghostRb.position + moveDirection * moveSpeed * Time.fixedDeltaTime); 
+        }
+    }
+
+    void DetectTaggedObjects2D(string tag, float detectionRadius)
+    {
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
+
+        foreach (var hitCollider in hitColliders)
+        {
+            if (hitCollider.CompareTag(tag))
+            {
+                toPossess = hitCollider.gameObject;
+                return; 
+            }
+        }
+        toPossess = null;
+    }
+
+    void Possess()
+    {
+        if (Input.GetKeyDown(KeyCode.E)) { 
+            if (!isPossessing && toPossess != null) //如果没有附身 且有可附身物体
+            {
+                ghostCollider.enabled = false;   //disableCollider
+                transform.localScale = new Vector3(0.1f,0.1f,0.1f);
+                transform.SetParent(toPossess.transform); // set parent
+                isPossessing = true; // is possessing
+                toPossess = null;
+                transform.position = transform.parent.position;
+                
+            }
+            else if (isPossessing) //附身中E，退出
+            {
+                Rigidbody2D parentRb = transform.parent.GetComponent<Rigidbody2D>();
+                parentRb.constraints = RigidbodyConstraints2D.FreezeAll;
+                transform.parent = null;
+                isPossessing = false;
+                ghostCollider.enabled = true; //enable collider
+                transform.localScale = new Vector3(1, 1, 1);//恢复原来大小
+            }
+        } 
     }
 
 }

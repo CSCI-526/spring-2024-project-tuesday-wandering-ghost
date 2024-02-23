@@ -17,7 +17,13 @@ public class LevelUIHandler : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            panel.SetActive(true);
+            if (panel.activeInHierarchy) {
+                panel.SetActive(false);
+            } else
+            {
+                panel.SetActive(true);
+            }
+
         }
     }
 
