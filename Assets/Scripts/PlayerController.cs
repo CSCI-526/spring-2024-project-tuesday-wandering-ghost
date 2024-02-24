@@ -62,19 +62,19 @@ public class PlayerController : MonoBehaviour
 
         Vector2 moveDirection = new Vector2(horizontalInput, verticalInput).normalized;
 
-        // ¶¯Ì¬»ñÈ¡¸¸¶ÔÏóµÄRigidbody2D×é¼ş
+        // åŠ¨æ€è·å–çˆ¶å¯¹è±¡çš„Rigidbody2Dç»„ä»¶
         Rigidbody2D parentRb = null;
 
         if (transform.parent != null)
         {
             parentRb = transform.parent.GetComponent<Rigidbody2D>();
             parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-            parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;//È¡ÏûxyÖáÒÆ¶¯ÏŞÖÆ
+            parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;//å–æ¶ˆxyè½´ç§»åŠ¨é™åˆ¶
         }
 
         if (parentRb != null)
         {
-            // Ê¹ÓÃRigidbody2DÀ´ÒÆ¶¯¸¸¶ÔÏó
+            // ä½¿ç”¨Rigidbody2Dæ¥ç§»åŠ¨çˆ¶å¯¹è±¡
             Vector2 newParentPosition = parentRb.position + moveDirection * moveSpeed * Time.fixedDeltaTime;
             parentRb.MovePosition(newParentPosition);
             ghostRb.MovePosition(newParentPosition);
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // Èç¹ûÃ»ÓĞ¸¸¶ÔÏóµÄRigidbody2D£¬¾Í°´Ô­À´µÄ·½Ê½ÒÆ¶¯µ±Ç°¶ÔÏó
+            // å¦‚æœæ²¡æœ‰çˆ¶å¯¹è±¡çš„Rigidbody2Dï¼Œå°±æŒ‰åŸæ¥çš„æ–¹å¼ç§»åŠ¨å½“å‰å¯¹è±¡
             ghostRb.MovePosition(ghostRb.position + moveDirection * moveSpeed * Time.fixedDeltaTime); 
         }
     }
@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour
     void Possess()
     {
         if (Input.GetKeyDown(KeyCode.E)) { 
-            if (!isPossessing && toPossess != null) //Èç¹ûÃ»ÓĞ¸½Éí ÇÒÓĞ¿É¸½ÉíÎïÌå
+            if (!isPossessing && toPossess != null) //å¦‚æœæ²¡æœ‰é™„èº« ä¸”æœ‰å¯é™„èº«ç‰©ä½“
             {
                 ghostCollider.enabled = false;   //disableCollider
                 transform.localScale = new Vector3(0.1f,0.1f,0.1f);
@@ -115,16 +115,51 @@ public class PlayerController : MonoBehaviour
                 transform.position = transform.parent.position;
                 
             }
-            else if (isPossessing) //¸½ÉíÖĞE£¬ÍË³ö
+            else if (isPossessing) //é™„èº«ä¸­Eï¼Œé€€å‡º
             {
+                if(CheckSpaceForDepossess()){
                 Rigidbody2D parentRb = transform.parent.GetComponent<Rigidbody2D>();
                 parentRb.constraints = RigidbodyConstraints2D.FreezeAll;
                 transform.parent = null;
                 isPossessing = false;
                 ghostCollider.enabled = true; //enable collider
-                transform.localScale = new Vector3(1, 1, 1);//»Ö¸´Ô­À´´óĞ¡
+                transform.localScale = new Vector3(1, 1, 1);//æ¢å¤åŸæ¥å¤§å°
+
+                }
+                else
+                {
+                    Debug.Log("No space to depossess");
+                }
+
             }
         } 
+        }
+
+    bool CheckSpaceForDepossess()
+{
+    if (transform.parent != null)
+    {
+        Rat ratComponent = transform.parent.GetComponent<Rat>(); //get rate component
+        if (ratComponent != null && ratComponent.GetType() == "Rat")
+        {
+            Collider2D ratCollider = transform.parent.GetComponent<Collider2D>(); //get rat's collider
+            if (ratCollider != null)
+            {
+                Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, ratCollider.bounds.extents.x + 0.1f); //check 0.1f distance around the rat
+                foreach (var hit in hits)
+                {
+                    if (hit != ratCollider && hit != ghostCollider && !hit.isTrigger) //ignore rat's collider and ghost's collider
+                    {
+                        return false; 
+                    }
+                }
+            }
+        }
     }
+
+    return true; 
+}
+
+
 
 }

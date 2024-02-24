@@ -21,21 +21,21 @@ public class Dog : MonoBehaviour
 
     void DetectBone()
     {
-        // ¼ì²âÖÜÎ§µÄËùÓĞÎïÌå
+        // æ£€æµ‹å‘¨å›´çš„æ‰€æœ‰ç‰©ä½“
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
 
         foreach (var hit in hits)
         {
-            if (hit.CompareTag(targetTag)) // ¼ì²éÊÇ·ñÎªÄ¿±ê±êÇ©
+            if (hit.CompareTag(targetTag)) // æ£€æŸ¥æ˜¯å¦ä¸ºç›®æ ‡æ ‡ç­¾
             {
                 Bone boneScript = hit.gameObject.GetComponent<Bone>();
                 if (boneScript != null)
                 {
-                    // ¼ÆËã·½ÏòÏòÁ¿
+                    // è®¡ç®—æ–¹å‘å‘é‡
                     Vector2 direction = (hit.transform.position - transform.position).normalized;
-                    // ÒÆ¶¯
+                    // ç§»åŠ¨
                     transform.position += (Vector3)direction * moveSpeed * Time.deltaTime;
-                    break; // ¼ÙÉèÎÒÃÇÖ»ÏòµÚÒ»¸öÕÒµ½µÄÄ¿±êÒÆ¶¯
+                    break; // å‡è®¾æˆ‘ä»¬åªå‘ç¬¬ä¸€ä¸ªæ‰¾åˆ°çš„ç›®æ ‡ç§»åŠ¨
                 }
 
             }
