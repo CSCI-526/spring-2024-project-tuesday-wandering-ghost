@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     bool reachedGoal = false;
     Rigidbody2D ghostRb;
     Collider2D ghostCollider;
+    private bool playerMove = true;
 
     void Start()
     {
@@ -24,11 +25,15 @@ public class PlayerController : MonoBehaviour
     {
         Possess();
         DetectTaggedObjects2D("Possessible", detectionRadius);
+
     }
 
     void FixedUpdate()
     {
-        MoveCharacter();
+        if(playerMove){
+            MoveCharacter();
+        }
+       // MoveCharacter();
 
     }
 
@@ -159,6 +164,14 @@ public class PlayerController : MonoBehaviour
 
     return true; 
 }
+    public void SetPlayerMovement(bool enable)
+        {
+            playerMove = enable;
+            if (!enable)
+            {
+                ghostRb.velocity = Vector2.zero;
+            }
+        }
 
 
 
