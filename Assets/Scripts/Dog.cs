@@ -21,21 +21,21 @@ public class Dog : MonoBehaviour
 
     void DetectBone()
     {
-        // 检测周围的所有物体
+        // detect all surrounding obj
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
 
         foreach (var hit in hits)
         {
-            if (hit.CompareTag(targetTag)) // 检查是否为目标标签
+            if (hit.CompareTag(targetTag)) // check if the target tag
             {
                 Bone boneScript = hit.gameObject.GetComponent<Bone>();
                 if (boneScript != null)
                 {
-                    // 计算方向向量
+                    // calc direction vector
                     Vector2 direction = (hit.transform.position - transform.position).normalized;
-                    // 移动
+                    // movement
                     transform.position += (Vector3)direction * moveSpeed * Time.deltaTime;
-                    break; // 假设我们只向第一个找到的目标移动
+                    break; // only move to the first target that been found
                 }
 
             }
