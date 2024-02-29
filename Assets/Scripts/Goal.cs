@@ -6,9 +6,14 @@ public class Goal : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject winPanel;
+    public PlayerController playerController;
     void Start()
     {
-        
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        if (playerObject != null)
+        {
+            playerController = playerObject.GetComponent<PlayerController>();
+        }
     }
 
     // Update is called once per frame
@@ -20,5 +25,6 @@ public class Goal : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         winPanel.SetActive(true);
+        playerController.SetPlayerMovement(false);
     }
 }

@@ -3575,6 +3575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 505812991}
+  playerController: {fileID: 0}
 --- !u!114 &1868519669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3797,6 +3798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winPanel: {fileID: 1239539529}
+  playerController: {fileID: 5117262892560557962}
 --- !u!61 &2033244417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4009,6 +4011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dog
       objectReference: {fileID: 0}
+    - target: {fileID: 1282573164411766052, guid: 1973b2c7cae0f5f409217f350d80d030, type: 3}
+      propertyPath: m_TagString
+      value: Possessible
+      objectReference: {fileID: 0}
     - target: {fileID: 3387554042325510135, guid: 1973b2c7cae0f5f409217f350d80d030, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.45
@@ -4183,6 +4189,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}
+--- !u!114 &5117262892560557962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8277739983921271729, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}
+  m_PrefabInstance: {fileID: 5117262892560557961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b18f41e983644b4a8b05633803df5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7674888768505032003
 PrefabInstance:
   m_ObjectHideFlags: 0

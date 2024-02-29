@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     bool reachedGoal = false;
     Rigidbody2D ghostRb;
     Collider2D ghostCollider;
+    private bool playerMove = true;
 
     void Start()
     {
@@ -24,11 +25,15 @@ public class PlayerController : MonoBehaviour
     {
         Possess();
         DetectTaggedObjects2D("Possessible", detectionRadius);
+
     }
 
     void FixedUpdate()
     {
-        MoveCharacter();
+        if(playerMove){
+            MoveCharacter();
+        }
+       // MoveCharacter();
 
     }
 
@@ -62,19 +67,19 @@ public class PlayerController : MonoBehaviour
 
         Vector2 moveDirection = new Vector2(horizontalInput, verticalInput).normalized;
 
-        // 动态获取父对象的Rigidbody2D组件
+        // get parent's Rigidbody2D component
         Rigidbody2D parentRb = null;
 
         if (transform.parent != null)
         {
             parentRb = transform.parent.GetComponent<Rigidbody2D>();
             parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-            parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;//取消xy轴移动限制
+            parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;//cancel xy axis movement restriction
         }
 
         if (parentRb != null)
         {
-            // 使用Rigidbody2D来移动父对象
+            // use Rigidbody2D to move parent obj
             Vector2 newParentPosition = parentRb.position + moveDirection * moveSpeed * Time.fixedDeltaTime;
             parentRb.MovePosition(newParentPosition);
             ghostRb.MovePosition(newParentPosition);
@@ -82,7 +87,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // 如果没有父对象的Rigidbody2D，就按原来的方式移动当前对象
+            // move in the original way when parent no Rigidbody2D
             ghostRb.MovePosition(ghostRb.position + moveDirection * moveSpeed * Time.fixedDeltaTime); 
         }
     }
@@ -105,7 +110,7 @@ public class PlayerController : MonoBehaviour
     void Possess()
     {
         if (Input.GetKeyDown(KeyCode.E)) { 
-            if (!isPossessing && toPossess != null) //如果没有附身 且有可附身物体
+            if (!isPossessing && toPossess != null) // if no possession and has possessable obj
             {
                 ghostCollider.enabled = false;   //disableCollider
                 transform.localScale = new Vector3(0.1f,0.1f,0.1f);
@@ -115,16 +120,59 @@ public class PlayerController : MonoBehaviour
                 transform.position = transform.parent.position;
                 
             }
-            else if (isPossessing) //附身中E，退出
+            else if (isPossessing) //press E when possessing will quite
             {
+                if(CheckSpaceForDepossess()){
                 Rigidbody2D parentRb = transform.parent.GetComponent<Rigidbody2D>();
                 parentRb.constraints = RigidbodyConstraints2D.FreezeAll;
                 transform.parent = null;
                 isPossessing = false;
                 ghostCollider.enabled = true; //enable collider
-                transform.localScale = new Vector3(1, 1, 1);//恢复原来大小
+                transform.localScale = new Vector3(1, 1, 1);//back to original size
+
+                }
+                else
+                {
+                    Debug.Log("No space to depossess");
+                }
+
             }
         } 
+        }
+
+    bool CheckSpaceForDepossess()
+{
+    if (transform.parent != null)
+    {
+        Rat ratComponent = transform.parent.GetComponent<Rat>(); //get rate component
+        if (ratComponent != null && ratComponent.GetType() == "Rat")
+        {
+            Collider2D ratCollider = transform.parent.GetComponent<Collider2D>(); //get rat's collider
+            if (ratCollider != null)
+            {
+                Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, ratCollider.bounds.extents.x + 0.1f); //check 0.1f distance around the rat
+                foreach (var hit in hits)
+                {
+                    if (hit != ratCollider && hit != ghostCollider && !hit.isTrigger) //ignore rat's collider and ghost's collider
+                    {
+                        return false; 
+                    }
+                }
+            }
+        }
     }
+
+    return true; 
+}
+    public void SetPlayerMovement(bool enable)
+        {
+            playerMove = enable;
+            if (!enable)
+            {
+                ghostRb.velocity = Vector2.zero;
+            }
+        }
+
+
 
 }
