@@ -8,7 +8,7 @@ public class Skeleton : MonoBehaviour
 
     public GameObject bone;
     string type = "Skeleton";
-    float projectileCount = 5;
+    float projectileCount = 1;
     float projectileSpeed = 10f;
     void Start()
     {
@@ -31,23 +31,8 @@ public class Skeleton : MonoBehaviour
 
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
 
-                Vector2 shootDirection = Vector2.right;
-                if (Input.GetKey(KeyCode.W))
-                {
-                    shootDirection = Vector2.up;
-                }
-                else if (Input.GetKey(KeyCode.S))
-                {
-                    shootDirection = Vector2.down;
-                }
-                else if (Input.GetKey(KeyCode.A))
-                {
-                    shootDirection = Vector2.left;
-                }
-                else if (Input.GetKey(KeyCode.D))
-                {
-                    shootDirection = Vector2.right;
-                }
+                Vector2 shootDirection = Vector2.left;
+                
 
                 rb.velocity = shootDirection * projectileSpeed;
                 projectileCount--;
