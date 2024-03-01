@@ -9,7 +9,7 @@ public class Goal : MonoBehaviour
     PlayerController playerController;
     void Start()
     {
-        GameObject playerObject = GameObject.FindWithTag("Player"); // 确保你的玩家游戏对象被标记为"Player"
+        GameObject playerObject = GameObject.FindWithTag("Player");
         if (playerObject != null)
         {
             playerController = playerObject.GetComponent<PlayerController>();

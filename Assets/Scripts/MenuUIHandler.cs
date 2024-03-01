@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -13,10 +14,14 @@ public class MenuUIHandler : MonoBehaviour
     // Start is called before the first frame update
     public GameObject startMenuButtons;
     public GameObject levelSelectionButtons;
+    public Button startBtn;
     GameObject title;
     void Start()
     {
         title = GameObject.Find("Title");
+        
+        // must visit tutorial first
+        startBtn.interactable = false;
     }
 
     // Update is called once per frame
@@ -42,6 +47,14 @@ public class MenuUIHandler : MonoBehaviour
     public void LoadSceneOne()
     {
         SceneManager.LoadScene("LevelOne");
+    }
+    
+    public void LoadTutorial()
+    {
+        SceneManager.LoadScene("LevelTutorial");
+        
+        // Enable the Start button after Tutorial is clicked
+        startBtn.interactable = true;
     }
 
     public void Exit()
