@@ -44,4 +44,9 @@ public class LevelUIHandler : MonoBehaviour
     {
         SceneManager.LoadScene("MenuScene");
     }
+    
+    public void StartLevelOne()
+    {
+        SceneManager.LoadScene("LevelOne");
+    }
 }
