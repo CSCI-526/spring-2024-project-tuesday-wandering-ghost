@@ -1445,7 +1445,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winPanel: {fileID: 1251379893}
-  playerController: {fileID: 1866457419}
 --- !u!61 &912645955
 BoxCollider2D:
   m_ObjectHideFlags: 0
