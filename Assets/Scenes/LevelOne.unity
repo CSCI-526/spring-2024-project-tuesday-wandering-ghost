@@ -4013,7 +4013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1282573164411766052, guid: 1973b2c7cae0f5f409217f350d80d030, type: 3}
       propertyPath: m_TagString
-      value: Possessible
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3387554042325510135, guid: 1973b2c7cae0f5f409217f350d80d030, type: 3}
       propertyPath: m_LocalPosition.x
