@@ -6,7 +6,7 @@ public class Goal : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject winPanel;
-    public PlayerController playerController;
+    PlayerController playerController;
     void Start()
     {
         GameObject playerObject = GameObject.FindWithTag("Player"); // 确保你的玩家游戏对象被标记为"Player"

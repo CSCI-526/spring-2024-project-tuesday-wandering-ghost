@@ -3575,6 +3575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 505812991}
+  playerController: {fileID: 0}
 --- !u!114 &1868519669
 MonoBehaviour:
   m_ObjectHideFlags: 0
