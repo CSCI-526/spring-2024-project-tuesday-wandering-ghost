@@ -11,6 +11,8 @@ public class MaskControllerTest : MonoBehaviour
     public float duration = 3f;
     public Vector3 targetScale = new Vector3(20, 20, 20);
     public TextMeshProUGUI counterText;
+    public TextMeshProUGUI gameOverText;
+
 
     Vector3 shrink = new Vector3(0.01f,0.01f,0.01f);
     Vector3 expandToOriginal = new Vector3(1f, 1f, 1f);
@@ -21,7 +23,7 @@ public class MaskControllerTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameOverText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,7 +48,18 @@ public class MaskControllerTest : MonoBehaviour
 
     void ShrinkMask()
     {
-        mask.transform.localScale -= shrink;
+        if (mask.transform.localScale.x > shrink.x && mask.transform.localScale.y > shrink.y)
+        {
+            mask.transform.localScale -= shrink;
+        }
+        else
+        {
+            if (gameOverText != null)
+            {
+                gameOverText.gameObject.SetActive(true);
+            }
+            isShrinking = false;
+        }
     }
 
     IEnumerator ResetMask()
