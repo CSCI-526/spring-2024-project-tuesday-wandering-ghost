@@ -14,7 +14,10 @@ public class Skeleton : MonoBehaviour
         // Get the Animator component attached to this GameObject
         animator = GetComponent<Animator>();
     }
-
+    // public void SetDefaultState()
+    // {
+    //     animator.SetTrigger("MoveDown");
+    // }
     void Update()
     {
         ShootBone();
@@ -37,27 +40,27 @@ public class Skeleton : MonoBehaviour
 
     void UpdateFacingDirection()
     {
-        // Use GetKeyDown to trigger the direction once when the key is first pressed
+        
         if (Input.GetKeyDown(KeyCode.A))
         {
             Debug.Log("Moving Left");
             lastDirection = Vector2.left;
-            animator.SetTrigger("MoveLeft");
+            //animator.SetTrigger("MoveLeft");
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
             lastDirection = Vector2.right;
-            animator.SetTrigger("MoveRight");
+            //animator.SetTrigger("MoveRight");
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
             lastDirection = Vector2.up;
-            animator.SetTrigger("MoveUp");
+            //animator.SetTrigger("MoveUp");
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
             lastDirection = Vector2.down;
-            animator.SetTrigger("MoveDown");
+            //animator.SetTrigger("MoveDown");
         }
     }
 
