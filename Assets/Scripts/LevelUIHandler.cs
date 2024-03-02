@@ -7,6 +7,8 @@ public class LevelUIHandler : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject panel;
+    public GameObject hintPanel;
+
     public PlayerController playerController;
     void Start()
     {
@@ -40,6 +42,14 @@ public class LevelUIHandler : MonoBehaviour
         panel.SetActive(false);
     }
 
+    public void EnableHintPanel()
+    {
+        hintPanel.SetActive(true);
+    }
+    public void DisEnableHintPanel()
+    {
+        hintPanel.SetActive(false);
+    }
     public void BackToMenu()
     {
         SceneManager.LoadScene("MenuScene");
@@ -49,4 +59,6 @@ public class LevelUIHandler : MonoBehaviour
     {
         SceneManager.LoadScene("LevelOne");
     }
+
+
 }
