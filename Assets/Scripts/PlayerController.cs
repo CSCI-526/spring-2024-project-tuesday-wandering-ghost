@@ -15,14 +15,10 @@ public class PlayerController : MonoBehaviour
     Collider2D ghostCollider;
     private bool playerMove = true;
 
-    public TextMeshProUGUI useAbilityTextUI;
-    public Vector3 UIoffset = new Vector3(300, 300, 0);
-
     void Start()
     {
         ghostRb = transform.GetComponent<Rigidbody2D>();
         ghostCollider = transform.GetComponent<Collider2D>();
-        useAbilityTextUI.enabled = false;
     }
 
     // Update is called once per frame
@@ -30,7 +26,6 @@ public class PlayerController : MonoBehaviour
     {
         Possess();
         DetectTaggedObjects2D("Possessible", detectionRadius);
-        useAbilityTextUI.transform.position = transform.position + UIoffset;
     }
 
     void FixedUpdate()
@@ -124,36 +119,7 @@ public class PlayerController : MonoBehaviour
                 toPossess = null;
                 transform.position = transform.parent.position;
 
-                string message = "";
-                while (true)
-                {
-                    Rat ratComponent = transform.parent.GetComponent<Rat>();
-                    if (ratComponent != null)
-                    {
-                        Debug.Log("1");
-                        message = "Press [Q] to shrink the size";
-                        ShowUI(message);
-                        Invoke("HideUI", 3f);
-                        break;
-                    }
-                    Bone boneComponent = transform.parent.GetComponent<Bone>();
-                    if (boneComponent != null)
-                    {
-                        message = "Bone can attract the dog";
-                        ShowUI(message);
-                        Invoke("HideUI", 3f);
-                        break;
-                    }
-                    Skeleton skeletonComponent = transform.parent.GetComponent<Skeleton>();
-                    if (skeletonComponent != null)
-                    {
-                        message = "Press [Q] to shoot the bone";
-                        ShowUI(message);
-                        Invoke("HideUI", 3f);
-                        break;
-                    }
-                    break;
-                }
+                
                
             }
             else if (isPossessing) //press E when possessing will quite
@@ -176,16 +142,6 @@ public class PlayerController : MonoBehaviour
         } 
         }
 
-    void ShowUI(string message)
-    {
-        useAbilityTextUI.text = message;
-        useAbilityTextUI.enabled = true;
-    }
-
-    void HideUI()
-    {
-        useAbilityTextUI.enabled = false;
-    }
 
     bool CheckSpaceForDepossess()
 {
