@@ -5224,14 +5224,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
-    - target: {fileID: 5769056599432424636, guid: 35148be69a1b35c4c834b1c4cdbb4907, type: 3}
-      propertyPath: m_MaskInteraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6023250482137734733, guid: 35148be69a1b35c4c834b1c4cdbb4907, type: 3}
-      propertyPath: bone
-      value: 
-      objectReference: {fileID: 1337463045701407438, guid: 6157d7adca727e2499a6449bfa726f08, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

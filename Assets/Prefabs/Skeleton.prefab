@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7009343063897916362}
   - component: {fileID: 443952189409533791}
   - component: {fileID: 6023250482137734733}
+  - component: {fileID: 4416285342125972264}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Possessible
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!50 &7009343063897916362
 Rigidbody2D:
@@ -172,3 +173,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bone: {fileID: 1337463045701407438, guid: 6157d7adca727e2499a6449bfa726f08, type: 3}
+--- !u!95 &4416285342125972264
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3151003344449484731}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2759e42b85fe34245b42c0ea6a6d331b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
