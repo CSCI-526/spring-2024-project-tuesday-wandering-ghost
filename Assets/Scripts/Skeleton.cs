@@ -1,24 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Skeleton : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public GameObject bone;
-    string type = "Skeleton";
-    float projectileCount = 5;
-    float projectileSpeed = 10f;
+    private Animator animator; // Reference to the Animator component
+    private float projectileCount = 5;
+    private float projectileSpeed = 10f;
+    private Vector2 lastDirection = Vector2.right; // Default facing direction
+    private string type = "Skeleton";
+
     void Start()
     {
-        
+        // Get the Animator component attached to this GameObject
+        animator = GetComponent<Animator>();
     }
-
-    // Update is called once per frame
+    // public void SetDefaultState()
+    // {
+    //     animator.SetTrigger("MoveDown");
+    // }
     void Update()
     {
         ShootBone();
+        UpdateFacingDirection();
     }
 
     void ShootBone()
@@ -28,35 +31,42 @@ public class Skeleton : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 GameObject projectile = Instantiate(bone, transform.position, Quaternion.identity);
-
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-
-                Vector2 shootDirection = Vector2.right;
-                if (Input.GetKey(KeyCode.W))
-                {
-                    shootDirection = Vector2.up;
-                }
-                else if (Input.GetKey(KeyCode.S))
-                {
-                    shootDirection = Vector2.down;
-                }
-                else if (Input.GetKey(KeyCode.A))
-                {
-                    shootDirection = Vector2.left;
-                }
-                else if (Input.GetKey(KeyCode.D))
-                {
-                    shootDirection = Vector2.right;
-                }
-
-                rb.velocity = shootDirection * projectileSpeed;
+                rb.velocity = lastDirection * projectileSpeed;
                 projectileCount--;
             }
         }
     }
 
-    public string GetType()
+    void UpdateFacingDirection()
     {
-        return type;
+        
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Debug.Log("Moving Left");
+            lastDirection = Vector2.left;
+            //animator.SetTrigger("MoveLeft");
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            lastDirection = Vector2.right;
+            //animator.SetTrigger("MoveRight");
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            lastDirection = Vector2.up;
+            //animator.SetTrigger("MoveUp");
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            lastDirection = Vector2.down;
+            //animator.SetTrigger("MoveDown");
+        }
     }
+
+public string GetSkeletonType()
+{
+    return type;
+}
+
 }
