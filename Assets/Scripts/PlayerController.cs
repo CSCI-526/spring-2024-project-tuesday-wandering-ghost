@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,11 +13,14 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D ghostRb;
     Collider2D ghostCollider;
     private bool playerMove = true;
+    public Skeleton skeleton;
+    private Animator animator; // Reference to the Animator component
 
     void Start()
     {
         ghostRb = transform.GetComponent<Rigidbody2D>();
         ghostCollider = transform.GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,11 @@ public class PlayerController : MonoBehaviour
     {
         Possess();
         DetectTaggedObjects2D("Possessible", detectionRadius);
+    if(isPossessing)
+    {
+        UpdateFacingDirection(); 
+    }
+
     }
 
     void FixedUpdate()
@@ -33,6 +40,7 @@ public class PlayerController : MonoBehaviour
         if(playerMove){
             MoveCharacter();
         }
+
        // MoveCharacter();
 
     }
@@ -118,9 +126,7 @@ public class PlayerController : MonoBehaviour
                 isPossessing = true; // is possessing
                 toPossess = null;
                 transform.position = transform.parent.position;
-
                 
-               
             }
             else if (isPossessing) //press E when possessing will quite
             {
@@ -141,7 +147,6 @@ public class PlayerController : MonoBehaviour
             }
         } 
         }
-
 
     bool CheckSpaceForDepossess()
 {
@@ -177,5 +182,45 @@ public class PlayerController : MonoBehaviour
         }
 
 
+ void UpdateFacingDirection()
+{
+    Animator animator = null;
+    if (isPossessing && transform.parent != null)
+    {
+        animator = transform.parent.GetComponent<Animator>();
+    }
+    else
+    {
+        
+        animator = GetComponent<Animator>();
+    }
 
+    if (animator != null)
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Debug.Log("Moving Left");
+            animator.SetTrigger("MoveLeft");
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            Debug.Log("Moving Right");
+            animator.SetTrigger("MoveRight");
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            Debug.Log("Moving Up");
+            animator.SetTrigger("MoveUp");
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            Debug.Log("Moving Down");
+            animator.SetTrigger("MoveDown");
+        }
+    }
 }
+}
+
+
+
+
