@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D ghostRb;
     Collider2D ghostCollider;
     private bool playerMove = true;
-    public Skeleton skeleton;
     private Animator animator; // Reference to the Animator component
 
     void Start()
@@ -28,7 +27,8 @@ public class PlayerController : MonoBehaviour
     {
         Possess();
         DetectTaggedObjects2D("Possessible", detectionRadius);
-    if(isPossessing)
+        DetectTaggedObjects2D("FixedPossessible", detectionRadius);
+        if (isPossessing)
     {
         UpdateFacingDirection(); 
     }
@@ -78,7 +78,13 @@ public class PlayerController : MonoBehaviour
         // get parent's Rigidbody2D component
         Rigidbody2D parentRb = null;
 
-        if (transform.parent != null)
+        if (transform.parent != null && transform.parent.CompareTag("FixedPossessible"))
+        {
+            ghostRb.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+
+
+        if (transform.parent != null && transform.parent.CompareTag("Possessible"))
         {
             parentRb = transform.parent.GetComponent<Rigidbody2D>();
             parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
@@ -137,7 +143,8 @@ public class PlayerController : MonoBehaviour
                 isPossessing = false;
                 ghostCollider.enabled = true; //enable collider
                 transform.localScale = new Vector3(1, 1, 1);//back to original size
-
+                ghostRb.constraints  &= ~RigidbodyConstraints2D.FreezePositionX;
+                ghostRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY; //cancel xy axis movement restriction
                 }
                 else
                 {
