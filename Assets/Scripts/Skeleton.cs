@@ -12,7 +12,7 @@ public class Skeleton : MonoBehaviour
     float projectileSpeed = 10f;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,7 +26,6 @@ public class PlayerController : MonoBehaviour
     {
         Possess();
         DetectTaggedObjects2D("Possessible", detectionRadius);
-
     }
 
     void FixedUpdate()
@@ -118,7 +118,9 @@ public class PlayerController : MonoBehaviour
                 isPossessing = true; // is possessing
                 toPossess = null;
                 transform.position = transform.parent.position;
+
                 
+               
             }
             else if (isPossessing) //press E when possessing will quite
             {
@@ -139,6 +141,7 @@ public class PlayerController : MonoBehaviour
             }
         } 
         }
+
 
     bool CheckSpaceForDepossess()
 {
