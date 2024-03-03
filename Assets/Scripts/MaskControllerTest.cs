@@ -23,7 +23,7 @@ public class MaskControllerTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameOverText.gameObject.SetActive(false);
+       //gameOverText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
