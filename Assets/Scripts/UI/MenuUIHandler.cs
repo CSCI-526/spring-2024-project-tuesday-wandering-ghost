@@ -58,6 +58,11 @@ public class MenuUIHandler : MonoBehaviour
         _isTutorialVisit = true;
     }
 
+    public void LoadLevelTwo()
+    {
+        SceneManager.LoadScene("LevelTwo");
+    }
+
     public void Exit()
     {
 #if UNITY_EDITOR
