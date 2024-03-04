@@ -76,4 +76,61 @@ public class GameData
             },
         }
     };
+    
+    public static LevelData LevelTwo = new LevelData
+    {
+        levelID = "Level2",
+        levelName = "LevelTwo",
+        
+        rooms = new RoomData[]
+        {
+            new RoomData
+            {
+                roomName = "RoomInit",
+                roomRange = new Vector2[]
+                {
+                    new Vector2(-3, 3),       //top let
+                    new Vector2(4, 3),        //top right
+                    new Vector2(-3, -2),      //bottom let
+                    new Vector2(4, -2)        //bottom right
+                }
+            },
+        
+            new RoomData
+            {
+                roomName = "RoomChest",
+                roomRange = new Vector2[]
+                {
+                    new Vector2(7, 13),
+                    new Vector2(15, 13),
+                    new Vector2(7, 5),
+                    new Vector2(15, 5)
+                }
+            },
+            
+            new RoomData
+            {
+                roomName = "RoomLeft",
+                roomRange = new Vector2[]
+                {
+                    new Vector2(-10, 12),
+                    new Vector2(-7, 12),
+                    new Vector2(-10, 7),
+                    new Vector2(-7, 7)
+                }
+            },
+            
+            new RoomData
+            {
+                roomName = "RoomGate",
+                roomRange = new Vector2[]
+                {
+                    new Vector2(-6, 23),
+                    new Vector2(7, 23),
+                    new Vector2(-6, 17),
+                    new Vector2(7, 17)
+                }
+            },
+        }
+    };
 }

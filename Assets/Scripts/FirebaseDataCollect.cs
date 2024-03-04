@@ -31,6 +31,9 @@ public class FirebaseDataCollect : MonoBehaviour
             case "LevelOne":
                 currentLevel = GameData.LevelOne;
                 break;
+            case "LevelTwo":
+                currentLevel = GameData.LevelTwo;
+                break;
             case "LevelTutorial":
                 currentLevel = GameData.LevelTutorial;
                 break;
@@ -53,6 +56,7 @@ public class FirebaseDataCollect : MonoBehaviour
                 // tutorial only collect total level time
                 break;
             case "LevelOne":
+            case "LevelTwo":
                 Vector2 playerPosition = player.transform.position;
                 CheckPlayerLocation(playerPosition);
                 break;

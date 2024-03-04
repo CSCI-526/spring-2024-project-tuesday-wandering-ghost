@@ -1027,7 +1027,7 @@ Transform:
   m_GameObject: {fileID: 387793067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4897914, y: 1.47182, z: -6}
+  m_LocalPosition: {x: 0.49273604, y: 1.47181, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3759,6 +3759,50 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1067142752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1067142754}
+  - component: {fileID: 1067142753}
+  m_Layer: 0
+  m_Name: Firebase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1067142753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067142752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297ab157544f7446ea3db79449cd256b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1067142754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067142752}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 281.72882, y: 110.88779, z: -0.66862345}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1087584392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5186744417259557768, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}
@@ -5970,6 +6014,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winPanel: {fileID: 1239539529}
+  playerController: {fileID: 0}
+  firebaseData: {fileID: 1067142753}
 --- !u!61 &2033244417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6576,3 +6622,4 @@ SceneRoots:
   - {fileID: 604672201}
   - {fileID: 1264595239850419322}
   - {fileID: 1169134534}
+  - {fileID: 1067142754}
