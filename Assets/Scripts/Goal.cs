@@ -6,7 +6,8 @@ public class Goal : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject winPanel;
-    PlayerController playerController;
+    public PlayerController playerController;
+    public FirebaseDataCollect firebaseData;
     void Start()
     {
         GameObject playerObject = GameObject.FindWithTag("Player");
@@ -26,5 +27,8 @@ public class Goal : MonoBehaviour
     {
         winPanel.SetActive(true);
         playerController.SetPlayerMovement(false);
+
+        // post data to firebase
+        firebaseData.FinishLevel();
     }
 }
