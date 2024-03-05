@@ -13,18 +13,25 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D ghostRb;
     Collider2D ghostCollider;
     private bool playerMove = true;
+    private Animator animator; // Reference to the Animator component
+    string[] possesibleTags = { "Possessible", "FixedPossessible" };
 
     void Start()
     {
         ghostRb = transform.GetComponent<Rigidbody2D>();
         ghostCollider = transform.GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Possess();
-        DetectTaggedObjects2D("Possessible", detectionRadius);
+        DetectTaggedObjects2D(possesibleTags, detectionRadius);
+        if (isPossessing)
+    {
+        UpdateFacingDirection(); 
+    }
 
     }
 
@@ -33,6 +40,7 @@ public class PlayerController : MonoBehaviour
         if(playerMove){
             MoveCharacter();
         }
+
        // MoveCharacter();
 
     }
@@ -67,19 +75,25 @@ public class PlayerController : MonoBehaviour
 
         Vector2 moveDirection = new Vector2(horizontalInput, verticalInput).normalized;
 
-        // 动态获取父对象的Rigidbody2D组件
+        // get parent's Rigidbody2D component
         Rigidbody2D parentRb = null;
 
-        if (transform.parent != null)
+        if (transform.parent != null && transform.parent.CompareTag("FixedPossessible"))
+        {
+            ghostRb.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+
+
+        if (transform.parent != null && transform.parent.CompareTag("Possessible"))
         {
             parentRb = transform.parent.GetComponent<Rigidbody2D>();
             parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-            parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;//取消xy轴移动限制
+            parentRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;//cancel xy axis movement restriction
         }
 
         if (parentRb != null)
         {
-            // 使用Rigidbody2D来移动父对象
+            // use Rigidbody2D to move parent obj
             Vector2 newParentPosition = parentRb.position + moveDirection * moveSpeed * Time.fixedDeltaTime;
             parentRb.MovePosition(newParentPosition);
             ghostRb.MovePosition(newParentPosition);
@@ -87,22 +101,26 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // 如果没有父对象的Rigidbody2D，就按原来的方式移动当前对象
+            // move in the original way when parent no Rigidbody2D
             ghostRb.MovePosition(ghostRb.position + moveDirection * moveSpeed * Time.fixedDeltaTime); 
         }
     }
 
-    void DetectTaggedObjects2D(string tag, float detectionRadius)
+    void DetectTaggedObjects2D(string[] tags, float detectionRadius)
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
 
         foreach (var hitCollider in hitColliders)
         {
-            if (hitCollider.CompareTag(tag))
+            foreach (var tag in tags)
             {
-                toPossess = hitCollider.gameObject;
-                return; 
+                if (hitCollider.CompareTag(tag))
+                {
+                    toPossess = hitCollider.gameObject;
+                    return;
+                }
             }
+
         }
         toPossess = null;
     }
@@ -110,7 +128,7 @@ public class PlayerController : MonoBehaviour
     void Possess()
     {
         if (Input.GetKeyDown(KeyCode.E)) { 
-            if (!isPossessing && toPossess != null) //如果没有附身 且有可附身物体
+            if (!isPossessing && toPossess != null) // if no possession and has possessable obj
             {
                 ghostCollider.enabled = false;   //disableCollider
                 transform.localScale = new Vector3(0.1f,0.1f,0.1f);
@@ -120,7 +138,7 @@ public class PlayerController : MonoBehaviour
                 transform.position = transform.parent.position;
                 
             }
-            else if (isPossessing) //附身中E，退出
+            else if (isPossessing) //press E when possessing will quite
             {
                 if(CheckSpaceForDepossess()){
                 Rigidbody2D parentRb = transform.parent.GetComponent<Rigidbody2D>();
@@ -128,8 +146,9 @@ public class PlayerController : MonoBehaviour
                 transform.parent = null;
                 isPossessing = false;
                 ghostCollider.enabled = true; //enable collider
-                transform.localScale = new Vector3(1, 1, 1);//恢复原来大小
-
+                transform.localScale = new Vector3(1, 1, 1);//back to original size
+                ghostRb.constraints  &= ~RigidbodyConstraints2D.FreezePositionX;
+                ghostRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY; //cancel xy axis movement restriction
                 }
                 else
                 {
@@ -174,5 +193,45 @@ public class PlayerController : MonoBehaviour
         }
 
 
+ void UpdateFacingDirection()
+{
+    Animator animator = null;
+    if (isPossessing && transform.parent != null)
+    {
+        animator = transform.parent.GetComponent<Animator>();
+    }
+    else
+    {
+        
+        animator = GetComponent<Animator>();
+    }
 
+    if (animator != null)
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Debug.Log("Moving Left");
+            animator.SetTrigger("MoveLeft");
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            Debug.Log("Moving Right");
+            animator.SetTrigger("MoveRight");
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            Debug.Log("Moving Up");
+            animator.SetTrigger("MoveUp");
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            Debug.Log("Moving Down");
+            animator.SetTrigger("MoveDown");
+        }
+    }
 }
+}
+
+
+
+
