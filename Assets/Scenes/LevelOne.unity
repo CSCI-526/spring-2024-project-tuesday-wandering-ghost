@@ -6054,7 +6054,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1767324839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1677624816}
+        m_TargetAssemblyTypeName: LevelUIHandler, Assembly-CSharp
+        m_MethodName: StartLevelTwo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1767324839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6496,7 +6508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cd9b15c654e4aa47b5dc89596cc95c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winPanel: {fileID: 0}
+  winPanel: {fileID: 925158882}
 --- !u!61 &2033244417
 BoxCollider2D:
   m_ObjectHideFlags: 0
