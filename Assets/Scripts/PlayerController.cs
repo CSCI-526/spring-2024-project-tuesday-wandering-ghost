@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     Collider2D ghostCollider;
     private bool playerMove = true;
     private Animator animator; // Reference to the Animator component
+    string[] possesibleTags = { "Possessible", "FixedPossessible" };
 
     void Start()
     {
@@ -26,8 +27,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Possess();
-        DetectTaggedObjects2D("Possessible", detectionRadius);
-        DetectTaggedObjects2D("FixedPossessible", detectionRadius);
+        DetectTaggedObjects2D(possesibleTags, detectionRadius);
         if (isPossessing)
     {
         UpdateFacingDirection(); 
@@ -106,17 +106,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void DetectTaggedObjects2D(string tag, float detectionRadius)
+    void DetectTaggedObjects2D(string[] tags, float detectionRadius)
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
 
         foreach (var hitCollider in hitColliders)
         {
-            if (hitCollider.CompareTag(tag))
+            foreach (var tag in tags)
             {
-                toPossess = hitCollider.gameObject;
-                return; 
+                if (hitCollider.CompareTag(tag))
+                {
+                    toPossess = hitCollider.gameObject;
+                    return;
+                }
             }
+
         }
         toPossess = null;
     }

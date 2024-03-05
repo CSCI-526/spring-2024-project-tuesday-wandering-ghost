@@ -8,6 +8,7 @@ public class LevelUIHandler : MonoBehaviour
     // Start is called before the first frame update
     public GameObject panel;
     public GameObject hintPanel;
+    public GameObject instructionPanel;
 
     public PlayerController playerController;
     void Start()
@@ -26,20 +27,25 @@ public class LevelUIHandler : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             if (panel.activeInHierarchy) {
-                panel.SetActive(false);
-                playerController.SetPlayerMovement(true);
+                DisablePanel();
             } else
             {
-                panel.SetActive(true);
-                playerController.SetPlayerMovement(false);
+                EnablePanel();
             }
 
         }
     }
 
+    public void EnablePanel()
+    {
+        panel.SetActive(true);
+        playerController.SetPlayerMovement(false);
+    }
+
     public void DisablePanel()
     {
         panel.SetActive(false);
+        playerController.SetPlayerMovement(true);
     }
 
     public void EnableHintPanel()
@@ -50,6 +56,19 @@ public class LevelUIHandler : MonoBehaviour
     {
         hintPanel.SetActive(false);
     }
+
+    public void EnableInstructionPanel()
+    {
+        panel.SetActive(false);
+        instructionPanel.SetActive(true);
+    }
+
+    public void DisableInstructionPanel()
+    {
+        panel.SetActive(true);
+        instructionPanel.SetActive(false);
+    }
+
     public void BackToMenu()
     {
         SceneManager.LoadScene("MenuScene");
