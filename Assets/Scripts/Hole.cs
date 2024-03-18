@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapStatus : MonoBehaviour
+public class Hole : MonoBehaviour
 {
     // Start is called before the first frame update
-    int lightNum = 1;
-    public GameObject chest;
     void Start()
     {
         
@@ -15,14 +13,14 @@ public class MapStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lightNum == 4 && chest != null)
-        {
-            chest.gameObject.SetActive(true);
-        }
+        
     }
 
-    public void increaseNum()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        lightNum++;
+        if (collision.gameObject.name == "SpiderWeb(Clone)") {
+            Destroy(this.gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 }
