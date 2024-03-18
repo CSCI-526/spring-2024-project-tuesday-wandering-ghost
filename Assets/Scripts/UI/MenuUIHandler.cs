@@ -63,6 +63,11 @@ public class MenuUIHandler : MonoBehaviour
         SceneManager.LoadScene("LevelTwo");
     }
 
+    public void LoadLevelThree()
+    {
+        SceneManager.LoadScene("LevelThree");
+    }
+
     public void Exit()
     {
 #if UNITY_EDITOR
