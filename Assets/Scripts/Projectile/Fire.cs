@@ -5,7 +5,7 @@ using UnityEngine;
 public class Fire : MonoBehaviour
 {
     // Start is called before the first frame update
-    float lifetime = 1f; // Projectile存活时间
+    float lifetime = 3f; // Projectile存活时间
     string type = "Fire";
     private Rigidbody2D rb;
     Collider2D cl;

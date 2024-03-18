@@ -5,10 +5,12 @@ using UnityEngine;
 public class SpiderWeb : MonoBehaviour
 {
     // Start is called before the first frame update
+    float lifetime = 3f;
     BoxCollider2D webCollider;
     void Start()
     {
         webCollider = this.gameObject.GetComponent<BoxCollider2D>();
+        //StartCoroutine(DeactivateAfterTime(lifetime));
     }
 
     // Update is called once per frame
@@ -23,6 +25,16 @@ public class SpiderWeb : MonoBehaviour
             webCollider.enabled = false;
         }
     }
+
+    /**
+     *     IEnumerator DeactivateAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(this.gameObject);
+    }
+     * /
+
+
 
     /*
     void OnCollisionExit2D(Collision2D collision) {
