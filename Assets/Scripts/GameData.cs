@@ -4,6 +4,7 @@ using UnityEngine;
 [Serializable]
 public class RoomData
 {
+    public string roomID;
     public string roomName;
     public float timeSpent = 0;
     public Vector2[] roomRange;
@@ -41,6 +42,7 @@ public class GameData
         {
             new RoomData
             {
+                roomID = "Room1",
                 roomName = "RoomRat",
                 roomRange = new Vector2[]
                 {
@@ -53,6 +55,7 @@ public class GameData
         
             new RoomData
             {
+                roomID = "Room2",
                 roomName = "RoomSkeleton",
                 roomRange = new Vector2[]
                 {
@@ -65,6 +68,7 @@ public class GameData
             
             new RoomData
             {
+                roomID = "Room3",
                 roomName = "RoomDog",
                 roomRange = new Vector2[]
                 {
@@ -86,6 +90,7 @@ public class GameData
         {
             new RoomData
             {
+                roomID = "Room1",
                 roomName = "RoomInit",
                 roomRange = new Vector2[]
                 {
@@ -98,6 +103,7 @@ public class GameData
         
             new RoomData
             {
+                roomID = "Room2",
                 roomName = "RoomChest",
                 roomRange = new Vector2[]
                 {
@@ -110,6 +116,7 @@ public class GameData
             
             new RoomData
             {
+                roomID = "Room3",
                 roomName = "RoomLeft",
                 roomRange = new Vector2[]
                 {
@@ -122,6 +129,7 @@ public class GameData
             
             new RoomData
             {
+                roomID = "Room4",
                 roomName = "RoomGate",
                 roomRange = new Vector2[]
                 {
