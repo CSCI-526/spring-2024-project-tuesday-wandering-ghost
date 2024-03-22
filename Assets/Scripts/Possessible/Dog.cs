@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Dog : MonoBehaviour
 {
-    float detectionRadius = 2f;
+    float detectionRadius = 2.5f;
+    float stopRadius = 0.95f;
     float moveSpeed = 2.5f;
     public string targetTag = "Possessible";
     // Start is called before the first frame update
@@ -33,8 +34,19 @@ public class Dog : MonoBehaviour
                 {
                     // calc direction vector
                     Vector2 direction = (hit.transform.position - transform.position).normalized;
-                    // movement
-                    transform.position += (Vector3)direction * moveSpeed * Time.deltaTime;
+
+                    // if too close, stop the dog
+                    float dis = Vector2.Distance(hit.transform.position, transform.position);
+
+                    // Debug.Log(dis);
+
+                    if(dis > stopRadius)
+                    {
+                        // movement
+                        transform.position += (Vector3)direction * moveSpeed * Time.deltaTime;
+                    }
+
+                    
                     break; // only move to the first target that been found
                 }
 

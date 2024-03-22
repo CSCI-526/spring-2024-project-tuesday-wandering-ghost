@@ -193,4 +193,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7aeb0a20076fb049ab5fdebbbf7ea8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopRadius: 1
   targetTag: Possessible
