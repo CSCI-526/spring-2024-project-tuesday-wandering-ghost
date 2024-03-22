@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Dog : MonoBehaviour
 {
-    float detectionRadius = 1f;
-    float moveSpeed = 5f;
+    float detectionRadius = 2f;
+    float moveSpeed = 2.5f;
     public string targetTag = "Possessible";
     // Start is called before the first frame update
     void Start()
