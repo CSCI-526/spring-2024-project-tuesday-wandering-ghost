@@ -89,4 +89,9 @@ public class LevelUIHandler : MonoBehaviour
         SceneManager.LoadScene("LevelThree");
     }
 
+    public void RestartLevel()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(sceneName);
+    }
 }
