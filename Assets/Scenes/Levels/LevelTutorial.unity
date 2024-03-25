@@ -1931,6 +1931,7 @@ MonoBehaviour:
   winPanel: {fileID: 1251379893}
   playerController: {fileID: 1866457419}
   firebaseData: {fileID: 355543749}
+  maskControllerTest: {fileID: 1638755708}
 --- !u!61 &912645955
 BoxCollider2D:
   m_ObjectHideFlags: 0

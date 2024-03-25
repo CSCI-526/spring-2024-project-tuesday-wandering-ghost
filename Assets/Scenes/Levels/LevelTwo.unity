@@ -313,6 +313,10 @@ PrefabInstance:
       propertyPath: lightStatus
       value: 
       objectReference: {fileID: 1274070175}
+    - target: {fileID: 7916780177036045551, guid: 16c53fe362cb2e04aa1a75eae39e50ff, type: 3}
+      propertyPath: shootDirection.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8346553326505016396, guid: 16c53fe362cb2e04aa1a75eae39e50ff, type: 3}
       propertyPath: m_MaskInteraction
       value: 1
@@ -651,6 +655,14 @@ PrefabInstance:
       propertyPath: lightStatus
       value: 
       objectReference: {fileID: 1274070175}
+    - target: {fileID: 7916780177036045551, guid: 16c53fe362cb2e04aa1a75eae39e50ff, type: 3}
+      propertyPath: shootDirection.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916780177036045551, guid: 16c53fe362cb2e04aa1a75eae39e50ff, type: 3}
+      propertyPath: shootDirection.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8346553326505016396, guid: 16c53fe362cb2e04aa1a75eae39e50ff, type: 3}
       propertyPath: m_MaskInteraction
       value: 1
@@ -1169,7 +1181,7 @@ Transform:
   m_GameObject: {fileID: 387793067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4942644, y: 1.4718, z: -6}
+  m_LocalPosition: {x: 0.44995776, y: 1.4717, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7254,6 +7266,14 @@ PrefabInstance:
       propertyPath: lightStatus
       value: 
       objectReference: {fileID: 1274070175}
+    - target: {fileID: 7916780177036045551, guid: 16c53fe362cb2e04aa1a75eae39e50ff, type: 3}
+      propertyPath: shootDirection.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916780177036045551, guid: 16c53fe362cb2e04aa1a75eae39e50ff, type: 3}
+      propertyPath: shootDirection.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8346553326505016396, guid: 16c53fe362cb2e04aa1a75eae39e50ff, type: 3}
       propertyPath: m_MaskInteraction
       value: 1
@@ -7390,6 +7410,7 @@ MonoBehaviour:
   winPanel: {fileID: 1239539529}
   playerController: {fileID: 0}
   firebaseData: {fileID: 1113849554}
+  maskControllerTest: {fileID: 1150189652}
 --- !u!61 &2033244417
 BoxCollider2D:
   m_ObjectHideFlags: 0

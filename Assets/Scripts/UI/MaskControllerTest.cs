@@ -73,4 +73,9 @@ public class MaskControllerTest : MonoBehaviour
     {
         maxPressCount++;
     }
+    public void StopShrinking()
+    {
+        isShrinking = false;
+    }
+
 }

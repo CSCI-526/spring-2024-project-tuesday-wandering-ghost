@@ -8,6 +8,7 @@ public class Goal : MonoBehaviour
     public GameObject winPanel;
     public PlayerController playerController;
     public FirebaseDataCollect firebaseData;
+    public MaskControllerTest maskControllerTest;
     void Start()
     {
         GameObject playerObject = GameObject.FindWithTag("Player");
@@ -30,5 +31,8 @@ public class Goal : MonoBehaviour
 
         // post data to firebase
         firebaseData.FinishLevel();
+
+        // stop shrinking
+        maskControllerTest.StopShrinking();
     }
 }

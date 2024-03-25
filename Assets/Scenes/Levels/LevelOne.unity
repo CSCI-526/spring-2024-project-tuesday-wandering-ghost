@@ -4096,6 +4096,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7aeb0a20076fb049ab5fdebbbf7ea8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectionRadius: 2
+  moveSpeed: 2
   targetTag: Possessible
 --- !u!4 &1087584392 stripped
 Transform:
@@ -6824,6 +6826,7 @@ MonoBehaviour:
   winPanel: {fileID: 925158882}
   playerController: {fileID: 5117262892560557962}
   firebaseData: {fileID: 1980908522}
+  maskControllerTest: {fileID: 1150189652}
 --- !u!61 &2033244417
 BoxCollider2D:
   m_ObjectHideFlags: 0
