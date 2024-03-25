@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Proyecto26;
 using UnityEngine.SceneManagement;
@@ -34,9 +31,12 @@ public class FirebaseDataCollect : MonoBehaviour
             case "LevelTwo":
                 currentLevel = GameData.LevelTwo;
                 break;
-            case "LevelTutorial":
-                currentLevel = GameData.LevelTutorial;
+            case "LevelThree":
+                currentLevel = GameData.LevelThree;
                 break;
+            // case "LevelTutorial":
+            //     currentLevel = GameData.LevelTutorial;
+            //     break;
             default:
                 currentLevel = GameData.NoDataToCollect;
                 break;
@@ -52,11 +52,12 @@ public class FirebaseDataCollect : MonoBehaviour
         {
             case "NoDataToCollect":
                 return;
-            case "LevelTutorial":
-                // tutorial only collect total level time
-                break;
+            // case "LevelTutorial":
+            //     // tutorial only collect total level time
+            //     break;
             case "LevelOne":
             case "LevelTwo":
+            case "LevelThree":
                 Vector2 playerPosition = player.transform.position;
                 CheckPlayerLocation(playerPosition);
                 break;
@@ -107,6 +108,9 @@ public class FirebaseDataCollect : MonoBehaviour
         // Debug.Log("enter room: " + room.roomName);
         currentRoom = room;
         roomTimer.Restart();  // starts or restarts timer
+        
+        // track the room sequence
+        currentLevel.roomVisits.Add(currentRoom.roomID);
     }
     
 
@@ -138,5 +142,8 @@ public class FirebaseDataCollect : MonoBehaviour
         RestClient.Post(isFinish ? $"{firebaseURL}/Finish/.json" : $"{firebaseURL}/UnFinish/.json", levelData);
     }
 
-
+    public void UsedReset()
+    {
+        currentLevel.restartBtnUsedTime++;
+    }
 }

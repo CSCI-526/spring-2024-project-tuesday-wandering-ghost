@@ -4,6 +4,13 @@
       "isFinish": true,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -87,6 +94,13 @@
       "isFinish": true,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -164,6 +178,11 @@
       "isFinish": true,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -276,6 +295,13 @@
       "isFinish": true,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -377,6 +403,13 @@
       "isFinish": true,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -466,6 +499,13 @@
       "isFinish": true,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -543,6 +583,11 @@
       "isFinish": true,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -661,6 +706,13 @@
       "isFinish": true,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -738,6 +790,11 @@
       "isFinish": true,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -840,6 +897,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -917,6 +979,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -994,6 +1061,15 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -1094,6 +1170,15 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -1194,6 +1279,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -1271,6 +1361,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -1354,6 +1449,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -1431,6 +1531,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -1508,6 +1613,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -1585,6 +1695,11 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -1685,6 +1800,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -1768,6 +1888,11 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -1868,6 +1993,11 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -1968,6 +2098,11 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -2068,6 +2203,11 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -2168,6 +2308,11 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -2268,6 +2413,11 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -2368,6 +2518,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -2445,6 +2600,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -2522,6 +2682,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -2599,6 +2764,11 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -2699,6 +2869,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
@@ -2782,6 +2957,11 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -2882,6 +3062,11 @@
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomInit",
@@ -2988,6 +3173,11 @@
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
           "roomName": "RoomRat",
