@@ -90,7 +90,7 @@ public class Torch : MonoBehaviour
 {
     public GameObject fire;
     private float projectileSpeed = 10f;
-    public Vector2 shootDirection = Vector2.left; // 默认向右发射，可以在编辑器中修改
+    public Vector2 shootDirection = Vector2.left; 
     SpriteRenderer torchSR;
     public Sprite lightSprite;
 
@@ -119,15 +119,15 @@ public class Torch : MonoBehaviour
 
     void ShootFire()
     {
-        if (transform.childCount > 0&&isLight && !hasFired) // 检查火炬是否点亮且未发射过
+        if (transform.childCount > 0&&isLight && !hasFired) 
         {
-            if (Input.GetKeyDown(KeyCode.Q)) // 当按下Q键时
+            if (Input.GetKeyDown(KeyCode.Q)) 
             {
                 GameObject projectile = Instantiate(fire, transform.position, Quaternion.identity);
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-                rb.velocity = shootDirection.normalized * projectileSpeed; // 使用预设的发射方向
+                rb.velocity = shootDirection.normalized * projectileSpeed; 
 
-                hasFired = true; // 标记为已发射，不允许再次发射
+                hasFired = true; 
             }
         }
     }
