@@ -11,14 +11,18 @@ public class LevelUIHandler : MonoBehaviour
     public GameObject instructionPanel;
 
     public PlayerController playerController;
+    
+    private FirebaseDataCollect firebaseData;
     void Start()
     {
-         GameObject playerObject = GameObject.FindWithTag("Player");
+        GameObject playerObject = GameObject.FindWithTag("Player");
         if (playerObject != null)
         {
             playerController = playerObject.GetComponent<PlayerController>();
             //log.Debug("playerController is ");
         }
+
+        firebaseData = GameObject.Find("Firebase").GetComponent<FirebaseDataCollect>();
     }
 
     // Update is called once per frame
@@ -89,4 +93,10 @@ public class LevelUIHandler : MonoBehaviour
         SceneManager.LoadScene("LevelThree");
     }
 
+    public void RestartLevel()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(sceneName);
+        firebaseData.UsedReset();
+    }
 }

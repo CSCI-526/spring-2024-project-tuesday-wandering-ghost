@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 144032774474909020}
   - component: {fileID: 7371323744719621642}
   - component: {fileID: 7800787476897915792}
-  - component: {fileID: 6616829508946910747}
+  - component: {fileID: -5125838564807535963}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -181,7 +181,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.90444064, y: 1.28}
   m_EdgeRadius: 0
---- !u!114 &6616829508946910747
+--- !u!114 &-5125838564807535963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,5 +193,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7aeb0a20076fb049ab5fdebbbf7ea8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  stopRadius: 1
   targetTag: Possessible

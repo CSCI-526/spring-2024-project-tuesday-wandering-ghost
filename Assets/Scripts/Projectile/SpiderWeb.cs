@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,13 @@ public class SpiderWeb : MonoBehaviour
     void Start()
     {
         webCollider = this.gameObject.GetComponent<BoxCollider2D>();
-        //StartCoroutine(DeactivateAfterTime(lifetime));
+        StartCoroutine(DeactivateAfterTime(lifetime));
+    }
+
+    IEnumerator DeactivateAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(this.gameObject); 
     }
 
     // Update is called once per frame
@@ -26,13 +33,7 @@ public class SpiderWeb : MonoBehaviour
         }
     }
 
-    /**
-     *     IEnumerator DeactivateAfterTime(float time)
-    {
-        yield return new WaitForSeconds(time);
-        Destroy(this.gameObject);
-    }
-     * /
+
 
 
 

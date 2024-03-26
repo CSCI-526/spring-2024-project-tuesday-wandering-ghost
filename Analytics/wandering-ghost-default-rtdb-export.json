@@ -1,13 +1,195 @@
 {
   "Finish": {
-    "-NsC3BkKiRAZBVzc2xgd": {
+    "-NtqQhJ-Vd2z23NrzGYL": {
+      "isFinish": true,
+      "levelID": "",
+      "levelName": "NoDataToCollect",
+      "restartBtnUsedTime": 0,
+      "totalTimeSpent": 68.46524047851562
+    },
+    "-NtqR3msw1H_Lfe-nsTG": {
+      "isFinish": true,
+      "levelID": "Level1",
+      "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Rat",
+          "roomRange": [
+            {
+              "x": -8,
+              "y": 4
+            },
+            {
+              "x": 8,
+              "y": 4
+            },
+            {
+              "x": -8,
+              "y": -4
+            },
+            {
+              "x": 8,
+              "y": -4
+            }
+          ],
+          "timeSpent": 24.59480857849121
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Skelefton",
+          "roomRange": [
+            {
+              "x": 4,
+              "y": 14
+            },
+            {
+              "x": 8,
+              "y": 14
+            },
+            {
+              "x": 4,
+              "y": 9
+            },
+            {
+              "x": 8,
+              "y": 9
+            }
+          ],
+          "timeSpent": 17.899686813354492
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Dog",
+          "roomRange": [
+            {
+              "x": -8,
+              "y": 17
+            },
+            {
+              "x": 1,
+              "y": 17
+            },
+            {
+              "x": -8,
+              "y": 12
+            },
+            {
+              "x": 1,
+              "y": 12
+            }
+          ],
+          "timeSpent": 20.639698028564453
+        }
+      ],
+      "totalTimeSpent": 85.20986938476562
+    },
+    "-NtqVHU8-ghNgJd55LIH": {
+      "isFinish": true,
+      "levelID": "",
+      "levelName": "NoDataToCollect",
+      "restartBtnUsedTime": 0,
+      "totalTimeSpent": 15.88286018371582
+    },
+    "-NtqVjn5ynNnSl3npl0l": {
+      "isFinish": true,
+      "levelID": "Level1",
+      "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Rat",
+          "roomRange": [
+            {
+              "x": -8,
+              "y": 4
+            },
+            {
+              "x": 8,
+              "y": 4
+            },
+            {
+              "x": -8,
+              "y": -4
+            },
+            {
+              "x": 8,
+              "y": -4
+            }
+          ],
+          "timeSpent": 25.698143005371094
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Skelefton",
+          "roomRange": [
+            {
+              "x": 4,
+              "y": 14
+            },
+            {
+              "x": 8,
+              "y": 14
+            },
+            {
+              "x": 4,
+              "y": 9
+            },
+            {
+              "x": 8,
+              "y": 9
+            }
+          ],
+          "timeSpent": 7.28022575378418
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Dog",
+          "roomRange": [
+            {
+              "x": -8,
+              "y": 17
+            },
+            {
+              "x": 1,
+              "y": 17
+            },
+            {
+              "x": -8,
+              "y": 12
+            },
+            {
+              "x": 1,
+              "y": 12
+            }
+          ],
+          "timeSpent": 13.77961254119873
+        }
+      ],
+      "totalTimeSpent": 54.40614318847656
+    },
+    "-Nts2g73AQE5bcgNySSV": {
       "isFinish": true,
       "levelID": "Level1",
       "levelName": "LevelOne",
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "RoomRat",
           "roomRange": [
             {
               "x": -8,
@@ -26,11 +208,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 10.169261932373047
+          "timeSpent": 6.029484272003174
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "RoomSkeleton",
           "roomRange": [
             {
               "x": 4,
@@ -49,11 +231,11 @@
               "y": 9
             }
           ],
-          "timeSpent": 3.7192885875701904
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "RoomDog",
           "roomRange": [
             {
               "x": -8,
@@ -72,25 +254,27 @@
               "y": 12
             }
           ],
-          "timeSpent": 12.781781196594238
+          "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 34.90228271484375
+      "totalTimeSpent": 6.341562271118164
     },
-    "-NsC3Hy7wmzQG-oJaQS0": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 23.031295776367188
-    },
-    "-NsC3n9pMSePBB0o1lcy": {
+    "-Nts4_w0YkGdK08JGqsN": {
       "isFinish": true,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "Rat",
           "roomRange": [
             {
               "x": -8,
@@ -109,11 +293,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 13.047257423400879
+          "timeSpent": 16.075307846069336
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "Skelefton",
           "roomRange": [
             {
               "x": 4,
@@ -132,11 +316,11 @@
               "y": 9
             }
           ],
-          "timeSpent": 5.958754539489746
+          "timeSpent": 5.739840984344482
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "Dog",
           "roomRange": [
             {
               "x": -8,
@@ -155,19 +339,131 @@
               "y": 12
             }
           ],
-          "timeSpent": 8.02037239074707
+          "timeSpent": 9.536656379699707
         }
       ],
-      "totalTimeSpent": 38.759193420410156
+      "totalTimeSpent": 43.43333053588867
     },
-    "-NsC3zqbHnCUV3YPr4BJ": {
+    "-Ntsn1LZBq0-uhShiA2_": {
+      "isFinish": true,
+      "levelID": "",
+      "levelName": "NoDataToCollect",
+      "restartBtnUsedTime": 0,
+      "totalTimeSpent": 26.160120010375977
+    },
+    "-Ntsod2VQ1r1HGZZxJR3": {
+      "isFinish": true,
+      "levelID": "",
+      "levelName": "NoDataToCollect",
+      "restartBtnUsedTime": 0,
+      "totalTimeSpent": 19.80905532836914
+    },
+    "-NtspPDmCX6m2du6z5i1": {
+      "isFinish": true,
+      "levelID": "",
+      "levelName": "NoDataToCollect",
+      "restartBtnUsedTime": 0,
+      "totalTimeSpent": 28.06605339050293
+    },
+    "-NtspqQMh4NvPVjKUw7a": {
+      "isFinish": true,
+      "levelID": "Level1",
+      "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Rat",
+          "roomRange": [
+            {
+              "x": -8,
+              "y": 4
+            },
+            {
+              "x": 8,
+              "y": 4
+            },
+            {
+              "x": -8,
+              "y": -4
+            },
+            {
+              "x": 8,
+              "y": -4
+            }
+          ],
+          "timeSpent": 16.346824645996094
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Skelefton",
+          "roomRange": [
+            {
+              "x": 4,
+              "y": 14
+            },
+            {
+              "x": 8,
+              "y": 14
+            },
+            {
+              "x": 4,
+              "y": 9
+            },
+            {
+              "x": 8,
+              "y": 9
+            }
+          ],
+          "timeSpent": 10.119586944580078
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Dog",
+          "roomRange": [
+            {
+              "x": -8,
+              "y": 17
+            },
+            {
+              "x": 1,
+              "y": 17
+            },
+            {
+              "x": -8,
+              "y": 12
+            },
+            {
+              "x": 1,
+              "y": 12
+            }
+          ],
+          "timeSpent": 8.639917373657227
+        }
+      ],
+      "totalTimeSpent": 42.87938690185547
+    },
+    "-NtsqV7l3QFZyEFXQTMr": {
       "isFinish": true,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room3",
+        "Room4"
+      ],
       "rooms": [
         {
-          "roomName": "RoomInit",
           "roomID": "Room1",
+          "roomName": "Init",
           "roomRange": [
             {
               "x": -3,
@@ -186,11 +482,11 @@
               "y": -2
             }
           ],
-          "timeSpent": 4.348344326019287
+          "timeSpent": 2.8687965869903564
         },
         {
-          "roomName": "RoomChest",
           "roomID": "Room2",
+          "roomName": "Chest",
           "roomRange": [
             {
               "x": 7,
@@ -209,11 +505,11 @@
               "y": 5
             }
           ],
-          "timeSpent": 11.759748458862305
+          "timeSpent": 11.620590209960938
         },
         {
-          "roomName": "RoomLeft",
           "roomID": "Room3",
+          "roomName": "Left",
           "roomRange": [
             {
               "x": -10,
@@ -232,11 +528,11 @@
               "y": 7
             }
           ],
-          "timeSpent": 7.959157943725586
+          "timeSpent": 6.541326522827148
         },
         {
-          "roomName": "RoomGate",
           "roomID": "Room4",
+          "roomName": "Gate",
           "roomRange": [
             {
               "x": -6,
@@ -255,31 +551,28 @@
               "y": 17
             }
           ],
-          "timeSpent": 2.0407028198242188
+          "timeSpent": 2.9005069732666016
         }
       ],
-      "totalTimeSpent": 53.76894760131836
+      "totalTimeSpent": 41.51982879638672
     },
-    "-NsCAZS6UO1MqI5Cpf62": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 13.446446418762207
-    },
-    "-NsCAwnWlAZyNjdICCnZ": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 16.327857971191406
-    },
-    "-NsCB6I86_URTdG_scRR": {
+    "-NtsrRsJ8bFKU5hV01rw": {
       "isFinish": true,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "Rat",
           "roomRange": [
             {
               "x": -8,
@@ -298,11 +591,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 13.873517990112305
+          "timeSpent": 23.875234603881836
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "Skelefton",
           "roomRange": [
             {
               "x": 4,
@@ -321,11 +614,11 @@
               "y": 9
             }
           ],
-          "timeSpent": 5.219878673553467
+          "timeSpent": 6.0796799659729
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "Dog",
           "roomRange": [
             {
               "x": -8,
@@ -344,506 +637,502 @@
               "y": 12
             }
           ],
-          "timeSpent": 7.536604404449463
+          "timeSpent": 7.701216697692871
         }
       ],
-      "totalTimeSpent": 34.46465301513672
+      "totalTimeSpent": 48.61078643798828
     },
-    "-NsCCx1rmR8Fcxn6EHyP": {
+    "-NtsxbCF1f_rusiyoy8b": {
       "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 21.8325138092041
-    },
-    "-NsCEQ8JOtpdbc6Ao_Yw": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 22.10773468017578
-    },
-    "-NsCFCeN99-8Jz0le-hP": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 34.927635192871094
-    },
-    "-NsCFiS_EgPHu0M_oLki": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 27.404586791992188
-    },
-    "-NsCG5mHIVUewulwy4aY": {
-      "isFinish": true,
-      "levelID": "Level1",
-      "levelName": "LevelOne",
-      "rooms": [
-        {
-          "roomName": "RoomRat",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -8,
-              "y": 4
-            },
-            {
-              "x": 8,
-              "y": 4
-            },
-            {
-              "x": -8,
-              "y": -4
-            },
-            {
-              "x": 8,
-              "y": -4
-            }
-          ],
-          "timeSpent": 29.987159729003906
-        },
-        {
-          "roomName": "RoomSkeleton",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 4,
-              "y": 14
-            },
-            {
-              "x": 8,
-              "y": 14
-            },
-            {
-              "x": 4,
-              "y": 9
-            },
-            {
-              "x": 8,
-              "y": 9
-            }
-          ],
-          "timeSpent": 13.299686431884766
-        },
-        {
-          "roomName": "RoomDog",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -8,
-              "y": 17
-            },
-            {
-              "x": 1,
-              "y": 17
-            },
-            {
-              "x": -8,
-              "y": 12
-            },
-            {
-              "x": 1,
-              "y": 12
-            }
-          ],
-          "timeSpent": 22.460847854614258
-        }
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room4",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room3",
+        "Room2",
+        "Room3",
+        "Room2",
+        "Room1"
       ],
-      "totalTimeSpent": 47.9542350769043
-    },
-    "-NsCGyw00-8iGByMbkJP": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 24.360448837280273
-    },
-    "-NsCHdnsk-g2AqbAXcTJ": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 22.119394302368164
-    },
-    "-NsCI-xvxR3plKu49qPf": {
-      "isFinish": true,
-      "levelID": "Level1",
-      "levelName": "LevelOne",
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "Init",
           "roomRange": [
             {
-              "x": -8,
-              "y": 4
-            },
-            {
-              "x": 8,
-              "y": 4
-            },
-            {
-              "x": -8,
-              "y": -4
-            },
-            {
-              "x": 8,
-              "y": -4
-            }
-          ],
-          "timeSpent": 35.42932891845703
-        },
-        {
-          "roomName": "RoomSkeleton",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 4,
+              "x": -13,
               "y": 14
             },
             {
-              "x": 8,
+              "x": 14,
               "y": 14
             },
             {
-              "x": 4,
-              "y": 9
+              "x": -13,
+              "y": -12
             },
             {
-              "x": 8,
-              "y": 9
+              "x": 14,
+              "y": -12
             }
           ],
-          "timeSpent": 9.601846694946289
+          "timeSpent": 68.10009002685547
         },
         {
-          "roomName": "RoomDog",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -8,
-              "y": 17
-            },
-            {
-              "x": 1,
-              "y": 17
-            },
-            {
-              "x": -8,
-              "y": 12
-            },
-            {
-              "x": 1,
-              "y": 12
-            }
-          ],
-          "timeSpent": 21.759883880615234
-        }
-      ],
-      "totalTimeSpent": 44.23634719848633
-    },
-    "-NsCIKbJ7NLEUWGpS9w_": {
-      "isFinish": true,
-      "levelID": "Level2",
-      "levelName": "LevelTwo",
-      "rooms": [
-        {
-          "roomName": "RoomInit",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -3,
-              "y": 3
-            },
-            {
-              "x": 4,
-              "y": 3
-            },
-            {
-              "x": -3,
-              "y": -2
-            },
-            {
-              "x": 4,
-              "y": -2
-            }
-          ],
-          "timeSpent": 4.874788761138916
-        },
-        {
-          "roomName": "RoomChest",
           "roomID": "Room2",
+          "roomName": "TopLeft",
           "roomRange": [
             {
-              "x": 7,
-              "y": 13
+              "x": -16,
+              "y": 21
             },
             {
-              "x": 15,
-              "y": 13
+              "x": -9,
+              "y": 21
             },
             {
-              "x": 7,
-              "y": 5
+              "x": -16,
+              "y": 17
             },
             {
-              "x": 15,
-              "y": 5
+              "x": -9,
+              "y": 17
             }
           ],
-          "timeSpent": 31.90398406982422
+          "timeSpent": 7.3193840980529785
         },
         {
-          "roomName": "RoomLeft",
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 9.139480590820312
+        },
+        {
           "roomID": "Room3",
+          "roomName": "TopRight",
           "roomRange": [
             {
-              "x": -10,
-              "y": 12
+              "x": 10,
+              "y": 21
             },
             {
-              "x": -7,
-              "y": 12
+              "x": 17,
+              "y": 21
             },
             {
-              "x": -10,
-              "y": 7
+              "x": 10,
+              "y": 17
             },
             {
-              "x": -7,
-              "y": 7
+              "x": 17,
+              "y": 17
             }
           ],
-          "timeSpent": 13.121733665466309
+          "timeSpent": 28.939878463745117
         },
         {
-          "roomName": "RoomGate",
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
           "roomID": "Room4",
+          "roomName": "BottomLeft",
           "roomRange": [
             {
-              "x": -6,
-              "y": 23
+              "x": -16,
+              "y": -15
             },
             {
-              "x": 7,
-              "y": 23
+              "x": -9,
+              "y": -15
             },
             {
-              "x": -6,
-              "y": 17
+              "x": -16,
+              "y": -19
             },
             {
-              "x": 7,
-              "y": 17
+              "x": -9,
+              "y": -19
             }
           ],
-          "timeSpent": 6.501547813415527
-        }
-      ],
-      "totalTimeSpent": 82.81555938720703
-    },
-    "-NsCP4dwObTVNqw_BHd2": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 26.262704849243164
-    },
-    "-NsCPEuNYbG7gdzZVdFM": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 24.134374618530273
-    },
-    "-NsCP_hhchieuTwSfBAo": {
-      "isFinish": true,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 22.584516525268555
-    },
-    "-NsCPxIHisjrEhl2_q_8": {
-      "isFinish": true,
-      "levelID": "Level1",
-      "levelName": "LevelOne",
-      "rooms": [
-        {
-          "roomName": "RoomRat",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -8,
-              "y": 4
-            },
-            {
-              "x": 8,
-              "y": 4
-            },
-            {
-              "x": -8,
-              "y": -4
-            },
-            {
-              "x": 8,
-              "y": -4
-            }
-          ],
-          "timeSpent": 30.06833267211914
+          "timeSpent": 11.36091423034668
         },
         {
-          "roomName": "RoomSkeleton",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 4,
-              "y": 14
-            },
-            {
-              "x": 8,
-              "y": 14
-            },
-            {
-              "x": 4,
-              "y": 9
-            },
-            {
-              "x": 8,
-              "y": 9
-            }
-          ],
-          "timeSpent": 9.840795516967773
-        },
-        {
-          "roomName": "RoomDog",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -8,
-              "y": 17
-            },
-            {
-              "x": 1,
-              "y": 17
-            },
-            {
-              "x": -8,
-              "y": 12
-            },
-            {
-              "x": 1,
-              "y": 12
-            }
-          ],
-          "timeSpent": 20.457904815673828
-        }
-      ],
-      "totalTimeSpent": 45.479095458984375
-    },
-    "-NsCQI4CvcRyqA1isZtZ": {
-      "isFinish": true,
-      "levelID": "Level2",
-      "levelName": "LevelTwo",
-      "rooms": [
-        {
-          "roomName": "RoomInit",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -3,
-              "y": 3
-            },
-            {
-              "x": 4,
-              "y": 3
-            },
-            {
-              "x": -3,
-              "y": -2
-            },
-            {
-              "x": 4,
-              "y": -2
-            }
-          ],
-          "timeSpent": 4.395566940307617
-        },
-        {
-          "roomName": "RoomChest",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 7,
-              "y": 13
-            },
-            {
-              "x": 15,
-              "y": 13
-            },
-            {
-              "x": 7,
-              "y": 5
-            },
-            {
-              "x": 15,
-              "y": 5
-            }
-          ],
-          "timeSpent": 24.777721405029297
-        },
-        {
-          "roomName": "RoomLeft",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -10,
-              "y": 12
-            },
-            {
-              "x": -7,
-              "y": 12
-            },
-            {
-              "x": -10,
-              "y": 7
-            },
-            {
-              "x": -7,
-              "y": 7
-            }
-          ],
-          "timeSpent": 11.05859661102295
-        },
-        {
-          "roomName": "RoomGate",
           "roomID": "Room4",
+          "roomName": "BottomLeft",
           "roomRange": [
             {
-              "x": -6,
-              "y": 23
+              "x": -26,
+              "y": -22
             },
             {
-              "x": 7,
-              "y": 23
+              "x": -19,
+              "y": -22
             },
             {
-              "x": -6,
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 21.76019287109375
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 159.71551513671875
+    },
+    "-NttErry38pGYA51qgfR": {
+      "isFinish": true,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 1,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room3",
+        "Room2",
+        "Room2",
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room4",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room3",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room1",
+        "Room2",
+        "Room3",
+        "Room2",
+        "Room1",
+        "Room4",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room3",
+        "Room1"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 124.85771179199219
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
               "y": 17
             },
             {
-              "x": 7,
+              "x": -9,
               "y": 17
             }
           ],
-          "timeSpent": 12.264840126037598
+          "timeSpent": 17.80673599243164
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 11.320618629455566
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 50.32434844970703
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 37.42665100097656
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 61.78571319580078
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 87.39575958251953
+      "totalTimeSpent": 137.04884338378906
     }
   },
   "UnFinish": {
-    "-NsC3Iw5DTEmnLYZj3PY": {
+    "-NtoyRePGe6ZO0NW0Le8": {
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1"
+      ],
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "Rat",
           "roomRange": [
             {
               "x": -8,
@@ -862,11 +1151,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 10.169261932373047
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "Skelefton",
           "roomRange": [
             {
               "x": 4,
@@ -885,11 +1174,11 @@
               "y": 9
             }
           ],
-          "timeSpent": 3.7192885875701904
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "Dog",
           "roomRange": [
             {
               "x": -8,
@@ -908,19 +1197,26 @@
               "y": 12
             }
           ],
-          "timeSpent": 12.781781196594238
+          "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 69.8045654296875
+      "totalTimeSpent": 82.9403305053711
     },
-    "-NsC3ZYJUfys8t2J69yI": {
+    "-NtqR4qD1xDxnB-u_GjM": {
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "Rat",
           "roomRange": [
             {
               "x": -8,
@@ -939,11 +1235,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 12.17204761505127
+          "timeSpent": 24.59480857849121
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "Skelefton",
           "roomRange": [
             {
               "x": 4,
@@ -962,11 +1258,11 @@
               "y": 9
             }
           ],
-          "timeSpent": 8.079377174377441
+          "timeSpent": 17.899686813354492
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "Dog",
           "roomRange": [
             {
               "x": -8,
@@ -985,19 +1281,111 @@
               "y": 12
             }
           ],
-          "timeSpent": 14.860007286071777
+          "timeSpent": 20.639698028564453
         }
       ],
-      "totalTimeSpent": 70.2724609375
+      "totalTimeSpent": 170.41973876953125
     },
-    "-NsC4-FipFr9x8oDzSsq": {
+    "-NtqVmnA1iVUTkhX-Oai": {
+      "isFinish": false,
+      "levelID": "Level1",
+      "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Rat",
+          "roomRange": [
+            {
+              "x": -8,
+              "y": 4
+            },
+            {
+              "x": 8,
+              "y": 4
+            },
+            {
+              "x": -8,
+              "y": -4
+            },
+            {
+              "x": 8,
+              "y": -4
+            }
+          ],
+          "timeSpent": 25.698143005371094
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Skelefton",
+          "roomRange": [
+            {
+              "x": 4,
+              "y": 14
+            },
+            {
+              "x": 8,
+              "y": 14
+            },
+            {
+              "x": 4,
+              "y": 9
+            },
+            {
+              "x": 8,
+              "y": 9
+            }
+          ],
+          "timeSpent": 7.28022575378418
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Dog",
+          "roomRange": [
+            {
+              "x": -8,
+              "y": 17
+            },
+            {
+              "x": 1,
+              "y": 17
+            },
+            {
+              "x": -8,
+              "y": 12
+            },
+            {
+              "x": 1,
+              "y": 12
+            }
+          ],
+          "timeSpent": 13.77961254119873
+        }
+      ],
+      "totalTimeSpent": 108.81228637695312
+    },
+    "-NtqWGqvDHv1T7-JI0E7": {
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room3",
+        "Room1",
+        "Room4",
+        "Room2"
+      ],
       "rooms": [
         {
-          "roomName": "RoomInit",
           "roomID": "Room1",
+          "roomName": "Init",
           "roomRange": [
             {
               "x": -3,
@@ -1016,11 +1404,11 @@
               "y": -2
             }
           ],
-          "timeSpent": 4.348344326019287
+          "timeSpent": 5.6854753494262695
         },
         {
-          "roomName": "RoomChest",
           "roomID": "Room2",
+          "roomName": "Chest",
           "roomRange": [
             {
               "x": 7,
@@ -1039,11 +1427,11 @@
               "y": 5
             }
           ],
-          "timeSpent": 11.759748458862305
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomLeft",
           "roomID": "Room3",
+          "roomName": "Left",
           "roomRange": [
             {
               "x": -10,
@@ -1062,11 +1450,11 @@
               "y": 7
             }
           ],
-          "timeSpent": 7.959157943725586
+          "timeSpent": 23.039865493774414
         },
         {
-          "roomName": "RoomGate",
           "roomID": "Room4",
+          "roomName": "Gate",
           "roomRange": [
             {
               "x": -6,
@@ -1085,19 +1473,24 @@
               "y": 17
             }
           ],
-          "timeSpent": 2.0407028198242188
+          "timeSpent": 2.858196496963501
         }
       ],
-      "totalTimeSpent": 107.53789520263672
+      "totalTimeSpent": 96.91265106201172
     },
-    "-NsC4v9FCSWYdLP7cWvK": {
+    "-NtqWQsR7lZaobzeBagc": {
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
       "rooms": [
         {
-          "roomName": "RoomInit",
           "roomID": "Room1",
+          "roomName": "Init",
           "roomRange": [
             {
               "x": -3,
@@ -1116,11 +1509,11 @@
               "y": -2
             }
           ],
-          "timeSpent": 0
+          "timeSpent": 3.746983528137207
         },
         {
-          "roomName": "RoomChest",
           "roomID": "Room2",
+          "roomName": "Chest",
           "roomRange": [
             {
               "x": 7,
@@ -1142,8 +1535,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomLeft",
           "roomID": "Room3",
+          "roomName": "Left",
           "roomRange": [
             {
               "x": -10,
@@ -1165,8 +1558,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomGate",
           "roomID": "Room4",
+          "roomName": "Gate",
           "roomRange": [
             {
               "x": -6,
@@ -1188,16 +1581,1081 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 6.944588661193848
+      "totalTimeSpent": 35.34914016723633
     },
-    "-NsC6_YzOiq6dgcV9p3Q": {
+    "-NtqWZlkK_Rct2V1Zj3n": {
+      "isFinish": false,
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 4.799724102020264
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 31.676780700683594
+    },
+    "-NtqWntnu5DvPaCZupr7": {
+      "isFinish": false,
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 1.6261327266693115
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 27.102602005004883
+    },
+    "-NtqXLgIPeTlJR7Jl_9Q": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 53.0434684753418
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 24.120105743408203
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 14.6396484375
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 103.01366424560547
+    },
+    "-NtqYF7Fei_ElsEoRCPR": {
+      "isFinish": false,
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 4.276854515075684
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 42.74680709838867
+    },
+    "-NtqYTkux51uuGILDyo6": {
+      "isFinish": false,
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 1.8148832321166992
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 29.77812957763672
+    },
+    "-NtrIF1EEvVYvTO6i1JQ": {
+      "isFinish": false,
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 1.227789282798767
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 21.767114639282227
+    },
+    "-NtrIaG8N1X8DIWxkH51": {
+      "isFinish": false,
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 1.1060844659805298
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 10.838651657104492
+    },
+    "-NtrIkEtvx_ZRxGZsHDC": {
+      "isFinish": false,
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 1.0601788759231567
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 23.937376022338867
+    },
+    "-NtrJB7HnUSEE2WKUmWE": {
+      "isFinish": false,
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 1.6854352951049805
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 21.2282657623291
+    },
+    "-Nts0MTktx4rQ-HcZLCg": {
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "RoomRat",
           "roomRange": [
             {
               "x": -8,
@@ -1216,11 +2674,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 0
+          "timeSpent": 33.219871520996094
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "RoomSkeleton",
           "roomRange": [
             {
               "x": 4,
@@ -1239,11 +2697,11 @@
               "y": 9
             }
           ],
-          "timeSpent": 0
+          "timeSpent": 0.9002410769462585
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "RoomDog",
           "roomRange": [
             {
               "x": -8,
@@ -1265,16 +2723,16 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 10.307209968566895
+      "totalTimeSpent": 42.71210861206055
     },
-    "-NsC6ewOsX7VeGsdPR1i": {
+    "-Nts0lqb2brIsYZiXXXQ": {
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "RoomRat",
           "roomRange": [
             {
               "x": -8,
@@ -1293,11 +2751,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 0
+          "timeSpent": 22.55451774597168
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "RoomSkeleton",
           "roomRange": [
             {
               "x": 4,
@@ -1319,8 +2777,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "RoomDog",
           "roomRange": [
             {
               "x": -8,
@@ -1342,22 +2800,16 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 11.932963371276855
+      "totalTimeSpent": 28.394201278686523
     },
-    "-NsC6o70mYB2WXqJCb96": {
-      "isFinish": false,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 1.0679056644439697
-    },
-    "-NsC6qIG0oLCcqMoX_N8": {
+    "-Nts1g7ZKdeM1RKoB4W5": {
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "RoomRat",
           "roomRange": [
             {
               "x": -8,
@@ -1376,11 +2828,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 0
+          "timeSpent": 7.464231491088867
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "RoomSkeleton",
           "roomRange": [
             {
               "x": 4,
@@ -1402,8 +2854,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "RoomDog",
           "roomRange": [
             {
               "x": -8,
@@ -1425,16 +2877,16 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 5.506176948547363
+      "totalTimeSpent": 159.5969696044922
     },
-    "-NsC6wAaU-OgGzbucRv5": {
+    "-Nts2hcPM_TOuNjpessB": {
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "RoomRat",
           "roomRange": [
             {
               "x": -8,
@@ -1453,11 +2905,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 0
+          "timeSpent": 6.029484272003174
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "RoomSkeleton",
           "roomRange": [
             {
               "x": 4,
@@ -1479,8 +2931,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "RoomDog",
           "roomRange": [
             {
               "x": -8,
@@ -1502,16 +2954,16 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 11.55873966217041
+      "totalTimeSpent": 12.683124542236328
     },
-    "-NsCAz4vsxS3gx_Af5yh": {
+    "-Nts30j4c2WgZOBfJqMc": {
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "RoomRat",
           "roomRange": [
             {
               "x": -8,
@@ -1530,11 +2982,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 0
+          "timeSpent": 32.132835388183594
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "RoomSkeleton",
           "roomRange": [
             {
               "x": 4,
@@ -1556,8 +3008,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "RoomDog",
           "roomRange": [
             {
               "x": -8,
@@ -1579,16 +3031,20 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 60.42763137817383
+      "totalTimeSpent": 49.404754638671875
     },
-    "-NsCB9U4AJPap-FOCDAv": {
+    "-Nts4fnPiVYBHIxIBIcp": {
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1"
+      ],
       "rooms": [
         {
-          "roomName": "RoomInit",
           "roomID": "Room1",
+          "roomName": "Init",
           "roomRange": [
             {
               "x": -3,
@@ -1607,11 +3063,11 @@
               "y": -2
             }
           ],
-          "timeSpent": 3.947654962539673
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomChest",
           "roomID": "Room2",
+          "roomName": "Chest",
           "roomRange": [
             {
               "x": 7,
@@ -1633,8 +3089,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomLeft",
           "roomID": "Room3",
+          "roomName": "Left",
           "roomRange": [
             {
               "x": -10,
@@ -1656,8 +3112,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomGate",
           "roomID": "Room4",
+          "roomName": "Gate",
           "roomRange": [
             {
               "x": -6,
@@ -1679,16 +3135,351 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 12.335431098937988
+      "totalTimeSpent": 22.908782958984375
     },
-    "-NsCBDuZ1CUwpRzdIavS": {
+    "-Nts4u9D5JLKTRX6bewA": {
+      "isFinish": false,
+      "levelID": "",
+      "levelName": "NoDataToCollect",
+      "restartBtnUsedTime": 0,
+      "totalTimeSpent": 10.912769317626953
+    },
+    "-Nts56O-e27AGAdCwp89": {
+      "isFinish": false,
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 1.547232985496521
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 27.40542221069336
+    },
+    "-Nts5I8E5yIbgFkTPbKd": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 17.60942840576172
+    },
+    "-Ntsn1lb1hJJjbJGFPRJ": {
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1"
+      ],
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "Rat",
           "roomRange": [
             {
               "x": -8,
@@ -1710,8 +3501,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "Skelefton",
           "roomRange": [
             {
               "x": 4,
@@ -1733,8 +3524,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "Dog",
           "roomRange": [
             {
               "x": -8,
@@ -1756,622 +3547,34 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 58.57709503173828
+      "totalTimeSpent": 1.8193910121917725
     },
-    "-NsCBKU7vM_9W_aor0vz": {
+    "-Ntsov2DU0A_Cnz-JpD8": {
       "isFinish": false,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 12.388620376586914
+      "levelID": "",
+      "levelName": "NoDataToCollect",
+      "restartBtnUsedTime": 0,
+      "totalTimeSpent": 2.6349167823791504
     },
-    "-NsCBTw3HH-cOMdtUvvP": {
+    "-Ntsp7J9AdfRM3eJqDlX": {
       "isFinish": false,
-      "levelID": "Level2",
-      "levelName": "LevelTwo",
-      "rooms": [
-        {
-          "roomName": "RoomInit",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -3,
-              "y": 3
-            },
-            {
-              "x": 4,
-              "y": 3
-            },
-            {
-              "x": -3,
-              "y": -2
-            },
-            {
-              "x": 4,
-              "y": -2
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomChest",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 7,
-              "y": 13
-            },
-            {
-              "x": 15,
-              "y": 13
-            },
-            {
-              "x": 7,
-              "y": 5
-            },
-            {
-              "x": 15,
-              "y": 5
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomLeft",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -10,
-              "y": 12
-            },
-            {
-              "x": -7,
-              "y": 12
-            },
-            {
-              "x": -10,
-              "y": 7
-            },
-            {
-              "x": -7,
-              "y": 7
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomGate",
-          "roomID": "Room4",
-          "roomRange": [
-            {
-              "x": -6,
-              "y": 23
-            },
-            {
-              "x": 7,
-              "y": 23
-            },
-            {
-              "x": -6,
-              "y": 17
-            },
-            {
-              "x": 7,
-              "y": 17
-            }
-          ],
-          "timeSpent": 0
-        }
-      ],
-      "totalTimeSpent": 11.320846557617188
+      "levelID": "",
+      "levelName": "NoDataToCollect",
+      "restartBtnUsedTime": 0,
+      "totalTimeSpent": 23.42510223388672
     },
-    "-NsCBe5PXFoKos0JWyEL": {
-      "isFinish": false,
-      "levelID": "Level2",
-      "levelName": "LevelTwo",
-      "rooms": [
-        {
-          "roomName": "RoomInit",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -3,
-              "y": 3
-            },
-            {
-              "x": 4,
-              "y": 3
-            },
-            {
-              "x": -3,
-              "y": -2
-            },
-            {
-              "x": 4,
-              "y": -2
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomChest",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 7,
-              "y": 13
-            },
-            {
-              "x": 15,
-              "y": 13
-            },
-            {
-              "x": 7,
-              "y": 5
-            },
-            {
-              "x": 15,
-              "y": 5
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomLeft",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -10,
-              "y": 12
-            },
-            {
-              "x": -7,
-              "y": 12
-            },
-            {
-              "x": -10,
-              "y": 7
-            },
-            {
-              "x": -7,
-              "y": 7
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomGate",
-          "roomID": "Room4",
-          "roomRange": [
-            {
-              "x": -6,
-              "y": 23
-            },
-            {
-              "x": 7,
-              "y": 23
-            },
-            {
-              "x": -6,
-              "y": 17
-            },
-            {
-              "x": 7,
-              "y": 17
-            }
-          ],
-          "timeSpent": 0
-        }
-      ],
-      "totalTimeSpent": 32.053985595703125
-    },
-    "-NsCBkzau164ro6eRW65": {
-      "isFinish": false,
-      "levelID": "Level2",
-      "levelName": "LevelTwo",
-      "rooms": [
-        {
-          "roomName": "RoomInit",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -3,
-              "y": 3
-            },
-            {
-              "x": 4,
-              "y": 3
-            },
-            {
-              "x": -3,
-              "y": -2
-            },
-            {
-              "x": 4,
-              "y": -2
-            }
-          ],
-          "timeSpent": 2.986870288848877
-        },
-        {
-          "roomName": "RoomChest",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 7,
-              "y": 13
-            },
-            {
-              "x": 15,
-              "y": 13
-            },
-            {
-              "x": 7,
-              "y": 5
-            },
-            {
-              "x": 15,
-              "y": 5
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomLeft",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -10,
-              "y": 12
-            },
-            {
-              "x": -7,
-              "y": 12
-            },
-            {
-              "x": -10,
-              "y": 7
-            },
-            {
-              "x": -7,
-              "y": 7
-            }
-          ],
-          "timeSpent": 23.414663314819336
-        },
-        {
-          "roomName": "RoomGate",
-          "roomID": "Room4",
-          "roomRange": [
-            {
-              "x": -6,
-              "y": 23
-            },
-            {
-              "x": 7,
-              "y": 23
-            },
-            {
-              "x": -6,
-              "y": 17
-            },
-            {
-              "x": 7,
-              "y": 17
-            }
-          ],
-          "timeSpent": 4.021058082580566
-        }
-      ],
-      "totalTimeSpent": 50.07297134399414
-    },
-    "-NsCBnlrWWJkZTvowuy4": {
-      "isFinish": false,
-      "levelID": "Level2",
-      "levelName": "LevelTwo",
-      "rooms": [
-        {
-          "roomName": "RoomInit",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -3,
-              "y": 3
-            },
-            {
-              "x": 4,
-              "y": 3
-            },
-            {
-              "x": -3,
-              "y": -2
-            },
-            {
-              "x": 4,
-              "y": -2
-            }
-          ],
-          "timeSpent": 1.106327772140503
-        },
-        {
-          "roomName": "RoomChest",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 7,
-              "y": 13
-            },
-            {
-              "x": 15,
-              "y": 13
-            },
-            {
-              "x": 7,
-              "y": 5
-            },
-            {
-              "x": 15,
-              "y": 5
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomLeft",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -10,
-              "y": 12
-            },
-            {
-              "x": -7,
-              "y": 12
-            },
-            {
-              "x": -10,
-              "y": 7
-            },
-            {
-              "x": -7,
-              "y": 7
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomGate",
-          "roomID": "Room4",
-          "roomRange": [
-            {
-              "x": -6,
-              "y": 23
-            },
-            {
-              "x": 7,
-              "y": 23
-            },
-            {
-              "x": -6,
-              "y": 17
-            },
-            {
-              "x": 7,
-              "y": 17
-            }
-          ],
-          "timeSpent": 2.0201480388641357
-        }
-      ],
-      "totalTimeSpent": 8.997540473937988
-    },
-    "-NsCCgJlQHTfNnnDSaJT": {
-      "isFinish": false,
-      "levelID": "Level2",
-      "levelName": "LevelTwo",
-      "rooms": [
-        {
-          "roomName": "RoomInit",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -3,
-              "y": 3
-            },
-            {
-              "x": 4,
-              "y": 3
-            },
-            {
-              "x": -3,
-              "y": -2
-            },
-            {
-              "x": 4,
-              "y": -2
-            }
-          ],
-          "timeSpent": 2.548529863357544
-        },
-        {
-          "roomName": "RoomChest",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 7,
-              "y": 13
-            },
-            {
-              "x": 15,
-              "y": 13
-            },
-            {
-              "x": 7,
-              "y": 5
-            },
-            {
-              "x": 15,
-              "y": 5
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomLeft",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -10,
-              "y": 12
-            },
-            {
-              "x": -7,
-              "y": 12
-            },
-            {
-              "x": -10,
-              "y": 7
-            },
-            {
-              "x": -7,
-              "y": 7
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomGate",
-          "roomID": "Room4",
-          "roomRange": [
-            {
-              "x": -6,
-              "y": 23
-            },
-            {
-              "x": 7,
-              "y": 23
-            },
-            {
-              "x": -6,
-              "y": 17
-            },
-            {
-              "x": 7,
-              "y": 17
-            }
-          ],
-          "timeSpent": 0
-        }
-      ],
-      "totalTimeSpent": 9.706595420837402
-    },
-    "-NsCCh9CSl7csZ0VvDk-": {
-      "isFinish": false,
-      "levelID": "Level2",
-      "levelName": "LevelTwo",
-      "rooms": [
-        {
-          "roomName": "RoomInit",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -3,
-              "y": 3
-            },
-            {
-              "x": 4,
-              "y": 3
-            },
-            {
-              "x": -3,
-              "y": -2
-            },
-            {
-              "x": 4,
-              "y": -2
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomChest",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 7,
-              "y": 13
-            },
-            {
-              "x": 15,
-              "y": 13
-            },
-            {
-              "x": 7,
-              "y": 5
-            },
-            {
-              "x": 15,
-              "y": 5
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomLeft",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -10,
-              "y": 12
-            },
-            {
-              "x": -7,
-              "y": 12
-            },
-            {
-              "x": -10,
-              "y": 7
-            },
-            {
-              "x": -7,
-              "y": 7
-            }
-          ],
-          "timeSpent": 0
-        },
-        {
-          "roomName": "RoomGate",
-          "roomID": "Room4",
-          "roomRange": [
-            {
-              "x": -6,
-              "y": 23
-            },
-            {
-              "x": 7,
-              "y": 23
-            },
-            {
-              "x": -6,
-              "y": 17
-            },
-            {
-              "x": 7,
-              "y": 17
-            }
-          ],
-          "timeSpent": 0
-        }
-      ],
-      "totalTimeSpent": 1.6763674020767212
-    },
-    "-NsCD9sFPn_u1fPkxtqT": {
+    "-NtspXzTY835GJ2Fq8fn": {
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1"
+      ],
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "Rat",
           "roomRange": [
             {
               "x": -8,
@@ -2390,11 +3593,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 17.98194122314453
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "Skelefton",
           "roomRange": [
             {
               "x": 4,
@@ -2416,85 +3619,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -8,
-              "y": 17
-            },
-            {
-              "x": 1,
-              "y": 17
-            },
-            {
-              "x": -8,
-              "y": 12
-            },
-            {
-              "x": 1,
-              "y": 12
-            }
-          ],
-          "timeSpent": 9.317911148071289
-        }
-      ],
-      "totalTimeSpent": 51.37268829345703
-    },
-    "-NsCEoT51ebDquHtDCn6": {
-      "isFinish": false,
-      "levelID": "Level1",
-      "levelName": "LevelOne",
-      "rooms": [
-        {
-          "roomName": "RoomRat",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -8,
-              "y": 4
-            },
-            {
-              "x": 8,
-              "y": 4
-            },
-            {
-              "x": -8,
-              "y": -4
-            },
-            {
-              "x": 8,
-              "y": -4
-            }
-          ],
-          "timeSpent": 16.25236701965332
-        },
-        {
-          "roomName": "RoomSkeleton",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 4,
-              "y": 14
-            },
-            {
-              "x": 8,
-              "y": 14
-            },
-            {
-              "x": 4,
-              "y": 9
-            },
-            {
-              "x": 8,
-              "y": 9
-            }
-          ],
-          "timeSpent": 9.88003921508789
-        },
-        {
-          "roomName": "RoomDog",
-          "roomID": "Room3",
+          "roomName": "Dog",
           "roomRange": [
             {
               "x": -8,
@@ -2516,16 +3642,21 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 99.52822875976562
+      "totalTimeSpent": 0.6973528265953064
     },
-    "-NsCFZhwrJho_JIiUKLj": {
+    "-NtspcxU-qQu3oqfODYU": {
       "isFinish": false,
       "levelID": "Level1",
       "levelName": "LevelOne",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room1"
+      ],
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "Rat",
           "roomRange": [
             {
               "x": -8,
@@ -2544,11 +3675,11 @@
               "y": -4
             }
           ],
-          "timeSpent": 34.155059814453125
+          "timeSpent": 3.4569642543792725
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "Skelefton",
           "roomRange": [
             {
               "x": 4,
@@ -2567,11 +3698,11 @@
               "y": 9
             }
           ],
-          "timeSpent": 9.342798233032227
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "Dog",
           "roomRange": [
             {
               "x": -8,
@@ -2590,19 +3721,23 @@
               "y": 12
             }
           ],
-          "timeSpent": 16.05976676940918
+          "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 43.805824279785156
+      "totalTimeSpent": 6.796873092651367
     },
-    "-NsCGMXZrxp86GTQZDFI": {
+    "-NtspsbDklAll6eHCBYj": {
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1"
+      ],
       "rooms": [
         {
-          "roomName": "RoomInit",
           "roomID": "Room1",
+          "roomName": "Init",
           "roomRange": [
             {
               "x": -3,
@@ -2621,11 +3756,11 @@
               "y": -2
             }
           ],
-          "timeSpent": 6.217740058898926
+          "timeSpent": 1.4861292839050293
         },
         {
-          "roomName": "RoomChest",
           "roomID": "Room2",
+          "roomName": "Chest",
           "roomRange": [
             {
               "x": 7,
@@ -2644,11 +3779,11 @@
               "y": 5
             }
           ],
-          "timeSpent": 5.099945545196533
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomLeft",
           "roomID": "Room3",
+          "roomName": "Left",
           "roomRange": [
             {
               "x": -10,
@@ -2667,11 +3802,11 @@
               "y": 7
             }
           ],
-          "timeSpent": 2.879768133163452
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomGate",
           "roomID": "Room4",
+          "roomName": "Gate",
           "roomRange": [
             {
               "x": -6,
@@ -2690,102 +3825,30 @@
               "y": 17
             }
           ],
-          "timeSpent": 4.478779315948486
+          "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 66.61756134033203
+      "totalTimeSpent": 2.7381081581115723
     },
-    "-NsCHKE0EjNLL_8zJYeT": {
-      "isFinish": false,
-      "levelID": "Level1",
-      "levelName": "LevelOne",
-      "rooms": [
-        {
-          "roomName": "RoomRat",
-          "roomID": "Room1",
-          "roomRange": [
-            {
-              "x": -8,
-              "y": 4
-            },
-            {
-              "x": 8,
-              "y": 4
-            },
-            {
-              "x": -8,
-              "y": -4
-            },
-            {
-              "x": 8,
-              "y": -4
-            }
-          ],
-          "timeSpent": 17.53118896484375
-        },
-        {
-          "roomName": "RoomSkeleton",
-          "roomID": "Room2",
-          "roomRange": [
-            {
-              "x": 4,
-              "y": 14
-            },
-            {
-              "x": 8,
-              "y": 14
-            },
-            {
-              "x": 4,
-              "y": 9
-            },
-            {
-              "x": 8,
-              "y": 9
-            }
-          ],
-          "timeSpent": 16.574913024902344
-        },
-        {
-          "roomName": "RoomDog",
-          "roomID": "Room3",
-          "roomRange": [
-            {
-              "x": -8,
-              "y": 17
-            },
-            {
-              "x": 1,
-              "y": 17
-            },
-            {
-              "x": -8,
-              "y": 12
-            },
-            {
-              "x": 1,
-              "y": 12
-            }
-          ],
-          "timeSpent": 15.681081771850586
-        }
-      ],
-      "totalTimeSpent": 39.33784866333008
-    },
-    "-NsCHWLVHM3qs7LufUrT": {
-      "isFinish": false,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 31.528038024902344
-    },
-    "-NsCIQVTH7JuiA_xz3AY": {
+    "-NtsqJarO4AH5mGFFPNB": {
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 1,
+      "roomVisits": [
+        "Room1",
+        "Room1",
+        "Room2",
+        "Room3",
+        "Room3",
+        "Room1",
+        "Room3",
+        "Room1"
+      ],
       "rooms": [
         {
-          "roomName": "RoomInit",
           "roomID": "Room1",
+          "roomName": "Init",
           "roomRange": [
             {
               "x": -3,
@@ -2804,11 +3867,11 @@
               "y": -2
             }
           ],
-          "timeSpent": 0
+          "timeSpent": 8.068941116333008
         },
         {
-          "roomName": "RoomChest",
           "roomID": "Room2",
+          "roomName": "Chest",
           "roomRange": [
             {
               "x": 7,
@@ -2827,11 +3890,11 @@
               "y": 5
             }
           ],
-          "timeSpent": 0
+          "timeSpent": 19.80015754699707
         },
         {
-          "roomName": "RoomLeft",
           "roomID": "Room3",
+          "roomName": "Left",
           "roomRange": [
             {
               "x": -10,
@@ -2850,11 +3913,11 @@
               "y": 7
             }
           ],
-          "timeSpent": 0
+          "timeSpent": 13.281073570251465
         },
         {
-          "roomName": "RoomGate",
           "roomID": "Room4",
+          "roomName": "Gate",
           "roomRange": [
             {
               "x": -6,
@@ -2876,16 +3939,240 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 4.057023525238037
+      "totalTimeSpent": 22.477787017822266
     },
-    "-NsCOjw7XqLgJlr-uwpb": {
+    "-Ntsq_6wfT_j_TllQ-TS": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 13.278752326965332
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 18.676979064941406
+    },
+    "-NtsrSx44YFL9geTf7Ce": {
       "isFinish": false,
       "levelID": "Level2",
       "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1"
+      ],
       "rooms": [
         {
-          "roomName": "RoomInit",
           "roomID": "Room1",
+          "roomName": "Init",
           "roomRange": [
             {
               "x": -3,
@@ -2904,11 +4191,11 @@
               "y": -2
             }
           ],
-          "timeSpent": 1.3136049509048462
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomChest",
           "roomID": "Room2",
+          "roomName": "Chest",
           "roomRange": [
             {
               "x": 7,
@@ -2930,8 +4217,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomLeft",
           "roomID": "Room3",
+          "roomName": "Left",
           "roomRange": [
             {
               "x": -10,
@@ -2953,8 +4240,8 @@
           "timeSpent": 0
         },
         {
-          "roomName": "RoomGate",
           "roomID": "Room4",
+          "roomName": "Gate",
           "roomRange": [
             {
               "x": -6,
@@ -2976,102 +4263,2253 @@
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 8.276297569274902
+      "totalTimeSpent": 1.2279189825057983
     },
-    "-NsCP6VRbhd8wGbyr_4Y": {
+    "-NtssK1nQ3aYBrDxORBF": {
       "isFinish": false,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 52.52540969848633
-    },
-    "-NsCPQseWixkWLzOpTOY": {
-      "isFinish": false,
-      "levelID": "Level1",
-      "levelName": "LevelOne",
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room4"
+      ],
       "rooms": [
         {
-          "roomName": "RoomRat",
           "roomID": "Room1",
+          "roomName": "Init",
           "roomRange": [
             {
-              "x": -8,
-              "y": 4
+              "x": -3,
+              "y": 3
             },
             {
-              "x": 8,
-              "y": 4
+              "x": 4,
+              "y": 3
             },
             {
-              "x": -8,
-              "y": -4
+              "x": -3,
+              "y": -2
             },
             {
-              "x": 8,
-              "y": -4
+              "x": 4,
+              "y": -2
             }
           ],
-          "timeSpent": 20.88298797607422
+          "timeSpent": 1.4819890260696411
         },
         {
-          "roomName": "RoomSkeleton",
           "roomID": "Room2",
+          "roomName": "Chest",
           "roomRange": [
             {
-              "x": 4,
-              "y": 14
+              "x": 7,
+              "y": 13
             },
             {
-              "x": 8,
-              "y": 14
+              "x": 15,
+              "y": 13
             },
             {
-              "x": 4,
-              "y": 9
+              "x": 7,
+              "y": 5
             },
             {
-              "x": 8,
-              "y": 9
+              "x": 15,
+              "y": 5
             }
           ],
-          "timeSpent": 8.540085792541504
+          "timeSpent": 0
         },
         {
-          "roomName": "RoomDog",
           "roomID": "Room3",
+          "roomName": "Left",
           "roomRange": [
             {
-              "x": -8,
-              "y": 17
-            },
-            {
-              "x": 1,
-              "y": 17
-            },
-            {
-              "x": -8,
+              "x": -10,
               "y": 12
             },
             {
-              "x": 1,
+              "x": -7,
               "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 4.259003162384033
+        }
+      ],
+      "totalTimeSpent": 14.467774391174316
+    },
+    "-Ntst07q4f-5zkaojvCR": {
+      "isFinish": false,
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 2.687962293624878
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
             }
           ],
           "timeSpent": 0
         }
       ],
-      "totalTimeSpent": 45.40786361694336
+      "totalTimeSpent": 7.867654323577881
     },
-    "-NsCRvUzqRZRcwme-FTM": {
+    "-Ntst7ET1rndbT-9tEYk": {
       "isFinish": false,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 103.502685546875
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 2.589852809906006
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 18.354639053344727
     },
-    "-NsCS7PtItSkaGYQ4KXI": {
+    "-NtstQdEzUY5Ae3dztOr": {
       "isFinish": false,
-      "levelID": "Level0",
-      "levelName": "LevelTutorial",
-      "totalTimeSpent": 49.561912536621094
+      "levelID": "Level2",
+      "levelName": "LevelTwo",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room3",
+        "Room3",
+        "Room4"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -3,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": -3,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": -2
+            }
+          ],
+          "timeSpent": 3.4658255577087402
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "Chest",
+          "roomRange": [
+            {
+              "x": 7,
+              "y": 13
+            },
+            {
+              "x": 15,
+              "y": 13
+            },
+            {
+              "x": 7,
+              "y": 5
+            },
+            {
+              "x": 15,
+              "y": 5
+            }
+          ],
+          "timeSpent": 11.22003173828125
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "Left",
+          "roomRange": [
+            {
+              "x": -10,
+              "y": 12
+            },
+            {
+              "x": -7,
+              "y": 12
+            },
+            {
+              "x": -10,
+              "y": 7
+            },
+            {
+              "x": -7,
+              "y": 7
+            }
+          ],
+          "timeSpent": 9.379956245422363
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "Gate",
+          "roomRange": [
+            {
+              "x": -6,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": -6,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 17
+            }
+          ],
+          "timeSpent": 3.940495014190674
+        }
+      ],
+      "totalTimeSpent": 49.08747482299805
+    },
+    "-NtsvJ4MQOevwjtoXnvo": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room1",
+        "Room2",
+        "Room3"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 23.29023551940918
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 10.880708694458008
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 45.97110366821289
+    },
+    "-Ntsw3tuDbJSMGPSINlC": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room3",
+        "Room2",
+        "Room3",
+        "Room2",
+        "Room3",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 14.560622215270996
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 11.200302124023438
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 1.7801684141159058
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 4.820586204528809
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 34.72127914428711
+    },
+    "-NtswEpjV3Zyj1pK6ZaS": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 9.284639358520508
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 16.199071884155273
+    },
+    "-NtswZWTDlwgl7_l2vPN": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room3",
+        "Room2",
+        "Room1",
+        "Room4",
+        "Room1"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 17.71415138244629
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 8.420289039611816
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 7.240240097045898
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 13.620038032531738
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 11.500157356262207
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 67.98477935791016
+    },
+    "-NtsxcAm-nHtdgXBHPh5": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room4",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room3",
+        "Room2",
+        "Room3",
+        "Room2",
+        "Room1",
+        "Room1"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 68.10009002685547
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 7.3193840980529785
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 9.139480590820312
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 28.939878463745117
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 11.36091423034668
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 21.76019287109375
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 160.49203491210938
+    },
+    "-NtsyNu6x8oLwPln2gK0": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1",
+        "Room5",
+        "Room5",
+        "Room5",
+        "Room5",
+        "Room1",
+        "Room3"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 36.82771682739258
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 6.820262432098389
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 56.447601318359375
+    },
+    "-NtszwsZg5dXnXd4USBP": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 0,
+      "roomVisits": [
+        "Room1"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 52.11577224731445
+    },
+    "-Ntt-FQ_BaQqj8rnzxIR": {
+      "isFinish": false,
+      "levelID": "",
+      "levelName": "NoDataToCollect",
+      "restartBtnUsedTime": 0,
+      "totalTimeSpent": 47.996341705322266
+    },
+    "-NttErruQ-NlHd9LRWsf": {
+      "isFinish": false,
+      "levelID": "Level3",
+      "levelName": "LevelThree",
+      "restartBtnUsedTime": 1,
+      "roomVisits": [
+        "Room1",
+        "Room2",
+        "Room3",
+        "Room2",
+        "Room2",
+        "Room1",
+        "Room2",
+        "Room1",
+        "Room4",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room3",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room1",
+        "Room2",
+        "Room3",
+        "Room2",
+        "Room1",
+        "Room4",
+        "Room1",
+        "Room5",
+        "Room1",
+        "Room3",
+        "Room1"
+      ],
+      "rooms": [
+        {
+          "roomID": "Room1",
+          "roomName": "Init",
+          "roomRange": [
+            {
+              "x": -13,
+              "y": 14
+            },
+            {
+              "x": 14,
+              "y": 14
+            },
+            {
+              "x": -13,
+              "y": -12
+            },
+            {
+              "x": 14,
+              "y": -12
+            }
+          ],
+          "timeSpent": 124.85771179199219
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": 21
+            },
+            {
+              "x": -9,
+              "y": 21
+            },
+            {
+              "x": -16,
+              "y": 17
+            },
+            {
+              "x": -9,
+              "y": 17
+            }
+          ],
+          "timeSpent": 17.80673599243164
+        },
+        {
+          "roomID": "Room2",
+          "roomName": "TopLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": 28
+            },
+            {
+              "x": -19,
+              "y": 28
+            },
+            {
+              "x": -26,
+              "y": 23
+            },
+            {
+              "x": -19,
+              "y": 23
+            }
+          ],
+          "timeSpent": 11.320618629455566
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": 21
+            },
+            {
+              "x": 17,
+              "y": 21
+            },
+            {
+              "x": 10,
+              "y": 17
+            },
+            {
+              "x": 17,
+              "y": 17
+            }
+          ],
+          "timeSpent": 50.32434844970703
+        },
+        {
+          "roomID": "Room3",
+          "roomName": "TopRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 27,
+              "y": 28
+            },
+            {
+              "x": 20,
+              "y": 23
+            },
+            {
+              "x": 27,
+              "y": 23
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -16,
+              "y": -15
+            },
+            {
+              "x": -9,
+              "y": -15
+            },
+            {
+              "x": -16,
+              "y": -19
+            },
+            {
+              "x": -9,
+              "y": -19
+            }
+          ],
+          "timeSpent": 37.42665100097656
+        },
+        {
+          "roomID": "Room4",
+          "roomName": "BottomLeft",
+          "roomRange": [
+            {
+              "x": -26,
+              "y": -22
+            },
+            {
+              "x": -19,
+              "y": -22
+            },
+            {
+              "x": -26,
+              "y": -27
+            },
+            {
+              "x": -19,
+              "y": -27
+            }
+          ],
+          "timeSpent": 0
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 10,
+              "y": -15
+            },
+            {
+              "x": 17,
+              "y": -15
+            },
+            {
+              "x": 10,
+              "y": -19
+            },
+            {
+              "x": 17,
+              "y": -19
+            }
+          ],
+          "timeSpent": 61.78571319580078
+        },
+        {
+          "roomID": "Room5",
+          "roomName": "BottomRight",
+          "roomRange": [
+            {
+              "x": 20,
+              "y": -21
+            },
+            {
+              "x": 27,
+              "y": -21
+            },
+            {
+              "x": 20,
+              "y": -26
+            },
+            {
+              "x": 27,
+              "y": -26
+            }
+          ],
+          "timeSpent": 0
+        }
+      ],
+      "totalTimeSpent": 274.0976867675781
     }
   }
 }

@@ -15,14 +15,10 @@ public class MenuUIHandler : MonoBehaviour
     public GameObject startMenuButtons;
     public GameObject levelSelectionButtons;
     public Button startBtn;
-    private static bool _isTutorialVisit = false;
     GameObject title;
     void Start()
     {
         title = GameObject.Find("Title");
-        
-        // must visit tutorial first
-        startBtn.interactable = _isTutorialVisit;
     }
 
     // Update is called once per frame
@@ -53,9 +49,6 @@ public class MenuUIHandler : MonoBehaviour
     public void LoadTutorial()
     {
         SceneManager.LoadScene("LevelTutorial");
-        
-        // Enable the Start button after Tutorial is clicked
-        _isTutorialVisit = true;
     }
 
     public void LoadLevelTwo()

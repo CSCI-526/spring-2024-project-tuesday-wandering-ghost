@@ -20,7 +20,8 @@ public class Chest : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
-        chestSR.sprite = openSprite;
+        //chestSR.sprite = openSprite;
+        Destroy(this.gameObject);
         key1.gameObject.SetActive(true);
     }
 }

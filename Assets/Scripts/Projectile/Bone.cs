@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bone : MonoBehaviour
 {
     // Start is called before the first frame update
-    float lifetime = 1f; // Projectile´æ»îÊ±¼ä
+    float lifetime = 1f; // Projectileï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     string type = "Bone";
     private Rigidbody2D rb;
     Collider2D cl;
@@ -20,13 +20,13 @@ public class Bone : MonoBehaviour
     IEnumerator DeactivateAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
-        rb.velocity = Vector2.zero; // Í£Ö¹ÒÆ¶¯
+        rb.velocity = Vector2.zero; // Í£Ö¹ï¿½Æ¶ï¿½
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         cl.enabled = true;
     }
 
     public string getType()
     {
-        return type;
+        return type;//return type
     }
 }

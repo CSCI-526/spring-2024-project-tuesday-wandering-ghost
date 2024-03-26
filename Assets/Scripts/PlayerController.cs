@@ -138,17 +138,20 @@ public class PlayerController : MonoBehaviour
                 transform.position = transform.parent.position;
                 
             }
+
+
             else if (isPossessing) //press E when possessing will quite
             {
                 if(CheckSpaceForDepossess()){
                 Rigidbody2D parentRb = transform.parent.GetComponent<Rigidbody2D>();
                 parentRb.constraints = RigidbodyConstraints2D.FreezeAll;
                 transform.parent = null;
-                isPossessing = false;
+                isPossessing = false;                
                 ghostCollider.enabled = true; //enable collider
                 transform.localScale = new Vector3(1, 1, 1);//back to original size
                 ghostRb.constraints  &= ~RigidbodyConstraints2D.FreezePositionX;
                 ghostRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY; //cancel xy axis movement restriction
+
                 }
                 else
                 {
@@ -156,8 +159,8 @@ public class PlayerController : MonoBehaviour
                 }
 
             }
-        } 
         }
+    }
 
     bool CheckSpaceForDepossess()
 {
