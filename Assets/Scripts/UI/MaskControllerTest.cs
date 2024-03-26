@@ -65,8 +65,21 @@ public class MaskControllerTest : MonoBehaviour
     IEnumerator ResetMask()
     {
         isShrinking = false;
+        Vector3 originalScale = mask.transform.localScale;
+        Vector3 targetScale = new Vector3(20f, 20f, 20f);
+        float duration = 1.0f;
+        float elapsedTime = 0;
+
+        while (elapsedTime < duration)
+        {
+            mask.transform.localScale = Vector3.Lerp(originalScale, targetScale, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // 确保最终尺寸正确设置
         mask.transform.localScale = targetScale;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(4);
         isShrinking = true;
     }
     public void IncreaseMaxPressCount()
