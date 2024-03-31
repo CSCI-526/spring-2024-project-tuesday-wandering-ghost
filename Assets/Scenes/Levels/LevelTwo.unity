@@ -1181,7 +1181,7 @@ Transform:
   m_GameObject: {fileID: 387793067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4892446, y: 1.47183, z: -6}
+  m_LocalPosition: {x: 0.48979473, y: 1.47183, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8743,6 +8743,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7406503003940883479, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5117262892560557964}
+    - targetCorrespondingSourceObject: {fileID: 7406503003940883479, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5117262892560557965}
   m_SourcePrefab: {fileID: 100100000, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}
 --- !u!114 &5117262892560557962 stripped
 MonoBehaviour:
@@ -8795,6 +8798,24 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.8, y: 0.9}
   m_Direction: 0
+--- !u!114 &5117262892560557965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5117262892560557963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf136b725796a4f7abb644ab6fce50f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualCamera: {fileID: 2055914525}
+  targetOrthoSize: 30
+  initialOrthoSize: 4.5
+  adjustDuration: 2
+  playerController: {fileID: 5117262892560557962}
+  maskController: {fileID: 1150189652}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
