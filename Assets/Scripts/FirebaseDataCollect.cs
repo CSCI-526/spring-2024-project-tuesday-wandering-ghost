@@ -149,6 +149,15 @@ public class FirebaseDataCollect : MonoBehaviour
 
     public float LevelStayTime()
     {
-        return currentLevel.totalTimeSpent;
+        // return in seconds
+        if (levelTimer.IsRunning)
+        {
+            float currentSessionTime = (float)levelTimer.Elapsed.TotalSeconds;
+            return currentLevel.totalTimeSpent + currentSessionTime;
+        }
+        else
+        {
+            return currentLevel.totalTimeSpent;
+        }
     }
 }
