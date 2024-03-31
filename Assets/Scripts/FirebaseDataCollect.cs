@@ -146,4 +146,9 @@ public class FirebaseDataCollect : MonoBehaviour
     {
         currentLevel.restartBtnUsedTime++;
     }
+
+    public float LevelStayTime()
+    {
+        return currentLevel.totalTimeSpent;
+    }
 }
