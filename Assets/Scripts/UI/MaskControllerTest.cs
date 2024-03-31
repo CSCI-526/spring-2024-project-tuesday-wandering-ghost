@@ -76,8 +76,6 @@ public class MaskControllerTest : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-
-        // 确保最终尺寸正确设置
         mask.transform.localScale = targetScale;
         yield return new WaitForSeconds(4);
         isShrinking = true;
@@ -89,6 +87,11 @@ public class MaskControllerTest : MonoBehaviour
     public void StopShrinking()
     {
         isShrinking = false;
+    }
+    public void AdjustMaskSize(float newOrthoSize)
+    {
+        float scaleMultiplier = Mathf.Lerp(1f, 5f, (newOrthoSize - 4.5f) / (10f - 4.5f));
+        mask.transform.localScale = targetScale * scaleMultiplier;
     }
 
 }
