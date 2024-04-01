@@ -6,7 +6,7 @@ public class Spider : MonoBehaviour
     private float projectileSpeed = 10f;
     private Vector2 lastDirection = Vector2.right; // Default facing direction
     private string type = "Spider";
-    private float projectileCount = 5;
+    private float projectileCount = 20;
     
 
     void Start()
