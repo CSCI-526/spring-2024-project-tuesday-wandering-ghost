@@ -100,6 +100,11 @@ public class LevelUIHandler : MonoBehaviour
     {
         SceneManager.LoadScene("LevelThree");
     }
+    
+    public void StartLevelFour()
+    {
+        SceneManager.LoadScene("LevelFour");
+    }
 
     public void RestartLevel()
     {

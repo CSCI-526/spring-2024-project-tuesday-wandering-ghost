@@ -139,7 +139,7 @@ public class FirebaseDataCollect : MonoBehaviour
     
     private void PostLevelData(LevelData levelData, bool isFinish = true)
     {
-        RestClient.Post(isFinish ? $"{firebaseURL}/Finish/.json" : $"{firebaseURL}/UnFinish/.json", levelData);
+        RestClient.Post(isFinish ? $"{firebaseURL}/FinishBM/.json" : $"{firebaseURL}/UnFinishBM/.json", levelData);
     }
 
     public void UsedReset()

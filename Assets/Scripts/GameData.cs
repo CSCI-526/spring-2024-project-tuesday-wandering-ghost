@@ -97,6 +97,80 @@ public class GameData
                 roomName = "Init",
                 roomRange = new[]
                 {
+                    new Vector2(-4, 2),       //top left
+                    new Vector2(3, 2),        //top right
+                    new Vector2(-4, -2),      //bottom left
+                    new Vector2(3, -2)        //bottom right
+                }
+            },
+        
+            new RoomData
+            {
+                roomID = "Room2",
+                roomName = "Key",
+                roomRange = new[]
+                {
+                    new Vector2(-11, 12),
+                    new Vector2(-7, 12),
+                    new Vector2(-11, 5),
+                    new Vector2(-7, 5)
+                }
+            },
+            
+            new RoomData
+            {
+                roomID = "Room3",
+                roomName = "Right",
+                roomRange = new[]
+                {
+                    new Vector2(6, 12),
+                    new Vector2(10, 12),
+                    new Vector2(6, 5),
+                    new Vector2(10, 5)
+                }
+            },
+            
+            new RoomData
+            {
+                roomID = "Room4",
+                roomName = "Invisible",
+                roomRange = new[]
+                {
+                    new Vector2(-11, 20),
+                    new Vector2(-8, 20),
+                    new Vector2(-11, 15),
+                    new Vector2(-8, 15)
+                }
+            },
+            
+            new RoomData
+            {
+                roomID = "Room5",
+                roomName = "Top",
+                roomRange = new[]
+                {
+                    new Vector2(-3, 30),
+                    new Vector2(2, 30),
+                    new Vector2(-3, 27),
+                    new Vector2(2, 27)
+                }
+            },
+        }
+    };
+    
+    public static LevelData LevelThree = new()
+    {
+        levelID = "Level3",
+        levelName = "LevelThree",
+        
+        rooms = new[]
+        {
+            new RoomData
+            {
+                roomID = "Room1",
+                roomName = "Init",
+                roomRange = new[]
+                {
                     new Vector2(-3, 3),       //top left
                     new Vector2(4, 3),        //top right
                     new Vector2(-3, -2),      //bottom left
@@ -145,10 +219,10 @@ public class GameData
         }
     };
     
-    public static LevelData LevelThree = new()
+    public static LevelData LevelFour = new()
     {
-        levelID = "Level3",
-        levelName = "LevelThree",
+        levelID = "Level4",
+        levelName = "LevelFour",
         
         rooms = new[]
         {
@@ -171,10 +245,10 @@ public class GameData
                 roomName = "TopLeft",   //rat
                 roomRange = new[]
                 {
-                    new Vector2(-16, 21),
-                    new Vector2(-9, 21),
-                    new Vector2(-16, 17),
-                    new Vector2(-9, 17)
+                    new Vector2(-9, 13),
+                    new Vector2(-4, 13),
+                    new Vector2(-9, 10),
+                    new Vector2(-4, 10)
                 }
             },
             
@@ -184,10 +258,10 @@ public class GameData
                 roomName = "TopLeft",   //switch
                 roomRange = new[]
                 {
-                    new Vector2(-26, 28),
-                    new Vector2(-19, 28),
-                    new Vector2(-26, 23),
-                    new Vector2(-19, 23)
+                    new Vector2(-22, 17),
+                    new Vector2(-15, 17),
+                    new Vector2(-22, 12),
+                    new Vector2(-15, 12)
                 }
             },
             
@@ -197,10 +271,10 @@ public class GameData
                 roomName = "TopRight",  //fruit
                 roomRange = new[]
                 {
-                    new Vector2(10, 21),
-                    new Vector2(17, 21),
-                    new Vector2(10, 17),
-                    new Vector2(17, 17)
+                    new Vector2(4, 13),
+                    new Vector2(9, 13),
+                    new Vector2(4, 10),
+                    new Vector2(9, 10)
                 }
             },
             
@@ -210,10 +284,10 @@ public class GameData
                 roomName = "TopRight",  // switch
                 roomRange = new[]
                 {
-                    new Vector2(20, 28),    //TL
-                    new Vector2(27, 28),    //TR
-                    new Vector2(20, 23),    //BL
-                    new Vector2(27, 23)     //BR
+                    new Vector2(15, 17),    //TL
+                    new Vector2(22, 17),    //TR
+                    new Vector2(15, 12),    //BL
+                    new Vector2(22, 12)     //BR
                 }
             },
             
@@ -223,10 +297,10 @@ public class GameData
                 roomName = "BottomLeft",   //spider
                 roomRange = new[]
                 {
-                    new Vector2(-16, -15),
-                    new Vector2(-9, -15),
-                    new Vector2(-16, -19),
-                    new Vector2(-9, -19)
+                    new Vector2(-9, -9),
+                    new Vector2(-4, -9),
+                    new Vector2(-9, -12),
+                    new Vector2(-4, -12)
                 }
             },
             
@@ -236,10 +310,10 @@ public class GameData
                 roomName = "BottomLeft",   //switch
                 roomRange = new[]
                 {
-                    new Vector2(-26, -22),
-                    new Vector2(-19, -22),
-                    new Vector2(-26, -27),
-                    new Vector2(-19, -27)
+                    new Vector2(-22, -11),
+                    new Vector2(-15, -11),
+                    new Vector2(-22, -16),
+                    new Vector2(-15, -16)
                 }
             },
             
@@ -249,10 +323,10 @@ public class GameData
                 roomName = "BottomRight",   //skeleton
                 roomRange = new[]
                 {
-                    new Vector2(10, -15),
-                    new Vector2(17, -15),
-                    new Vector2(10, -19),
-                    new Vector2(17, -19)
+                    new Vector2(4, -9),
+                    new Vector2(9, -9),
+                    new Vector2(4, -12),
+                    new Vector2(9, -12)
                 }
             },
             
@@ -262,10 +336,10 @@ public class GameData
                 roomName = "BottomRight",   //switch
                 roomRange = new[]
                 {
-                    new Vector2(20, -21),
-                    new Vector2(27, -21),
-                    new Vector2(20, -26),
-                    new Vector2(27, -26)
+                    new Vector2(15, -11),
+                    new Vector2(22, -11),
+                    new Vector2(15, -16),
+                    new Vector2(22, -16)
                 }
             },
         }
