@@ -8498,7 +8498,7 @@ MonoBehaviour:
   counterText: {fileID: 1930515649}
   gameOverText: {fileID: 2120248508}
   spacePressCount: 0
-  maxPressCount: 3
+  maxPressCount: 5
 --- !u!1 &1151285147
 GameObject:
   m_ObjectHideFlags: 0
@@ -11692,7 +11692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Times: 3'
+  m_text: 'Times: 5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

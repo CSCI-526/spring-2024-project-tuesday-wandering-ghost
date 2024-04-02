@@ -17,7 +17,7 @@ public class MaskControllerTest : MonoBehaviour
     Vector3 shrink = new Vector3(0.01f,0.01f,0.01f);
     Vector3 expandToOriginal = new Vector3(1f, 1f, 1f);
     public int spacePressCount = 0;
-    public int maxPressCount = 3;
+    public int maxPressCount = 5;
     private bool isShrinking = true;
 
     // Start is called before the first frame update
@@ -50,7 +50,7 @@ public class MaskControllerTest : MonoBehaviour
     {
         if (mask.transform.localScale.x > shrink.x && mask.transform.localScale.y > shrink.y)
         {
-            mask.transform.localScale -= shrink;
+            mask.transform.localScale -= shrink / 2;
         }
         else
         {
