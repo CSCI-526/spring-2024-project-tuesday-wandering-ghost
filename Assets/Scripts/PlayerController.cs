@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
     private Animator animator; // Reference to the Animator component
     string[] possesibleTags = { "Possessible", "FixedPossessible" };
 
+    public void SetMovementEnabled(bool enabled)
+    {
+        playerMove = enabled;
+    }
     void Start()
     {
         ghostRb = transform.GetComponent<Rigidbody2D>();

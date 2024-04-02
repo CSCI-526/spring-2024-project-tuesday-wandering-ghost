@@ -139,11 +139,25 @@ public class FirebaseDataCollect : MonoBehaviour
     
     private void PostLevelData(LevelData levelData, bool isFinish = true)
     {
-        RestClient.Post(isFinish ? $"{firebaseURL}/Finish/.json" : $"{firebaseURL}/UnFinish/.json", levelData);
+        RestClient.Post(isFinish ? $"{firebaseURL}/FinishBM/.json" : $"{firebaseURL}/UnFinishBM/.json", levelData);
     }
 
     public void UsedReset()
     {
         currentLevel.restartBtnUsedTime++;
+    }
+
+    public float LevelStayTime()
+    {
+        // return in seconds
+        if (levelTimer.IsRunning)
+        {
+            float currentSessionTime = (float)levelTimer.Elapsed.TotalSeconds;
+            return currentLevel.totalTimeSpent + currentSessionTime;
+        }
+        else
+        {
+            return currentLevel.totalTimeSpent;
+        }
     }
 }
