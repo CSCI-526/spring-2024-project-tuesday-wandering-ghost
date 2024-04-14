@@ -100,6 +100,11 @@ public class Torch : MonoBehaviour
     bool isLight = false;
     private bool hasFired = false;
 
+    private int fireCount = 0;
+    public int maxFireCount = 3;
+
+    public float fireCooldown = 1f;
+
 
     void Start()
     {
@@ -119,19 +124,24 @@ public class Torch : MonoBehaviour
 
     void ShootFire()
     {
-        if (transform.childCount > 0&&isLight && !hasFired) 
+        if (transform.childCount > 0&&isLight && !hasFired && fireCount < maxFireCount) 
         {
             if (Input.GetKeyDown(KeyCode.Q)) 
             {
                 GameObject projectile = Instantiate(fire, transform.position, Quaternion.identity);
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
                 rb.velocity = shootDirection.normalized * projectileSpeed; 
-
                 hasFired = true; 
+                fireCount++;
+                StartCoroutine(ResetFire());
             }
         }
     }
-
+    IEnumerator ResetFire()
+    {
+        yield return new WaitForSeconds(fireCooldown); 
+        hasFired = false;
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -147,3 +157,4 @@ public class Torch : MonoBehaviour
         }
     }
 }
+
