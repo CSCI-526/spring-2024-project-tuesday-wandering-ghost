@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
     string[] possesibleTags = { "Possessible", "FixedPossessible" };
     private float originalSpeed = 3f;
     private float speedIncreaseFactorSpider = 4f;
-    private float speedIncreaseFactorRat = 5f; 
+    private float speedIncreaseFactorRat = 5f;
+    public MaskControllerTest maskControllerTest;
 
     public void SetMovementEnabled(bool enabled)
     {
@@ -168,6 +169,7 @@ public class PlayerController : MonoBehaviour
                     transform.localScale = new Vector3(1, 1, 1);//back to original size
                 ghostRb.constraints  &= ~RigidbodyConstraints2D.FreezePositionX;
                 ghostRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY; //cancel xy axis movement restriction
+                    maskControllerTest.SetIsShrinking(true);
 
                 }
                 else

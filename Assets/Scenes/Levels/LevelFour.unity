@@ -6242,6 +6242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rat
       objectReference: {fileID: 0}
+    - target: {fileID: 6768552534894754185, guid: bd1f1268e1cb5d44987399b5d14a425c, type: 3}
+      propertyPath: maskControllerTest
+      value: 
+      objectReference: {fileID: 1150189652}
     - target: {fileID: 7454430530873705994, guid: bd1f1268e1cb5d44987399b5d14a425c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.21
@@ -12955,6 +12959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 8277739983921271729, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}
+      propertyPath: maskControllerTest
+      value: 
+      objectReference: {fileID: 1150189652}
     m_RemovedComponents:
     - {fileID: 1999277568160544198, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}
     m_RemovedGameObjects: []

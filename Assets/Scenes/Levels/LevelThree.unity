@@ -1149,7 +1149,7 @@ Transform:
   m_GameObject: {fileID: 387793067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4898512, y: 1.47182, z: -6}
+  m_LocalPosition: {x: 0.49142343, y: 1.47182, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8977,6 +8977,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 8277739983921271729, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}
+      propertyPath: maskControllerTest
+      value: 
+      objectReference: {fileID: 1150189652}
     m_RemovedComponents:
     - {fileID: 1999277568160544198, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}
     m_RemovedGameObjects: []
