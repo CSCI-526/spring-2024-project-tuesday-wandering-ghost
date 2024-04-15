@@ -34,9 +34,9 @@ public class FirebaseDataCollect : MonoBehaviour
             case "LevelThree":
                 currentLevel = GameData.LevelThree;
                 break;
-            // case "LevelTutorial":
-            //     currentLevel = GameData.LevelTutorial;
-            //     break;
+            case "LevelFour":
+                currentLevel = GameData.LevelFour;
+                break;
             default:
                 currentLevel = GameData.NoDataToCollect;
                 break;
@@ -58,6 +58,7 @@ public class FirebaseDataCollect : MonoBehaviour
             case "LevelOne":
             case "LevelTwo":
             case "LevelThree":
+            case "LevelFour":
                 Vector2 playerPosition = player.transform.position;
                 CheckPlayerLocation(playerPosition);
                 break;
@@ -139,7 +140,7 @@ public class FirebaseDataCollect : MonoBehaviour
     
     private void PostLevelData(LevelData levelData, bool isFinish = true)
     {
-        RestClient.Post(isFinish ? $"{firebaseURL}/FinishBM/.json" : $"{firebaseURL}/UnFinishBM/.json", levelData);
+        RestClient.Post(isFinish ? $"{firebaseURL}/Finish/.json" : $"{firebaseURL}/UnFinish/.json", levelData);
     }
 
     public void UsedReset()
