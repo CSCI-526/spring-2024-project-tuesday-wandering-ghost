@@ -72,7 +72,7 @@ public class Tutorial1UIHandler : MonoBehaviour
             // to avoid first keydown is not response in UI control only in mask's PressCount
             timeCountWhenStop = maskController.maxPressCount - maskController.spacePressCount;
         }
-        else
+        else if (!spaceUI.activeSelf && virtualCamera.m_Lens.OrthographicSize == 4.5f)
         {
             maskController.SetIsShrinking(true);
             playerController.SetMovementEnabled(true);
