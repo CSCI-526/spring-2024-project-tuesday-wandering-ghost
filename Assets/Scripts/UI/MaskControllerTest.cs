@@ -94,4 +94,19 @@ public class MaskControllerTest : MonoBehaviour
         mask.transform.localScale = targetScale * scaleMultiplier;
     }
 
+    public void SetIsShrinking(bool newShrinking)
+    {
+        isShrinking = newShrinking;
+    }
+
+    public bool GetIsShrinking()
+    {
+        return isShrinking;
+    }
+
+    public void SetFixedMaskSize()
+    {
+        mask.transform.localScale = new Vector3(10, 10, 10);  // Set the fixed size here
+    }
+
 }

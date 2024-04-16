@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour
     private bool playerMove = true;
     private Animator animator; // Reference to the Animator component
     string[] possesibleTags = { "Possessible", "FixedPossessible" };
+    private float originalSpeed = 3f;
+    private float speedIncreaseFactorSpider = 4f;
+    private float speedIncreaseFactorRat = 5f;
+    public MaskControllerTest maskControllerTest;
 
     public void SetMovementEnabled(bool enabled)
     {
@@ -25,6 +29,7 @@ public class PlayerController : MonoBehaviour
         ghostRb = transform.GetComponent<Rigidbody2D>();
         ghostCollider = transform.GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
+        originalSpeed = moveSpeed;
     }
 
     // Update is called once per frame
@@ -138,6 +143,14 @@ public class PlayerController : MonoBehaviour
                 transform.localScale = new Vector3(0.1f,0.1f,0.1f);
                 transform.SetParent(toPossess.transform); // set parent
                 isPossessing = true; // is possessing
+                if (toPossess.GetComponent<Spider>() != null)
+                { 
+                    moveSpeed += speedIncreaseFactorSpider; 
+                }
+                if(toPossess.GetComponent<Rat>() != null)
+                {
+                    moveSpeed += speedIncreaseFactorRat;
+                }
                 toPossess = null;
                 transform.position = transform.parent.position;
                 
@@ -152,9 +165,11 @@ public class PlayerController : MonoBehaviour
                 transform.parent = null;
                 isPossessing = false;                
                 ghostCollider.enabled = true; //enable collider
-                transform.localScale = new Vector3(1, 1, 1);//back to original size
+                moveSpeed = originalSpeed; //back to original speed
+                    transform.localScale = new Vector3(1, 1, 1);//back to original size
                 ghostRb.constraints  &= ~RigidbodyConstraints2D.FreezePositionX;
                 ghostRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY; //cancel xy axis movement restriction
+                    maskControllerTest.SetIsShrinking(true);
 
                 }
                 else

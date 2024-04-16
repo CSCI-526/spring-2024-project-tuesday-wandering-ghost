@@ -14,8 +14,6 @@ public class LevelUIHandler : MonoBehaviour
     
     private FirebaseDataCollect firebaseData;
 
-    private bool isAutoHint = false;
-
     void Start()
     {
         GameObject playerObject = GameObject.FindWithTag("Player");
@@ -40,11 +38,6 @@ public class LevelUIHandler : MonoBehaviour
                 EnablePanel();
             }
 
-        }
-        if(firebaseData.LevelStayTime() >= 80 && !isAutoHint)
-        {
-            isAutoHint = true;
-            EnableHintPanel();
         }
     }
 
