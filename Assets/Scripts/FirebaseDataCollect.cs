@@ -34,9 +34,9 @@ public class FirebaseDataCollect : MonoBehaviour
             case "LevelThree":
                 currentLevel = GameData.LevelThree;
                 break;
-            // case "LevelTutorial":
-            //     currentLevel = GameData.LevelTutorial;
-            //     break;
+            case "LevelFour":
+                currentLevel = GameData.LevelFour;
+                break;
             default:
                 currentLevel = GameData.NoDataToCollect;
                 break;
@@ -58,6 +58,7 @@ public class FirebaseDataCollect : MonoBehaviour
             case "LevelOne":
             case "LevelTwo":
             case "LevelThree":
+            case "LevelFour":
                 Vector2 playerPosition = player.transform.position;
                 CheckPlayerLocation(playerPosition);
                 break;
@@ -145,5 +146,19 @@ public class FirebaseDataCollect : MonoBehaviour
     public void UsedReset()
     {
         currentLevel.restartBtnUsedTime++;
+    }
+
+    public float LevelStayTime()
+    {
+        // return in seconds
+        if (levelTimer.IsRunning)
+        {
+            float currentSessionTime = (float)levelTimer.Elapsed.TotalSeconds;
+            return currentLevel.totalTimeSpent + currentSessionTime;
+        }
+        else
+        {
+            return currentLevel.totalTimeSpent;
+        }
     }
 }

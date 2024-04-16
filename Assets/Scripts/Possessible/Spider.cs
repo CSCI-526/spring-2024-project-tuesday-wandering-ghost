@@ -1,12 +1,14 @@
 using UnityEngine;
+using UnityEngine.Scripting.APIUpdating;
 
 public class Spider : MonoBehaviour
 {
     public GameObject web;
-    private float projectileSpeed = 10f;
+    private float projectileSpeed = 20f;
     private Vector2 lastDirection = Vector2.right; // Default facing direction
     private string type = "Spider";
-    private float projectileCount = 5;
+    private float projectileCount = 20;
+
     
 
     void Start()
@@ -20,7 +22,6 @@ public class Spider : MonoBehaviour
         UpdateFacingDirection();
     }
 
-  
     void ShootWeb()
     {
         if (transform.childCount > 0 && projectileCount > 0)
