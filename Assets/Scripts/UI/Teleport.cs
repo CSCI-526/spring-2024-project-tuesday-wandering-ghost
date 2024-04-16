@@ -6,7 +6,7 @@ public class Teleport : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject exits;
-    private Vector3 offset = new Vector3(1,0,0);
+    private Vector3 offset = new Vector3(1.5f,0,0);
     SpriteRenderer exitSR;
 
     //SpriteRenderer portalSR;
@@ -25,14 +25,16 @@ public class Teleport : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (exitSR.flipX)
-        {
-            collision.transform.position = exits.transform.position + offset;
+            if (exitSR.flipX)
+            {
+                collision.transform.position = exits.transform.position + offset;
 
-        } else
-        {
-            
-            collision.transform.position = exits.transform.position - offset;
+            }
+            else
+            {
+
+                collision.transform.position = exits.transform.position - offset;
+            }
         }
-    }
+
 }

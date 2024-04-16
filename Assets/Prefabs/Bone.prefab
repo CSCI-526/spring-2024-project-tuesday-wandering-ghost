@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7165210476048030943}
   - component: {fileID: 7011332825080382236}
   - component: {fileID: -1140000342016873006}
+  - component: {fileID: -8195476545094603712}
   m_Layer: 0
   m_Name: Bone
   m_TagString: Possessible
@@ -171,3 +172,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76465f4652fef8d4c9532734b6481366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &-8195476545094603712
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337463045701407438}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.017300248, y: 0.072660744}
+  m_Size: {x: 1.6464311, y: 1.6948712}
+  m_Direction: 0
