@@ -250,6 +250,7 @@ MonoBehaviour:
   wasdUI: {fileID: 1300837743}
   mask: {fileID: 1638755709}
   virtualCamera: {fileID: 98815131}
+  winPanel: {fileID: 1251379893}
 --- !u!114 &41496385
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,8 +14,9 @@ public class Tutorial1UIHandler : MonoBehaviour
     private GameObject ghost;
     private MaskControllerTest maskController;
     private PlayerController playerController;
-    private Coroutine shrinkCoroutine;
-    private int shrinkCount = 0;
+    private bool sawShrink = false;
+    public GameObject winPanel;
+    private int timeCountWhenStop = -1;
     
     // Start is called before the first frame update
     void Start()
@@ -40,10 +41,10 @@ public class Tutorial1UIHandler : MonoBehaviour
         
         // shrink quickly
         Vector2 ghostPosition = ghost.transform.position;
-        if (ghostPosition.x > 16.0f && shrinkCount == 0)
+        print(!sawShrink);
+        if (!sawShrink && ghostPosition.x > 16.0f)
         {
             maskController.SetShrinkSpeed(new Vector3(0.3f,0.3f,0.3f));
-            shrinkCount++;
         }
         
         // show view alert when less than half of the original
@@ -52,22 +53,37 @@ public class Tutorial1UIHandler : MonoBehaviour
             viewAlertTextUI.SetActive(true);
             spaceUI.transform.position = ghost.transform.position;
             spaceUI.SetActive(true);
-            maskController.SetIsShrinking(false);       // stop shrinking
-            playerController.SetMovementEnabled(false); // stop moving
         }
 
-        if (Input.GetKeyDown(maskController.toggleKey))
+        // already saw alert and hit space
+        if (sawShrink && maskController.maxPressCount-maskController.spacePressCount < timeCountWhenStop)
         {
+            maskController.SetShrinkSpeed(new Vector3(0.01f,0.01f,0.01f));
+            viewAlertTextUI.SetActive(false);
+            spaceUI.SetActive(false);
+        }
+
+        if (spaceUI.activeSelf)
+        {
+            maskController.SetIsShrinking(false);       // stop shrinking
+            playerController.SetMovementEnabled(false); // stop moving
+            sawShrink = true;
+            
+            // to avoid first keydown is not response in UI control only in mask's PressCount
+            timeCountWhenStop = maskController.maxPressCount - maskController.spacePressCount;
+        }
+        else
+        {
+            maskController.SetIsShrinking(true);
             playerController.SetMovementEnabled(true);
         }
 
-        if (maskController.maxPressCount-maskController.spacePressCount <= 4)
+        
+        // stop move when win
+        if (winPanel.activeSelf)
         {
-            maskController.SetShrinkSpeed(new Vector3(0.01f,0.01f,0.01f));
-            maskController.SetIsShrinking(true);
-            viewAlertTextUI.SetActive(false);
-            spaceUI.SetActive(false);
-
+            maskController.SetIsShrinking(false);
+            playerController.SetPlayerMovement(false);
         }
     }
 }
