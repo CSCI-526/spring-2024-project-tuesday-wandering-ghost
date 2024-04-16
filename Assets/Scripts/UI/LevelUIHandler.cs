@@ -78,7 +78,21 @@ public class LevelUIHandler : MonoBehaviour
     {
         SceneManager.LoadScene("MenuScene");
     }
-    
+    public void LoadTutorialOne()
+    {
+        SceneManager.LoadScene("TutorialOne");
+    }
+
+    public void LoadTutorialTwo()
+    {
+        SceneManager.LoadScene("TutorialTwo");
+    }
+
+    public void LoadTutorialThree()
+    {
+        SceneManager.LoadScene("TutorialThree");
+    }
+
     public void StartLevelOne()
     {
         SceneManager.LoadScene("LevelOne");

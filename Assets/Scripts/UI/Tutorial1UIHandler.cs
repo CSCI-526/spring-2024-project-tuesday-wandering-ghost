@@ -56,13 +56,18 @@ public class Tutorial1UIHandler : MonoBehaviour
             playerController.SetMovementEnabled(false); // stop moving
         }
 
-        if (maskController.maxPressCount-maskController.spacePressCount <= 4 || Input.GetKeyDown(maskController.toggleKey))
+        if (Input.GetKeyDown(maskController.toggleKey))
+        {
+            playerController.SetMovementEnabled(true);
+        }
+
+        if (maskController.maxPressCount-maskController.spacePressCount <= 4)
         {
             maskController.SetShrinkSpeed(new Vector3(0.01f,0.01f,0.01f));
             maskController.SetIsShrinking(true);
             viewAlertTextUI.SetActive(false);
             spaceUI.SetActive(false);
-            playerController.SetMovementEnabled(true);
+
         }
     }
 }

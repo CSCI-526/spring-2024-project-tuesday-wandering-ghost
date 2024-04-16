@@ -14,6 +14,7 @@ public class MenuUIHandler : MonoBehaviour
     // Start is called before the first frame update
     public GameObject startMenuButtons;
     public GameObject levelSelectionButtons;
+    public GameObject tutorialSelectionButtons;
     public Button startBtn;
     GameObject title;
     void Start()
@@ -34,11 +35,19 @@ public class MenuUIHandler : MonoBehaviour
         levelSelectionButtons.SetActive(true);
     }
 
+    public void TutorialSelection()
+    {
+        startMenuButtons.SetActive(false);
+        title.SetActive(false);
+        tutorialSelectionButtons.SetActive(true);
+    }
+
     public void BackToMenu()
     {
         startMenuButtons.SetActive(true);
         title.SetActive(true);
         levelSelectionButtons.SetActive(false);
+        tutorialSelectionButtons.SetActive(false);
     }
 
     public void LoadSceneOne()
@@ -46,9 +55,19 @@ public class MenuUIHandler : MonoBehaviour
         SceneManager.LoadScene("LevelOne");
     }
     
-    public void LoadTutorial()
+    public void LoadTutorialOne()
     {
-        SceneManager.LoadScene("LevelTutorial");
+        SceneManager.LoadScene("TutorialOne");
+    }
+
+    public void LoadTutorialTwo()
+    {
+        SceneManager.LoadScene("TutorialTwo");
+    }
+
+    public void LoadTutorialThree()
+    {
+        SceneManager.LoadScene("TutorialThree");
     }
 
     public void LoadLevelTwo()
