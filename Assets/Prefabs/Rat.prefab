@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3933295233069347426}
   - component: {fileID: 4906118377170138676}
   - component: {fileID: 6768552534894754185}
+  - component: {fileID: 4011405422514820431}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Possessible
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.02, y: 1.49, z: -0.41457966}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -143,10 +144,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.028301477, y: -0.021226048}
+  m_Offset: {x: -0.0093204975, y: -0.041156173}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -157,7 +158,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5363393, y: 0.5670731}
+  m_Size: {x: 0.9539218, y: 0.8385017}
   m_EdgeRadius: 0
 --- !u!114 &6768552534894754185
 MonoBehaviour:
@@ -172,3 +173,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: Rat
+  maskControllerTest: {fileID: 0}
+--- !u!70 &4011405422514820431
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513742581580392256}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.023726225, y: -0.013286471}
+  m_Size: {x: 0.48132277, y: 0.54396033}
+  m_Direction: 0

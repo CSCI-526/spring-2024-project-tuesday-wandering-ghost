@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     private float speedIncreaseFactorRat = 5f;
     public MaskControllerTest maskControllerTest;
 
+    private Color highLight = new Color(0.7f, 1, 0.7f);
+    private Color deHighLight = new Color(0, 0, 0);
+
     public void SetMovementEnabled(bool enabled)
     {
         playerMove = enabled;
@@ -159,17 +162,17 @@ public class PlayerController : MonoBehaviour
 
             else if (isPossessing) //press E when possessing will quite
             {
-                if(CheckSpaceForDepossess()){
+                if(true){
                 Rigidbody2D parentRb = transform.parent.GetComponent<Rigidbody2D>();
                 parentRb.constraints = RigidbodyConstraints2D.FreezeAll;
                 transform.parent = null;
                 isPossessing = false;                
                 ghostCollider.enabled = true; //enable collider
                 moveSpeed = originalSpeed; //back to original speed
-                    transform.localScale = new Vector3(1, 1, 1);//back to original size
+                transform.localScale = new Vector3(1, 1, 1);//back to original size
                 ghostRb.constraints  &= ~RigidbodyConstraints2D.FreezePositionX;
                 ghostRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY; //cancel xy axis movement restriction
-                    maskControllerTest.SetIsShrinking(true);
+                maskControllerTest.SetIsShrinking(true);
 
                 }
                 else
@@ -181,11 +184,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    bool CheckSpaceForDepossess()
+    /*
+         bool CheckSpaceForDepossess()
 {
     if (transform.parent != null)
     {
-        Rat ratComponent = transform.parent.GetComponent<Rat>(); //get rate component
+        Rat ratComponent = transform.parent.GetComponent<Rat>(); //get rat component
         if (ratComponent != null && ratComponent.GetType() == "Rat")
         {
             Collider2D ratCollider = transform.parent.GetComponent<Collider2D>(); //get rat's collider
@@ -205,6 +209,9 @@ public class PlayerController : MonoBehaviour
 
     return true; 
 }
+     */
+
+
     public void SetPlayerMovement(bool enable)
         {
             playerMove = enable;

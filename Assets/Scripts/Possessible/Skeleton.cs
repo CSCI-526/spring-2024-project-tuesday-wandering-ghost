@@ -9,6 +9,9 @@ public class Skeleton : MonoBehaviour
     private Vector2 lastDirection = Vector2.right; // Default facing direction
     private string type = "Skeleton";
 
+    private UnityEngine.Color highLight = new UnityEngine.Color(0.7f, 1, 0.7f);
+    private UnityEngine.Color deHighLight = new UnityEngine.Color(1, 1, 1);
+
     void Start()
     {
         // Get the Animator component attached to this GameObject
@@ -69,4 +72,21 @@ public string GetSkeletonType()
     return type;
 }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+            sr.color = highLight;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+            sr.color = deHighLight;
+        }
+    }
 }

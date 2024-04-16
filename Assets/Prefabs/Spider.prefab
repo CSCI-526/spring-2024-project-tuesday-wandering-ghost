@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 27276731132177020}
   - component: {fileID: 5832441777882052119}
   - component: {fileID: 3488363763285894055}
+  - component: {fileID: 4160817154928414996}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Possessible
@@ -144,10 +145,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015221596, y: -0.030444324}
+  m_Offset: {x: 0.02568686, y: 0.00020253658}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -158,7 +159,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5296669, y: 0.6057781}
+  m_Size: {x: 1.1032841, y: 1.0899978}
   m_EdgeRadius: 0
 --- !u!95 &5832441777882052119
 Animator:
@@ -194,3 +195,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   web: {fileID: 2673771173307342235, guid: fa8125dee09b9494083ec31db1e96dd3, type: 3}
+--- !u!70 &4160817154928414996
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3441712982866775403}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0045973063, y: -0.0076617002}
+  m_Size: {x: 0.6023085, y: 0.65134335}
+  m_Direction: 0

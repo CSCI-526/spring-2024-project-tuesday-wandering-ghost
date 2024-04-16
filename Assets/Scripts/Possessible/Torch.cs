@@ -105,6 +105,9 @@ public class Torch : MonoBehaviour
 
     public float fireCooldown = 1f;
 
+    private UnityEngine.Color highLight = new UnityEngine.Color(0.7f, 1, 0.7f);
+    private UnityEngine.Color deHighLight = new UnityEngine.Color(1, 1, 1);
+
 
     void Start()
     {
@@ -154,6 +157,24 @@ public class Torch : MonoBehaviour
                 lightStatusScript.increaseNum();
                 Destroy(collision.gameObject);
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+            sr.color = highLight;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+            sr.color = deHighLight;
         }
     }
 }

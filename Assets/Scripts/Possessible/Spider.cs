@@ -9,7 +9,8 @@ public class Spider : MonoBehaviour
     private string type = "Spider";
     private float projectileCount = 20;
 
-    
+    private UnityEngine.Color highLight = new UnityEngine.Color(0.7f, 1, 0.7f);
+    private UnityEngine.Color deHighLight = new UnityEngine.Color(1, 1, 1);
 
     void Start()
     {
@@ -68,5 +69,21 @@ public class Spider : MonoBehaviour
     }
 
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+            sr.color = highLight;
+        }
+    }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+            sr.color = deHighLight;
+        }
+    }
 }
