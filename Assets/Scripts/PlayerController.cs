@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour
     private Animator animator; // Reference to the Animator component
     string[] possesibleTags = { "Possessible", "FixedPossessible" };
     private float originalSpeed = 3f;
-    private float speedIncreaseFactorSpider = 4f;
-    private float speedIncreaseFactorRat = 5f;
+    private float speedIncreaseFactorSpider = 3f;
+    private float speedIncreaseFactorRat = 3f;
     public MaskControllerTest maskControllerTest;
 
     private Color highLight = new Color(0.7f, 1, 0.7f);
