@@ -6475,6 +6475,7 @@ MonoBehaviour:
   hintPanel: {fileID: 234350713}
   instructionPanel: {fileID: 1075404584}
   playerController: {fileID: 5117262892560557962}
+  maskController: {fileID: 1150189652}
 --- !u!114 &1677624817
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -42,6 +42,7 @@ public class Tutorial1UIHandler : MonoBehaviour
         // shrink quickly
         Vector2 ghostPosition = ghost.transform.position;
         print(!sawShrink);
+        print(maskController.GetIsShrinking());
         if (!sawShrink && ghostPosition.x > 16.0f)
         {
             maskController.SetShrinkSpeed(new Vector3(0.3f,0.3f,0.3f));

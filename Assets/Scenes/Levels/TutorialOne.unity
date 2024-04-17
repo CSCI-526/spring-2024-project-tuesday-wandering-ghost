@@ -267,6 +267,7 @@ MonoBehaviour:
   hintPanel: {fileID: 565256094}
   instructionPanel: {fileID: 0}
   playerController: {fileID: 1866457419}
+  maskController: {fileID: 1638755708}
 --- !u!4 &71756817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5186744417259557768, guid: 4b7ac6d6f40220941bca45dc8c9b19b8, type: 3}

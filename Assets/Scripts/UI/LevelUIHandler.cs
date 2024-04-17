@@ -14,6 +14,8 @@ public class LevelUIHandler : MonoBehaviour
     
     private FirebaseDataCollect firebaseData;
 
+    public MaskControllerTest maskController;
+
     void Start()
     {
         GameObject playerObject = GameObject.FindWithTag("Player");
@@ -44,22 +46,36 @@ public class LevelUIHandler : MonoBehaviour
     public void EnablePanel()
     {
         panel.SetActive(true);
+        if(maskController.GetIsShrinking())
+        {
+            maskController.StopShrinking();
+        }
         playerController.SetPlayerMovement(false);
     }
 
     public void DisablePanel()
     {
         panel.SetActive(false);
+        maskController.SetIsShrinking(true);
         playerController.SetPlayerMovement(true);
     }
 
     public void EnableHintPanel()
     {
         hintPanel.SetActive(true);
+
+        if (maskController.GetIsShrinking())
+        {
+            maskController.StopShrinking();
+        }
+        Debug.Log(maskController.GetIsShrinking());
+        playerController.SetPlayerMovement(false);
     }
     public void DisEnableHintPanel()
     {
         hintPanel.SetActive(false);
+        maskController.SetIsShrinking(true);
+        playerController.SetPlayerMovement(true);
     }
 
     public void EnableInstructionPanel()
