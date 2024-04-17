@@ -56,7 +56,10 @@ public class LevelUIHandler : MonoBehaviour
     public void DisablePanel()
     {
         panel.SetActive(false);
-        maskController.SetIsShrinking(true);
+        if (!(playerController.GetWhetherPossessRat() && maskController.mask.transform.localScale == new Vector3(10, 10, 10)))
+        {
+            maskController.SetIsShrinking(true);
+        }
         playerController.SetPlayerMovement(true);
     }
 
@@ -67,22 +70,19 @@ public class LevelUIHandler : MonoBehaviour
         if (maskController.GetIsShrinking())
         {
             maskController.StopShrinking();
-<<<<<<< Updated upstream
         }
         Debug.Log(maskController.GetIsShrinking());
         playerController.SetPlayerMovement(false);
-=======
-
-            Debug.Log(maskController.GetIsShrinking());
-            playerController.SetPlayerMovement(false);
-        }
->>>>>>> Stashed changes
     }
 
     public void DisEnableHintPanel()
     {
         hintPanel.SetActive(false);
-        maskController.SetIsShrinking(true);
+        if(!(playerController.GetWhetherPossessRat() && maskController.mask.transform.localScale == new Vector3(10, 10, 10)))
+        {
+            maskController.SetIsShrinking(true);
+        }
+        
         
         playerController.SetPlayerMovement(true);
     }
