@@ -14,6 +14,7 @@ public class Tutorial1UIHandler : MonoBehaviour
     private GameObject ghost;
     private MaskControllerTest maskController;
     private PlayerController playerController;
+    private LevelUIHandler levelUIHandler;
     private bool sawShrink = false;
     public GameObject winPanel;
     private int timeCountWhenStop = -1;
@@ -24,6 +25,7 @@ public class Tutorial1UIHandler : MonoBehaviour
         ghost = GameObject.Find("Ghost");
         maskController = GameObject.Find("Mask").GetComponent<MaskControllerTest>();
         playerController = GameObject.Find("Ghost").GetComponent<PlayerController>();
+        levelUIHandler = GameObject.Find("Canvas").GetComponent<LevelUIHandler>();
         
         wasdUI.SetActive(false);
         viewAlertTextUI.SetActive(false);
@@ -78,10 +80,9 @@ public class Tutorial1UIHandler : MonoBehaviour
             maskController.SetIsShrinking(true);
             playerController.SetMovementEnabled(true);
         }
-
         
-        // stop move when win
-        if (winPanel.activeSelf)
+        // stop move when panels open
+        if (winPanel.activeSelf || levelUIHandler.isPanelOpen)
         {
             maskController.SetIsShrinking(false);
             playerController.SetPlayerMovement(false);
