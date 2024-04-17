@@ -137,6 +137,15 @@ public class PlayerController : MonoBehaviour
         toPossess = null;
     }
 
+    public bool GetWhetherPossessRat()
+    {
+        if(isPossessing && toPossess != null && toPossess.GetComponent<Rat>() != null)
+        {
+            return true;
+        }
+        return false;
+    }
+
     void Possess()
     {
         if (Input.GetKeyDown(KeyCode.E)) { 
