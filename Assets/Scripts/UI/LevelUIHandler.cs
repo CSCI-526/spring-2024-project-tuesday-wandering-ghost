@@ -67,7 +67,7 @@ public class LevelUIHandler : MonoBehaviour
         if (maskController.GetIsShrinking())
         {
             maskController.StopShrinking();
-
+        }
         Debug.Log(maskController.GetIsShrinking());
         playerController.SetPlayerMovement(false);
     }
