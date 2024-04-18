@@ -14,6 +14,9 @@ public class LevelUIHandler : MonoBehaviour
     
     private FirebaseDataCollect firebaseData;
 
+    public MaskControllerTest maskController;
+    public bool isPanelOpen = false;
+
     void Start()
     {
         GameObject playerObject = GameObject.FindWithTag("Player");
@@ -44,33 +47,61 @@ public class LevelUIHandler : MonoBehaviour
     public void EnablePanel()
     {
         panel.SetActive(true);
+        isPanelOpen = true;
+        if(maskController.GetIsShrinking())
+        {
+            maskController.StopShrinking();
+        }
         playerController.SetPlayerMovement(false);
     }
 
     public void DisablePanel()
     {
         panel.SetActive(false);
+        isPanelOpen = false;
+        if (!(playerController.GetWhetherPossessRat() && maskController.mask.transform.localScale == new Vector3(10, 10, 10)))
+        {
+            maskController.SetIsShrinking(true);
+        }
         playerController.SetPlayerMovement(true);
     }
 
     public void EnableHintPanel()
     {
         hintPanel.SetActive(true);
+        isPanelOpen = true;
+        if (maskController.GetIsShrinking())
+        {
+            maskController.StopShrinking();
+        }
+        Debug.Log(maskController.GetIsShrinking());
+        playerController.SetPlayerMovement(false);
     }
+
     public void DisEnableHintPanel()
     {
         hintPanel.SetActive(false);
+        isPanelOpen = false;
+        if(!(playerController.GetWhetherPossessRat() && maskController.mask.transform.localScale == new Vector3(10, 10, 10)))
+        {
+            maskController.SetIsShrinking(true);
+        }
+        
+        
+        playerController.SetPlayerMovement(true);
     }
 
     public void EnableInstructionPanel()
     {
         panel.SetActive(false);
+        isPanelOpen = false;
         instructionPanel.SetActive(true);
     }
 
     public void DisableInstructionPanel()
     {
         panel.SetActive(true);
+        isPanelOpen = true;
         instructionPanel.SetActive(false);
     }
 

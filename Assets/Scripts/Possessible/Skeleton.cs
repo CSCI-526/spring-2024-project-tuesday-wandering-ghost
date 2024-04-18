@@ -12,10 +12,13 @@ public class Skeleton : MonoBehaviour
     private UnityEngine.Color highLight = new UnityEngine.Color(0.7f, 1, 0.7f);
     private UnityEngine.Color deHighLight = new UnityEngine.Color(1, 1, 1);
 
+    public AudioSource audioSource;
+
     void Start()
     {
         // Get the Animator component attached to this GameObject
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
     // public void SetDefaultState()
     // {
@@ -37,6 +40,11 @@ public class Skeleton : MonoBehaviour
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
                 rb.velocity = lastDirection * projectileSpeed;
                 projectileCount--;
+
+                if (audioSource != null)
+                {
+                    audioSource.Play();
+                }
             }
         }
     }

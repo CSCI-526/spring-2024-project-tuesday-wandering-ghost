@@ -108,6 +108,7 @@ public class Torch : MonoBehaviour
     private UnityEngine.Color highLight = new UnityEngine.Color(0.7f, 1, 0.7f);
     private UnityEngine.Color deHighLight = new UnityEngine.Color(1, 1, 1);
 
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -118,6 +119,8 @@ public class Torch : MonoBehaviour
         {
             isLight = true;
         }
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -137,6 +140,11 @@ public class Torch : MonoBehaviour
                 hasFired = true; 
                 fireCount++;
                 StartCoroutine(ResetFire());
+
+                if (audioSource != null)
+                {
+                    audioSource.Play();
+                }
             }
         }
     }
