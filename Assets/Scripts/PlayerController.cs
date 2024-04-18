@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private float speedIncreaseFactorSpider = 3f;
     private float speedIncreaseFactorRat = 3f;
     public MaskControllerTest maskControllerTest;
+    bool soundPlayed = false;
 
     private Color highLight = new Color(0.7f, 1, 0.7f);
     private Color deHighLight = new Color(0, 0, 0);
@@ -155,6 +156,14 @@ public class PlayerController : MonoBehaviour
                 transform.localScale = new Vector3(0.1f,0.1f,0.1f);
                 transform.SetParent(toPossess.transform); // set parent
                 isPossessing = true; // is possessing
+
+                AudioSource audioSource = toPossess.GetComponent<AudioSource>();
+                if (audioSource != null && !soundPlayed)
+                {
+                    audioSource.Play();
+                    soundPlayed = true;
+                }
+
                 if (toPossess.GetComponent<Spider>() != null)
                 { 
                     moveSpeed += speedIncreaseFactorSpider; 
@@ -182,6 +191,7 @@ public class PlayerController : MonoBehaviour
                 ghostRb.constraints  &= ~RigidbodyConstraints2D.FreezePositionX;
                 ghostRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY; //cancel xy axis movement restriction
                 maskControllerTest.SetIsShrinking(true);
+                soundPlayed = false;
 
                 }
                 else

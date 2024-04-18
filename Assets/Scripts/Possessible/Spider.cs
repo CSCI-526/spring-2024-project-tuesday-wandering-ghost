@@ -12,9 +12,11 @@ public class Spider : MonoBehaviour
     private UnityEngine.Color highLight = new UnityEngine.Color(0.7f, 1, 0.7f);
     private UnityEngine.Color deHighLight = new UnityEngine.Color(1, 1, 1);
 
+    public AudioSource audioSource;
+
     void Start()
     {
-
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -42,6 +44,11 @@ public class Spider : MonoBehaviour
                 rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
                 rb.velocity = lastDirection * projectileSpeed;
                 projectileCount--;
+
+                if (audioSource != null)
+                {
+                    audioSource.Play();
+                }
             }
         }
     }
