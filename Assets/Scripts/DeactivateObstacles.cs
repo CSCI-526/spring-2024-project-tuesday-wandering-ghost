@@ -5,11 +5,11 @@ using UnityEngine;
 public class DeactivateObstacles : MonoBehaviour
 {
     // Start is called before the first frame update
-    public SpriteRenderer trigger;
+    GameObject triggerOnChild;
     public GameObject obstacle;
     void Start()
     {
-        
+        triggerOnChild = transform.Find("Trigger_on").gameObject;
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class DeactivateObstacles : MonoBehaviour
 
     void Deactivate()
     {
-        if (trigger.color == Color.green)
+        if (triggerOnChild.activeSelf)
         {
             obstacle.SetActive(false);
         }

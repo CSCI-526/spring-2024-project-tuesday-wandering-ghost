@@ -5,10 +5,10 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     // Start is called before the first frame update
-    SpriteRenderer triggerSR;
+    GameObject triggerOnChild;
     void Start()
     {
-        triggerSR = GetComponent<SpriteRenderer>();
+        triggerOnChild = transform.Find("Trigger_on").gameObject;
     }
 
     // Update is called once per frame
@@ -19,6 +19,7 @@ public class Trigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-            triggerSR.color = Color.green;
+        print("child true");
+        triggerOnChild.SetActive(true);
     }
 }
