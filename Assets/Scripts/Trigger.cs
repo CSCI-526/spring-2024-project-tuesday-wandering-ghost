@@ -17,9 +17,11 @@ public class Trigger : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        print("child true");
-        triggerOnChild.SetActive(true);
+        if (collision.gameObject.CompareTag("Possessible") || collision.gameObject.CompareTag("Player")) {
+            print("child true");
+            triggerOnChild.SetActive(true);
+        }
     }
 }
