@@ -122,20 +122,34 @@ public class PlayerController : MonoBehaviour
     void DetectTaggedObjects2D(string[] tags, float detectionRadius)
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
+        GameObject tmpToPossess = null;
+        float closestDistance = Mathf.Infinity;
 
         foreach (var hitCollider in hitColliders)
         {
+
+
             foreach (var tag in tags)
             {
                 if (hitCollider.CompareTag(tag))
                 {
-                    toPossess = hitCollider.gameObject;
-                    return;
+                    float distanceSqr = (hitCollider.transform.position - transform.position).sqrMagnitude;
+                    if (distanceSqr < closestDistance)
+                    {
+                        closestDistance = distanceSqr;
+                        tmpToPossess = hitCollider.gameObject;
+                    }
+                    break;
                 }
             }
-
         }
-        toPossess = null;
+
+        if (tmpToPossess != null) {
+            toPossess = tmpToPossess;
+        } else {
+            toPossess = null;
+        }
+
     }
 
     public bool GetWhetherPossessRat()

@@ -10,7 +10,19 @@ public class SpiderWeb : MonoBehaviour
     BoxCollider2D webCollider;
     void Start()
     {
-        webCollider = this.gameObject.GetComponent<BoxCollider2D>();
+        GameObject[] possessibles = GameObject.FindGameObjectsWithTag("Possessible");
+        if (possessibles != null) {
+            webCollider = this.gameObject.GetComponent<BoxCollider2D>();
+            foreach (GameObject possessible in possessibles) {
+                CapsuleCollider2D psCollider = possessible.GetComponent<CapsuleCollider2D>();
+                if (psCollider != null && webCollider != null) {
+                    Physics2D.IgnoreCollision(psCollider,webCollider,true);
+                }
+            }
+        }
+
+
+        
         StartCoroutine(DeactivateAfterTime(lifetime));
     }
 
