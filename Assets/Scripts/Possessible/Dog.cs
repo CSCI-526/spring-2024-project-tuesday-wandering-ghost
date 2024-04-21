@@ -8,16 +8,25 @@ public class Dog : MonoBehaviour
     public float moveSpeed = 2f;
     public string targetTag = "Possessible";
     private bool isBoneInRange = false;
+    private Animator animator;
+    bool isMovingTowardsBone = false;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
         DetectBone();
+        animator.SetBool("IsMoving", isBoneInRange && isMovingTowardsBone);
     }
 
     void DetectBone()
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
         isBoneInRange = false;
+
 
         foreach (var hit in hits)
         {
@@ -32,10 +41,15 @@ public class Dog : MonoBehaviour
                     {
                         Vector2 direction = (hit.transform.position - transform.position).normalized;
                         transform.position += (Vector3)direction * moveSpeed * Time.deltaTime;
+                        isMovingTowardsBone = true;
                     }
                     isBoneInRange = true; 
                     break; 
                 }
+            }
+            if (!isBoneInRange || !isMovingTowardsBone)
+            {
+                isMovingTowardsBone = false;
             }
         }
     }
