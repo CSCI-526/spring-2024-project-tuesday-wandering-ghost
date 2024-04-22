@@ -133232,6 +133232,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400219637833100256, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+      propertyPath: triggerOnChild2
+      value: 
+      objectReference: {fileID: 129080887}
     - target: {fileID: 4304916867566974932, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: trigger
       value: 
@@ -133280,6 +133284,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.625
       objectReference: {fileID: 0}
+    - target: {fileID: 6805626804052125190, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+      propertyPath: m_Name
+      value: Trigger_on
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805626804052125190, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8223103676157196425, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: m_Size.x
       value: 1
@@ -133309,6 +133321,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+--- !u!1 &129080887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6805626804052125190, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+  m_PrefabInstance: {fileID: 129080886}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &190617756
 GameObject:
   m_ObjectHideFlags: 0
@@ -138380,6 +138397,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400219637833100256, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+      propertyPath: triggerOnChild2
+      value: 
+      objectReference: {fileID: 672117158}
     - target: {fileID: 4304916867566974932, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: trigger
       value: 
@@ -138428,6 +138449,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.625
       objectReference: {fileID: 0}
+    - target: {fileID: 6805626804052125190, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+      propertyPath: m_Name
+      value: Trigger_on
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805626804052125190, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8223103676157196425, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: m_Size.x
       value: 1
@@ -138457,6 +138486,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+--- !u!1 &672117158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6805626804052125190, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+  m_PrefabInstance: {fileID: 672117157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &680144372
 RectTransform:
   m_ObjectHideFlags: 0
@@ -143685,6 +143719,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400219637833100256, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+      propertyPath: triggerOnChild
+      value: 
+      objectReference: {fileID: 2140129407}
+    - target: {fileID: 400219637833100256, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+      propertyPath: triggerOnChild2
+      value: 
+      objectReference: {fileID: 2140129407}
     - target: {fileID: 4304916867566974932, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: trigger
       value: 
@@ -143725,6 +143767,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6805626804052125190, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8223103676157196425, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: m_Size.x
       value: 1
@@ -143738,6 +143784,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+--- !u!1 &2140129407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6805626804052125190, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
+  m_PrefabInstance: {fileID: 2140129406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5117262892560557961
 PrefabInstance:
   m_ObjectHideFlags: 0

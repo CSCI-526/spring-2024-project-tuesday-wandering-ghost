@@ -8,7 +8,8 @@ public class Trigger : MonoBehaviour
     GameObject triggerOnChild;
     void Start()
     {
-        triggerOnChild = transform.Find("Trigger_on").gameObject;
+        triggerOnChild = transform.GetChild(0).gameObject;
+        triggerOnChild.SetActive(false);
     }
 
     // Update is called once per frame
@@ -16,11 +17,11 @@ public class Trigger : MonoBehaviour
     {
         
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Possessible") || collision.gameObject.CompareTag("Player")) {
-            print("child true");
+        if (collision.CompareTag("Possessible") || collision.CompareTag("Player")) {
+            
             triggerOnChild.SetActive(true);
         }
     }

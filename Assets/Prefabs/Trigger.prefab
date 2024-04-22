@@ -157,7 +157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3edb61f71b9ce7b40afd830b248a85bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 0}
   obstacle: {fileID: 0}
 --- !u!1 &6805626804052125190
 GameObject:
@@ -175,7 +174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6919046884486197028
 Transform:
   m_ObjectHideFlags: 0
