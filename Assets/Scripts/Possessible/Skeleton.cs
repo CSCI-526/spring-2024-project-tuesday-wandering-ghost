@@ -33,6 +33,26 @@ public class Skeleton : MonoBehaviour
         UpdateFacingDirection();
     }
 
+
+    // void ShootBone()
+    // {
+    //     if (transform.childCount > 0 && Time.time - lastShot > cooldown)
+    //     {
+    //         if (Input.GetKeyDown(KeyCode.Q))
+    //         {
+    //             GameObject projectile = Instantiate(bone, transform.position, Quaternion.identity);
+    //             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+    //             rb.velocity = lastDirection * projectileSpeed;
+    //             lastShot = Time.time;
+
+    //             if (audioSource != null)
+    //             {
+    //                 audioSource.Play();
+    //             }
+    //         }
+    //     }
+
+    // }
     void ShootBone()
     {
         if (transform.childCount > 0 && Time.time - lastShot > cooldown)
@@ -41,7 +61,10 @@ public class Skeleton : MonoBehaviour
             {
                 GameObject projectile = Instantiate(bone, transform.position, Quaternion.identity);
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-                rb.velocity = lastDirection * projectileSpeed;
+                // Calculate a parabolic trajectory
+                Vector2 velocity = new Vector2(lastDirection.x * projectileSpeed, 5f);
+                rb.velocity = velocity;
+                rb.gravityScale = 1; 
                 lastShot = Time.time;
 
                 if (audioSource != null)
@@ -50,20 +73,6 @@ public class Skeleton : MonoBehaviour
                 }
             }
         }
-        // {
-        //     if (Input.GetKeyDown(KeyCode.Q))
-        //     {
-        //         GameObject projectile = Instantiate(bone, transform.position, Quaternion.identity);
-        //         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        //         rb.velocity = lastDirection * projectileSpeed;
-        //         projectileCount--;
-
-        //         if (audioSource != null)
-        //         {
-        //             audioSource.Play();
-        //         }
-        //     }
-        // }
     }
 
     void UpdateFacingDirection()
