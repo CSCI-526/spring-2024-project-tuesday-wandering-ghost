@@ -1,10 +1,13 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Skeleton : MonoBehaviour
 {
     public GameObject bone;
     private Animator animator; // Reference to the Animator component
-    private float projectileCount = 5;
+    private float cooldown = 1.0f;
+    private float lastShot = 0;
+    //private float projectileCount = 5;
     private float projectileSpeed = 10f;
     private Vector2 lastDirection = Vector2.right; // Default facing direction
     private string type = "Skeleton";
@@ -32,14 +35,14 @@ public class Skeleton : MonoBehaviour
 
     void ShootBone()
     {
-        if (transform.childCount > 0 && projectileCount > 0)
+        if (transform.childCount > 0 && Time.time - lastShot > cooldown)
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 GameObject projectile = Instantiate(bone, transform.position, Quaternion.identity);
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
                 rb.velocity = lastDirection * projectileSpeed;
-                projectileCount--;
+                lastShot = Time.time;
 
                 if (audioSource != null)
                 {
@@ -47,6 +50,20 @@ public class Skeleton : MonoBehaviour
                 }
             }
         }
+        // {
+        //     if (Input.GetKeyDown(KeyCode.Q))
+        //     {
+        //         GameObject projectile = Instantiate(bone, transform.position, Quaternion.identity);
+        //         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+        //         rb.velocity = lastDirection * projectileSpeed;
+        //         projectileCount--;
+
+        //         if (audioSource != null)
+        //         {
+        //             audioSource.Play();
+        //         }
+        //     }
+        // }
     }
 
     void UpdateFacingDirection()
