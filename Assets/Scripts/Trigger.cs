@@ -6,9 +6,11 @@ public class Trigger : MonoBehaviour
 {
     // Start is called before the first frame update
     GameObject triggerOnChild;
+    AudioSource audioSource;
     void Start()
     {
         triggerOnChild = transform.Find("Trigger_on").gameObject;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,5 +23,6 @@ public class Trigger : MonoBehaviour
     {
         print("child true");
         triggerOnChild.SetActive(true);
+        audioSource.Play();
     }
 }
