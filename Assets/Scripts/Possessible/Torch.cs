@@ -101,7 +101,7 @@ public class Torch : MonoBehaviour
     private bool hasFired = false;
 
     private int fireCount = 0;
-    public int maxFireCount = 20;
+    private int maxFireCount = 20;
 
     public float fireCooldown = 1f;
 
