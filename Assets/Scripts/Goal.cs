@@ -26,13 +26,16 @@ public class Goal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        winPanel.SetActive(true);
-        playerController.SetPlayerMovement(false);
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Possessible")) {
+            winPanel.SetActive(true);
+            playerController.SetPlayerMovement(false);
 
-        // post data to firebase
-        firebaseData.FinishLevel();
+            // post data to firebase
+            firebaseData.FinishLevel();
 
-        // stop shrinking
-        maskControllerTest.StopShrinking();
+            // stop shrinking
+            maskControllerTest.StopShrinking();
+        }
+
     }
 }
