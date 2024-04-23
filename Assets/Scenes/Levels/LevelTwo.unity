@@ -133262,7 +133262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6322245440662933376, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6322245440662933376, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
@@ -138434,7 +138434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6322245440662933376, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6322245440662933376, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
@@ -139071,7 +139071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -134.8, y: 75.9}
+  m_AnchoredPosition: {x: -204.5, y: 75.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868906817
@@ -144204,7 +144204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6322245440662933376, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6322245440662933376, guid: 9d0d820ec77b1422880ed6fbefa2ee0d, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x

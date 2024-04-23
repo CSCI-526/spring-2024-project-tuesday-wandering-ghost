@@ -14,17 +14,20 @@ public class DisappearOnTouch : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        gameObject.SetActive(false);
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Possessible")) {
+            gameObject.SetActive(false);
 
-        if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.PlayClip(soundClip);
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayClip(soundClip);
+            }
+
+            if (maskControllerTest != null)
+            {
+                maskControllerTest.IncreaseMaxPressCount();
+            }
         }
 
-        if (maskControllerTest != null)
-        {
-            maskControllerTest.IncreaseMaxPressCount();
-        }
     }
     // Update is called once per frame
     void Update()
