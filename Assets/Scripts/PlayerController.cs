@@ -201,7 +201,7 @@ public class PlayerController : MonoBehaviour
                 isPossessing = false;                
                 ghostCollider.enabled = true; //enable collider
                 moveSpeed = originalSpeed; //back to original speed
-                transform.localScale = new Vector3(1, 1, 1);//back to original size
+                transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);//back to original size
                 ghostRb.constraints  &= ~RigidbodyConstraints2D.FreezePositionX;
                 ghostRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY; //cancel xy axis movement restriction
                 maskControllerTest.SetIsShrinking(true);

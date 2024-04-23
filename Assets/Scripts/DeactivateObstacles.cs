@@ -9,7 +9,8 @@ public class DeactivateObstacles : MonoBehaviour
     public GameObject obstacle;
     void Start()
     {
-        triggerOnChild = transform.Find("Trigger_on").gameObject;
+        // triggerOnChild = transform.Find("Trigger_on").gameObject;
+        triggerOnChild = transform.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
