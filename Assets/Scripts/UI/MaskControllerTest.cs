@@ -14,7 +14,7 @@ public class MaskControllerTest : MonoBehaviour
     public TextMeshProUGUI gameOverText;
 
 
-    Vector3 shrink = new Vector3(0.01f,0.01f,0.01f);
+    Vector3 shrink = new Vector3(0.04f,0.04f,0.04f);
     Vector3 expandToOriginal = new Vector3(1f, 1f, 1f);
     public int spacePressCount = 0;
     public int maxPressCount = 5;
