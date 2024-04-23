@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,16 +19,25 @@ public class Bone : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         cl = GetComponent<Collider2D>();
         StartCoroutine(DeactivateAfterTime(lifetime));
+        StartCoroutine(DisableGravityAfterTime(2.0f));
     }
 
     IEnumerator DeactivateAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
-        rb.velocity = Vector2.zero; // ֹͣ�ƶ�
+        rb.velocity = Vector2.zero; 
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         cl.enabled = true;
     }
-
+    IEnumerator DisableGravityAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        if (rb != null)
+        {
+            rb.gravityScale = 0; 
+            rb.velocity = new Vector2(rb.velocity.x, 0); 
+        }
+    }
     public string getType()
     {
         return type;//return type

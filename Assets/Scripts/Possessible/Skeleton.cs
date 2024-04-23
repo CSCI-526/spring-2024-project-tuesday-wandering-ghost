@@ -33,26 +33,6 @@ public class Skeleton : MonoBehaviour
         UpdateFacingDirection();
     }
 
-
-    // void ShootBone()
-    // {
-    //     if (transform.childCount > 0 && Time.time - lastShot > cooldown)
-    //     {
-    //         if (Input.GetKeyDown(KeyCode.Q))
-    //         {
-    //             GameObject projectile = Instantiate(bone, transform.position, Quaternion.identity);
-    //             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-    //             rb.velocity = lastDirection * projectileSpeed;
-    //             lastShot = Time.time;
-
-    //             if (audioSource != null)
-    //             {
-    //                 audioSource.Play();
-    //             }
-    //         }
-    //     }
-
-    // }
     void ShootBone()
     {
         if (transform.childCount > 0 && Time.time - lastShot > cooldown)
@@ -61,10 +41,20 @@ public class Skeleton : MonoBehaviour
             {
                 GameObject projectile = Instantiate(bone, transform.position, Quaternion.identity);
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-                // Calculate a parabolic trajectory
-                Vector2 velocity = new Vector2(lastDirection.x * projectileSpeed, 5f);
-                rb.velocity = velocity;
-                rb.gravityScale = 1; 
+
+               
+                if (lastDirection == Vector2.left || lastDirection == Vector2.right)
+                {
+                    
+                    rb.velocity = new Vector2(lastDirection.x * projectileSpeed, 5f); 
+                }
+                else if (lastDirection == Vector2.up || lastDirection == Vector2.down)
+                {
+                    
+                    rb.velocity = lastDirection * projectileSpeed;
+                }
+
+                rb.gravityScale = lastDirection.y == 0 ? 1 : 0; 
                 lastShot = Time.time;
 
                 if (audioSource != null)
@@ -74,6 +64,8 @@ public class Skeleton : MonoBehaviour
             }
         }
     }
+
+
 
     void UpdateFacingDirection()
     {
