@@ -106,7 +106,7 @@ public class MaskControllerTest : MonoBehaviour
 
     public void SetFixedMaskSize()
     {
-        mask.transform.localScale = new Vector3(10, 10, 10);  // Set the fixed size here
+        mask.transform.localScale = new Vector3(5, 5, 5);  // Set the fixed size here
     }
 
     public void SetShrinkSpeed(Vector3 newShrink)

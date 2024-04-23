@@ -27,4 +27,11 @@ public class Fire : MonoBehaviour
     {
         return type;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Possessible")) {
+            Destroy(this.gameObject);
+        }
+    }
 }

@@ -16,9 +16,10 @@ public class PlayerController : MonoBehaviour
     private Animator animator; // Reference to the Animator component
     string[] possesibleTags = { "Possessible", "FixedPossessible" };
     private float originalSpeed = 3f;
-    private float speedIncreaseFactorSpider = 4f;
-    private float speedIncreaseFactorRat = 5f;
+    private float speedIncreaseFactorSpider = 3f;
+    private float speedIncreaseFactorRat = 3f;
     public MaskControllerTest maskControllerTest;
+    bool soundPlayed = false;
 
     private Color highLight = new Color(0.7f, 1, 0.7f);
     private Color deHighLight = new Color(0, 0, 0);
@@ -121,20 +122,43 @@ public class PlayerController : MonoBehaviour
     void DetectTaggedObjects2D(string[] tags, float detectionRadius)
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
+        GameObject tmpToPossess = null;
+        float closestDistance = Mathf.Infinity;
 
         foreach (var hitCollider in hitColliders)
         {
+
+
             foreach (var tag in tags)
             {
                 if (hitCollider.CompareTag(tag))
                 {
-                    toPossess = hitCollider.gameObject;
-                    return;
+                    float distanceSqr = (hitCollider.transform.position - transform.position).sqrMagnitude;
+                    if (distanceSqr < closestDistance)
+                    {
+                        closestDistance = distanceSqr;
+                        tmpToPossess = hitCollider.gameObject;
+                    }
+                    break;
                 }
             }
-
         }
-        toPossess = null;
+
+        if (tmpToPossess != null) {
+            toPossess = tmpToPossess;
+        } else {
+            toPossess = null;
+        }
+
+    }
+
+    public bool GetWhetherPossessRat()
+    {
+        if(isPossessing && toPossess != null && toPossess.GetComponent<Rat>() != null)
+        {
+            return true;
+        }
+        return false;
     }
 
     void Possess()
@@ -146,6 +170,14 @@ public class PlayerController : MonoBehaviour
                 transform.localScale = new Vector3(0.1f,0.1f,0.1f);
                 transform.SetParent(toPossess.transform); // set parent
                 isPossessing = true; // is possessing
+
+                AudioSource audioSource = toPossess.GetComponent<AudioSource>();
+                if (audioSource != null && !soundPlayed)
+                {
+                    audioSource.Play();
+                    soundPlayed = true;
+                }
+
                 if (toPossess.GetComponent<Spider>() != null)
                 { 
                     moveSpeed += speedIncreaseFactorSpider; 
@@ -169,10 +201,11 @@ public class PlayerController : MonoBehaviour
                 isPossessing = false;                
                 ghostCollider.enabled = true; //enable collider
                 moveSpeed = originalSpeed; //back to original speed
-                transform.localScale = new Vector3(1, 1, 1);//back to original size
+                transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);//back to original size
                 ghostRb.constraints  &= ~RigidbodyConstraints2D.FreezePositionX;
                 ghostRb.constraints &= ~RigidbodyConstraints2D.FreezePositionY; //cancel xy axis movement restriction
                 maskControllerTest.SetIsShrinking(true);
+                soundPlayed = false;
 
                 }
                 else

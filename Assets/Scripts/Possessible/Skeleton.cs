@@ -1,10 +1,13 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Skeleton : MonoBehaviour
 {
     public GameObject bone;
     private Animator animator; // Reference to the Animator component
-    private float projectileCount = 5;
+    private float cooldown = 1.0f;
+    private float lastShot = 0;
+    //private float projectileCount = 5;
     private float projectileSpeed = 10f;
     private Vector2 lastDirection = Vector2.right; // Default facing direction
     private string type = "Skeleton";
@@ -12,10 +15,13 @@ public class Skeleton : MonoBehaviour
     private UnityEngine.Color highLight = new UnityEngine.Color(0.7f, 1, 0.7f);
     private UnityEngine.Color deHighLight = new UnityEngine.Color(1, 1, 1);
 
+    public AudioSource audioSource;
+
     void Start()
     {
         // Get the Animator component attached to this GameObject
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
     // public void SetDefaultState()
     // {
@@ -29,17 +35,37 @@ public class Skeleton : MonoBehaviour
 
     void ShootBone()
     {
-        if (transform.childCount > 0 && projectileCount > 0)
+        if (transform.childCount > 0 && Time.time - lastShot > cooldown)
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 GameObject projectile = Instantiate(bone, transform.position, Quaternion.identity);
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-                rb.velocity = lastDirection * projectileSpeed;
-                projectileCount--;
+
+               
+                if (lastDirection == Vector2.left || lastDirection == Vector2.right)
+                {
+                    
+                    rb.velocity = new Vector2(lastDirection.x * projectileSpeed, 5f); 
+                }
+                else if (lastDirection == Vector2.up || lastDirection == Vector2.down)
+                {
+                    
+                    rb.velocity = lastDirection * projectileSpeed;
+                }
+
+                rb.gravityScale = lastDirection.y == 0 ? 1 : 0; 
+                lastShot = Time.time;
+
+                if (audioSource != null)
+                {
+                    audioSource.Play();
+                }
             }
         }
     }
+
+
 
     void UpdateFacingDirection()
     {

@@ -10,11 +10,14 @@ public class Gate : MonoBehaviour
     public GameObject key2;
     public GameObject key3;
     float cooldownTime = 2f;
-
+    private BoxCollider2D gateCollider;
+    SpriteRenderer gateSR;
+    public Sprite gateSprite;
     public GameObject cannotEnterUI;
     void Start()
     {
-        
+        gateSR = gameObject.GetComponent<SpriteRenderer>();
+        gateCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -27,7 +30,8 @@ public class Gate : MonoBehaviour
     {
         if (key1.activeInHierarchy && key2.activeInHierarchy && key3.activeInHierarchy)
         {
-            Destroy(this.gameObject);
+            gateSR.sprite = gateSprite;
+            gateCollider.enabled = false;
         }
         else
         {

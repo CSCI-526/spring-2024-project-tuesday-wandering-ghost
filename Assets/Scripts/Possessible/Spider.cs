@@ -12,9 +12,11 @@ public class Spider : MonoBehaviour
     private UnityEngine.Color highLight = new UnityEngine.Color(0.7f, 1, 0.7f);
     private UnityEngine.Color deHighLight = new UnityEngine.Color(1, 1, 1);
 
+    public AudioSource audioSource;
+
     void Start()
     {
-
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -29,12 +31,8 @@ public class Spider : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                // GameObject projectile = Instantiate(web, transform.position, Quaternion.identity);
-                // Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-                // rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-                // rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
-                // rb.velocity = lastDirection * projectileSpeed;
-                Vector2 spawnPoint = (Vector2)transform.position + lastDirection * 1.0f; // 可以调整这里的乘数来改变蜘蛛网的起始距离
+
+                Vector2 spawnPoint = (Vector2)transform.position;
 
                 GameObject projectile = Instantiate(web, spawnPoint, Quaternion.identity);
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
@@ -42,6 +40,11 @@ public class Spider : MonoBehaviour
                 rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
                 rb.velocity = lastDirection * projectileSpeed;
                 projectileCount--;
+
+                if (audioSource != null)
+                {
+                    audioSource.Play();
+                }
             }
         }
     }

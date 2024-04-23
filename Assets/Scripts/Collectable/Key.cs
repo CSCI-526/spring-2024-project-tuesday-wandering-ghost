@@ -12,6 +12,12 @@ public class Key : MonoBehaviour
     void Start()
     {
         keySR = gameObject.GetComponent<SpriteRenderer>();
+        
+        // distinguish collectable
+        if (keySR.sprite.name == "key-white")
+        {
+            keySR.color = Color.yellow;
+        }
     }
 
     // Update is called once per frame
@@ -28,6 +34,7 @@ public class Key : MonoBehaviour
             Destroy(this.gameObject);
         } else if (keySR.sprite.name == "key_broken" && collision.gameObject.name == "SpiderWeb(Clone)") {
             keySR.sprite = keySprite;
+            keySR.color = Color.yellow;
             Destroy(collision.gameObject);
         }
     }

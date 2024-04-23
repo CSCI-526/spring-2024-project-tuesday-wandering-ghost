@@ -14,6 +14,7 @@ public class Tutorial1UIHandler : MonoBehaviour
     private GameObject ghost;
     private MaskControllerTest maskController;
     private PlayerController playerController;
+    private LevelUIHandler levelUIHandler;
     private bool sawShrink = false;
     public GameObject winPanel;
     private int timeCountWhenStop = -1;
@@ -24,6 +25,7 @@ public class Tutorial1UIHandler : MonoBehaviour
         ghost = GameObject.Find("Ghost");
         maskController = GameObject.Find("Mask").GetComponent<MaskControllerTest>();
         playerController = GameObject.Find("Ghost").GetComponent<PlayerController>();
+        levelUIHandler = GameObject.Find("Canvas").GetComponent<LevelUIHandler>();
         
         wasdUI.SetActive(false);
         viewAlertTextUI.SetActive(false);
@@ -42,6 +44,7 @@ public class Tutorial1UIHandler : MonoBehaviour
         // shrink quickly
         Vector2 ghostPosition = ghost.transform.position;
         print(!sawShrink);
+        print(maskController.GetIsShrinking());
         if (!sawShrink && ghostPosition.x > 16.0f)
         {
             maskController.SetShrinkSpeed(new Vector3(0.3f,0.3f,0.3f));
@@ -72,15 +75,14 @@ public class Tutorial1UIHandler : MonoBehaviour
             // to avoid first keydown is not response in UI control only in mask's PressCount
             timeCountWhenStop = maskController.maxPressCount - maskController.spacePressCount;
         }
-        else
+        else if (!spaceUI.activeSelf && virtualCamera.m_Lens.OrthographicSize == 4.5f)
         {
             maskController.SetIsShrinking(true);
             playerController.SetMovementEnabled(true);
         }
-
         
-        // stop move when win
-        if (winPanel.activeSelf)
+        // stop move when panels open
+        if (winPanel.activeSelf || levelUIHandler.isPanelOpen)
         {
             maskController.SetIsShrinking(false);
             playerController.SetPlayerMovement(false);

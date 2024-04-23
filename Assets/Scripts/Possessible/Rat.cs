@@ -10,10 +10,11 @@ public class Rat : MonoBehaviour
     public MaskControllerTest maskControllerTest;
     private UnityEngine.Color highLight = new UnityEngine.Color(0.7f, 1, 0.7f);
     private UnityEngine.Color deHighLight = new UnityEngine.Color(1, 1, 1);
+    public AudioSource audioSource;
 
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,7 +41,13 @@ public class Rat : MonoBehaviour
         {
             maskControllerTest.StopShrinking();
             maskControllerTest.SetFixedMaskSize();
+
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

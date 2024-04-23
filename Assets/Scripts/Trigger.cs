@@ -5,10 +5,13 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     // Start is called before the first frame update
-    SpriteRenderer triggerSR;
+    GameObject triggerOnChild;
+    AudioSource audioSource;
     void Start()
     {
-        triggerSR = GetComponent<SpriteRenderer>();
+        triggerOnChild = transform.GetChild(0).gameObject;
+        triggerOnChild.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -17,8 +20,25 @@ public class Trigger : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*
+         private void OnTriggerEnter2D(Collider2D collision)
     {
-            triggerSR.color = Color.green;
+        // print("In Trigger");
+        if (collision.CompareTag("Possessible") || collision.CompareTag("Player")) {
+            // print("in active");
+            triggerOnChild.SetActive(true);
+            audioSource.Play();
+        }
+    }
+     */
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // print("In collision");
+        if (collision.gameObject.CompareTag("Possessible") || collision.gameObject.CompareTag("Player")) {
+            // print("child true");
+            triggerOnChild.SetActive(true);
+            audioSource.Play();
+        }
     }
 }
